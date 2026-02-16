@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+[Download PDF version](/files/Mitch Gerhardt CV Spring 2026.pdf){: .btn .btn--primary}
+
 Research Interests
 ======
 Sociotechnical studies of generative AI adoption in workplace settings, ethnographic methods, science and technology studies (STS), epistemic cultures, computational approaches to qualitative research, symbolic interactionism, workplace learning and expertise
