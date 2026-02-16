@@ -84,7 +84,7 @@ $(document).ready(function () {
   });
 
   // init smooth scroll, this needs to be slightly more than then fixed masthead height
-  $("a").smoothScroll({ 
+ $("a[href*='#']:not([href='#'])").smoothScroll({
     offset: -75, // needs to match $masthead-height
     preventDefault: false,
   }); 

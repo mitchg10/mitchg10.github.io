@@ -188,6 +188,7 @@ exclude:
   - README
   - tmp
   - vendor
+  - "*.tex"
 keep_files:
   - .git
   - .svn

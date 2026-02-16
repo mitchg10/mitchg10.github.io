@@ -1,0 +1,637 @@
+% \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+% \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+% \newcommand{\bibTitle}[1]{``#1''}
+
+\documentclass{resume} 
+\usepackage[left=0.6in,top=0.6in,right=0.8in,bottom=0.6in]{geometry} 
+\pagenumbering{arabic}
+\usepackage{setspace}
+
+\usepackage{fontawesome}
+\usepackage{enumitem}
+\usepackage{datetime2}
+\usepackage{tabularx}
+\usepackage{needspace}
+\usepackage{placeins}
+
+\newcommand{\smallspace}{\hspace{0.2em}}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancypagestyle{firstpage}
+{
+    \fancyhead[L]{}    
+    \fancyhead[R]{\color{date} Last Updated on \today}
+}
+\fancypagestyle{reference}
+{
+    \fancyfoot[L] {}
+    \fancyfoot[C] {}
+    \fancyfoot[R] {\color{date} \thepage}
+}
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% \fancyfoot[L]{\color{date} Hongtao Hao~·~Curriculum Vitae}
+% \fancyfoot[C]{\color{date} https://hongtaoh.com/en/vitae/}
+\fancyfoot[C] {\color{date} \thepage}
+% 483d8b, 8000000
+\usepackage[dvipsnames]{xcolor}
+\definecolor{hypercolor}{HTML}{510080}
+\definecolor{sectioncolor}{HTML}{510080}
+\definecolor{date}{HTML}{666666} 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=hypercolor,
+}
+
+% \usepackage{mathpazo} 
+% \usepackage{fontspec}
+% \setmainfont[
+% BoldFont = Source Sans Pro-{Semi-bold}]{Source Sans Pro}
+
+% Font configuaration
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}  % Modern sans-serif font
+\usepackage[scale=0.9]{sourceserifpro}  % Modern serif font for body text
+\usepackage[scale=0.9]{sourcecodepro}  % Modern monospace font
+
+% Set default fonts
+\renewcommand{\familydefault}{\sfdefault}  % Make sans-serif the default
+\renewcommand{\rmdefault}{sourceserifpro}
+\renewcommand{\ttdefault}{sourcecodepro}
+
+% \setromanfont[Mapping={tex-text}, 
+% 	Numbers={OldStyle},
+% 	Ligatures={Common}]%{Minion Pro}
+%     {Caladea}
+% \setmainfont[
+% BoldFont = Open Sans {Semi-bold}]{Open Sans}
+% \setsansfont[
+% BoldFont = Roboto-Medium]{Roboto}
+
+% Caladea
+\name{Mitch Gerhardt}
+% \address{hhao@iu.edu \hspace{0.4em} | \hspace{0.4em} \url{www.hongtaoh.com}}
+\address{\hspace{0.2em} \hspace{0.4em} {\small \faEnvelope} \hspace{0.1em} mitchg@vt.edu \hspace{0.4em}
+{\large\faGithub} \href{https://github.com/mitchg10/}{mitchg10} \hspace{0.4em} 
+{\large\faLinkedinSquare} \href{https://linkedin.com/in/mitchell-gerhardt}{\texttt{mitchell-gerhardt}}} 
+\begin{document}
+% \setstretch{1.1}
+\fancyheadoffset[RO]{5em}
+\fancyfootoffset[RO]{0cm}
+\thispagestyle{firstpage}
+
+%----------------------------------------------------------------------------------------
+%	Research Interests 
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Research Interests}
+% Engineering Education
+% Natural Language Processing
+% Machine Learning
+% Qualitative Research Methods
+% Epistemic Cognition
+% Collaborative Learning
+% Software Engineering
+% Educational Technology
+% Automated Analysis
+% Large Language Models
+% Engineering Design
+% Educational Assessment
+% AI in Education
+% Capstone Design
+% Python Development
+% Research Methods
+% Academic Integrity
+% Data Analysis
+% STEM Pedagogy
+% Knowledge Representation
+% Cognitive Science
+% Human-Computer Interaction
+% Web Application Development
+% Teaching Excellence
+    {\textbf{Sociotechnical studies of generative AI adoption in workplace settings, ethnographic methods, science and technology studies (STS), epistemic cultures, computational approaches to qualitative research, symbolic interactionism, workplace learning and expertise}}
+\end{rSection}
+
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION 
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+%--copy and paste this region  if you need more--
+{\textbf {Ph.D. in Engineering Education}}, Virginia Tech, GPA: 4.00/4.00 \hfill {May, 2027 (expected)} 
+\begin{itemize}
+    \item[] \vspace{-0.5em} \hspace{-1em} PhD Candidate (advanced to candidacy Fall 2025)
+    \item[] \vspace{-0.5em} \hspace{-1em} Committee: Courtney Faber, Andrew Katz (Chair), Holly Matusovich, and Nicole Pitterson
+    \item[] \vspace{-0.5em} \hspace{-1em} 2025 NSF GRFP Honorable Mention
+    \item[] \vspace{-0.5em} \hspace{-1em} 2024 Google PhD Fellowship Nominee
+    \item[] \vspace{-0.5em} \hspace{-1em} 2023-2024 Davenport Fellowship Awardee
+\end{itemize}
+
+{\textbf {M.S. in Computer Science}}, Virginia Tech, GPA: 3.95/4.00 \hfill {December, 2026 (expected)} 
+\begin{itemize}
+    \item[] \vspace{-0.5em} \hspace{-1em} Committee: Sara Hooshangi (Chair), Andrew Katz, Sanmay Das
+  \item[] \vspace{-0.5em} \hspace{-1.0em} Coursework: \emph{Machine Learning}, \smallspace \emph{Natural Language Processing}, \smallspace \emph{Computer Education Research}, \smallspace \emph{AI Tools for Software Engineering}, \smallspace \emph{Applied Design and Assessment of Educational Environments in Engineering}
+\end{itemize}
+
+{\textbf {Graduate Certificate: Cognition and Education}}, Virginia Tech, GPA: 4.00/4.00 \hfill {May, 2025} 
+
+{\textbf {B.S. in Electrical Engineering}}, Virginia Tech, GPA: 3.69/4.00 \hfill {Dec., 2020}
+\begin{itemize}
+    \item[] \vspace{-0.5em} \hspace{-1.0em} Graduated Magna Cum Laude and Dean's List 
+    \item[] \vspace{-0.5em} \hspace{-1.0em} Pratt Engineering Scholarship, Donald and Madeline Stewart Scholarship, and Konrad-Steinmetz Scholarship for Engineering Leadership Awardee
+    \item[] \vspace{-0.5em} \hspace{-1.0em} Hardware Team Lead for \href{https://eng.vt.edu/academics/student-teams/autodrive.html}{AutoDrive Design Team}
+\end{itemize}
+\end{rSection}
+
+%--------------------------------------------------------------------------------
+%    Publications
+%-----------------------------------------------------------------------------------------------
+
+% Book Chapters
+
+\begin{rSection}{Book Chapters}
+% \begingroup
+% \raggedbottom
+\begin{tabularx}{\textwidth}{p{2.5cm}X}
+Under \newline Revision & \textbf{Leveraging Large Language Models in Engineering Education Research: Methods and Applications}\\
+& \emph{2026 International Handbook of Engineering Education Research
+Methods}\\
+& \textbf{Mitchell Gerhardt}, Gabriella Coloyan Fleming, Siqing Wei, and Andrew Katz\\
+& Expected publication: February 2027\\
+\end{tabularx}
+% \endgroup
+\end{rSection}
+
+% Journal
+
+\begin{rSection}{Journal Publications}
+% \begingroup
+% \raggedbottom
+\begin{tabularx}{\textwidth}{p{2.5cm}X}
+Pending \newline Publication & \textbf{Collaborative (In)decision: A Preliminary Investigation of the Differences in Undergraduate Engineering Capstone Students' Collaborative Behaviors}\\
+& \emph{International Journal of Engineering Education} - Special Issue for Capstone Design\\
+& \textbf{Mitchell Gerhardt}, Mayar Madboly, Nicole Pitterson, Emily Dringenberg, and Benjamin Ahn\\[1em]
+
+Submitted & \textbf{Improving Engineering Education GAI Qualitative Research Workflow Quality: Techniques and Documentation Strategies}\\
+& \emph{Studied in Engineering Education} - Special Issue on GAI in Methods\\
+& \textbf{Mitchell Gerhardt} and Andrew Katz  \\
+
+\end{tabularx}
+
+\needspace{4\baselineskip} % Ensure space for at least 4 lines, otherwise pagebreak
+
+\begin{tabularx}{\textwidth}{p{2.5cm}X}
+
+In \newline Preparation & \textbf{Decade-Long Analysis of Skills in Mechanical Engineering Job Advertisements 2010-2022}\\
+& \emph{Targeting: ASME}\\
+& \textbf{Mitchell Gerhardt}, Shawn Sun, Andrew Katz, David Knight, Jessica Deters, Maura Borrego, Riya Budhathoki, and Herman Ronald Clements III  \\[2em]
+
+% \needspace{4\baselineskip} % Check if we need to page break
+
+In \newline Preparation & \textbf{Addictive GAI Use Among STEM Graduate Students: Dependency-Based Technological Diffusion}\\
+& \emph{Targeting: Computers \& Education: AI}\\
+& \textbf{Mitchell Gerhardt} and Andrew Katz  \\[1em]
+
+Nov, 2024 & \textbf{Using Generative Text Models to Create Qualitative Codebooks for Student Evaluations of Teaching} \hspace{2em [\href{https://doi.org/10.1177/16094069241293283}{Paper}]}\\
+& \emph{International Journal of Qualitative Methods} - Volume 23\\
+& Andrew Katz, \textbf{Mitchell Gerhardt}, and Michelle Soledad\\
+
+\end{tabularx}
+% \endgroup
+\end{rSection}
+
+\needspace{4\baselineskip} % Check if we need to page break
+
+% Conference
+
+\begin{rSection}{Peer-Reviewed Conference Publications}
+\begingroup
+\raggedright
+\begin{tabularx}{\textwidth}{p{2.5cm}X}
+
+Accepted & \textbf{It's like “X”: How Engineering Faculty Metaphors Construct (and Constrain) GAI Understanding in Engineering Education}\\
+& \emph{2026 ASEE Annual Conference \& Exposition}\\
+& \textbf{Mitchell Gerhardt}, Kylee Shiekh, Andrew Katz, and Benjamin Chaback \\[1em]
+
+Accepted & \textbf{WIP: Unpacking Mechanical Engineering Students' Career Goals, Skill Development, and Perspectives on Industry}\\
+& \emph{2026 Frontiers in Education Conference}\\
+& Herman Ronald Clements III, \textbf{Mitchell Gerhardt}, Jessica Deters, Shawn Sun, David Knight, Maura Borrego, Andrew Katz, and Riya Budhathoki \\[2em]
+
+% \needspace{6\baselineskip} % Check if we need to page break
+
+Accepted & \textbf{Understanding the Master’s Engineering Workforce Landscape: Employer Demands and Student Goals}\\
+& \emph{2026 ASEE Annual Conference \& Exposition}\\
+& Herman Ronald Clements III, Riya Budhathoki, \textbf{Mitchell Gerhardt}, Jessica Deters, Shawn Sun, David Knight, Maura Borrego, and Andrew Katz \\[2em]
+
+Under \newline Revision & \textbf{When Can GAI be Used Anyway? An Analysis of Engineering Faculty’s Generative AI Policies}\\
+& \emph{2026 ASEE Annual Conference \& Exposition}\\
+& Benjamin Chaback, \textbf{Mitchell Gerhardt}, Andrew Katz, and Kylee Shiekh \\[1em]
+
+June, 2025 & \textbf{Automated Analysis of Knowledge Types in Computer Science Textbooks: A Natural Language Processing Approach to Understanding Epistemic Climate} \hspace{2em [\href{https://peer.asee.org/55491}{Paper}]} \\
+& \emph{2025 ASEE Annual Conference \& Exposition} - Montreal, QC, Canada \\
+& \textbf{Mitchell Gerhardt} and Andrew Katz \\[1em]
+
+June, 2025 & \textbf{Beyond Calculations: Engineering Judgment as Epistemic Cognition in Engineering Education} \hspace{2em [\href{https://peer.asee.org/beyond-calculations-engineering-judgment-as-epistemic-cognition-in-engineering-education}{Paper}]} \\
+& \emph{2025 ASEE Annual Conference \& Exposition} - Montreal, QC, Canada \\
+& \textbf{Mitchell Gerhardt}, Michael Robinson, and Brian Faulkner \\[1em]
+
+June, 2024 & \textbf{Reimagining Behavioral Analysis in Engineering Education: A Theoretical Exploration of Reasoned Action Approach} \hspace{2em [\href{https://peer.asee.org/47934}{Paper}]} \\
+& \emph{2024 ASEE Annual Conference \& Exposition} - Portland, OR \\
+& \textbf{Mitchell Gerhardt}, Nicole Pitterson, Emily Dringenberg, and Benjamin Ahn \\
+\end{tabularx}
+
+\needspace{4\baselineskip} % Check if we need to page break
+\begin{tabularx}{\textwidth}{p{2.5cm}X}
+
+June, 2024 & \textbf{Why do capstone students choose to perform behaviors? Differing prevalence in collaborative choices} \hspace{2em [\href{https://capstonedesigncommunity.org/sites/default/files/proceedings_papers/Gerhardt-CDC24.pdf}{Paper}]} \\
+& \emph{Capstone Design Conference} - Knoxville, TN \\
+& \textbf{Mitchell Gerhardt}, Nicole Pitterson, Emily Dringenberg, and Benjamin Ahn \\
+% \needspace{4\baselineskip} % Check if we need to page break
+
+\end{tabularx}
+\endgroup
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Research experience}
+
+%--CAREER Research Assistant with Andrew Katz--
+{\bf Research Assistant} \hfill {\ Aug., 2025 - Present }\\ 
+{\href{https://enge.vt.edu/}{Department of Engineering Education}, Virginia Tech} \hfill {\ {Blacksburg, VA}}\\
+\href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=2339702&HistoricalAwards=false}{NSF Award \#2339702}: ``CAREER: Minds and Machines: Exploring Engineering Faculty Member Mental Models of Generative AI and Instructional Decisions"
+\begin{cvitems}
+    \item Examining sociotechnical dimensions of GAI adoption in STEM higher education workplace contexts using mental model theory and Theory of Planned Behavior (TPB)
+    \item Conducting qualitative interviews with faculty to understand how perceptions of GAI shape instructional decisions, assessment practices, and workplace norms around GAI use
+    \item Applying ethnomethodological and symbolic interactionist frameworks to analyze epistemic cultures and expertise recognition in AI-mediated educational environments
+    \item Developing LLM-based qualitative workflows to scale aspects of qualitative data analysis and make them available to fellow researchers
+\end{cvitems}
+
+%--Workforce Development Research Assistant --
+{\bf Research Assistant} \hfill {\ May., 2025 - Present }\\ 
+{\href{https://enge.vt.edu/}{Department of Engineering Education}, Virginia Tech} \hfill {\ {Blacksburg, VA}}\\
+Assisted \href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=2433099&HistoricalAwards=false}{NSF Award \#2433099}: ``Collaborative Research: Research: The Engineering Master's Workforce: Leveraging NLP Techniques to Understand Employer Demands and Student Goals":
+\begin{cvitems}
+    \item Created a Python-based workflow to manage DuckDB-based database to analyze over 5 million jobs spanning 2007-2025 
+    \item Implemented Jupyter notebooks to extract job postings' qualification information, tasks and responsibilities, skills and knowledge, and technologies required
+    \item Currently applying open-source large language models (LLMs) to add flexibility and granularity to job posting extractions
+\end{cvitems}
+
+%--Research Assistant with Andrew Katz--
+{\bf Research Assistant} \hfill {\ Jan., 2024 - July, 2024 }\\ 
+{\href{https://enge.vt.edu/}{Department of Engineering Education}, Virginia Tech} \hfill {\ {Blacksburg, VA}}\\
+Assisted \href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=2300977&HistoricalAwards=false}{NSF Award \#2300977}: ``Design for Sustainability: How Mental Models of Social-Ecological Systems Shape Engineering Design Decisions":
+\begin{cvitems}
+    \item Developed a novel natural language processing (NLP) methodology for generating qualitative codebooks from large datasets (e.g., students' instructor evaluations)
+    \item Co-authored a journal publication in the \emph{International Journal of Qualitative Methods} outlining the extract, embed, cluster, and summarize (EECS) workflow
+    \item Contributed to ongoing refinement and improvement of the NLP-based methodology for analyzing qualitative data
+    \item Applied open-source LLMs to preserve data security and privacy while maintaining analytical rigor
+\end{cvitems}
+
+\needspace{4\baselineskip} % Check if we need to page break
+
+%--Research Assistant with Nicole Pitterson--
+{\bf Research Assistant} \hfill {\ August, 2024 - Jan., 2024 }\\ 
+{\href{https://enge.vt.edu/}{Department of Engineering Education}, Virginia Tech} \hfill {\ {Blacksburg, VA}}\\
+Assisted \href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=2217523&HistoricalAwards=false}{NSF Award \#2217523}: ``Collaborative Research: Collaboration in Engineering Student and Practitioner Teams: A Study of Beliefs about Effective Behaviors":
+\begin{cvitems}
+    \item Designed and implemented a pilot study to examine the frequency and prevalence of collaborative behaviors in senior engineering capstone teams
+    \item Co-authored a conference paper for the 2024 Capstone Design Conference about why students choose certain collaborative behaviors
+    \item Expanded the conference paper into an accepted journal article based on the preliminary findings from the project
+    \item Developed foundation for future research on student collaborative decision-making within engineering design contexts
+\end{cvitems}
+
+{\bf Ethnographic Researcher} \hfill {\ Fall, 2025}\\
+{\href{https://sts.cornell.edu/}{Cornell University Science \& Technology Studies}} \hfill {\ {Ithaca, NY}}\\
+Independent ethnographic study of Science Studies Reading Group (SSRG) feedback practices
+\begin{cvitems}
+    \item Conducted 15+ weeks of participant observation examining how different feedback formats (facilitated dialogues, "ping pong" discussions) shape scholarly collaboration and expertise networks
+    \item Produced 10,000-word analytical ethnography applying STS frameworks to understand epistemic cultures, knowledge production practices, and organizational dynamics in interdisciplinary research communities
+    \item Analyzed conversational patterns, turn-taking behaviors, and collaborative meaning-making in academic workplace settings
+    \item Working on methodology paper explicating study and decision-making for contributions to studying workplace knowledge practices in EER
+\end{cvitems}
+
+{\bf Principal Investigator, Graduate Student Survey Research} \hfill {\ May, 2025 - Present}\\
+{Multi-institutional} \hfill {\ Ithaca, NY}\\
+IRB-approved multi-institutional study examining STEM graduate students' GAI use patterns
+\begin{cvitems}
+    \item Designed and distributed Qualtrics survey across a few universities collecting 100+ responses examining nuanced patterns of GAI adoption beyond reductive "cheating" narratives
+    \item Applying mixed methods approach combining descriptive statistics, correlation analyses, demographic studies, and planned qualitative interviews
+    \item Investigating workplace socialization processes, community norms around GAI use, and shifting definitions of legitimate expertise in graduate education contexts
+\end{cvitems}
+
+\end{rSection}
+
+%--------------------------------------------------------------------------------
+%    PROFESSIONAL EXPERIENCE
+%-----------------------------------------------------------------------------------------------
+
+\begin{rSection}{Professional Experience}
+
+%--Graduate Assistant at CETL--
+{\bf Graduate Assistant to the Director for Special Programs} \hfill {\ Aug., 2024 - May, 2025 }\\ 
+{\href{https://teaching.vt.edu/}{Center for Excellence in Teaching and Learning (CETL)}, Virginia Tech} \hfill {\ {Blacksburg, VA}}\\
+Worked with Dr. Tiffany Shoop on various teaching and learning initiatives:
+\begin{cvitems}
+    \item Conducted mid-semester feedback sessions across various disciplines, gathering and analyzing student input to help faculty enhance teaching effectiveness and student engagement
+    \item Developed and presented a faculty workshop on Interactive Lecturing with approximately 30 attendees, providing resources and strategies for enhancing student engagement in the classroom
+    \item Co-led the implementation of the \href{https://cirtl.vt.edu/}{CIRTL} (Center for the Integration of Research, Teaching, and Learning) program at Virginia Tech, researching best practices and developing an institutional implementation strategy for Practitioner and Scholar CIRTL levels leveraging cross-campus resources and partnerships
+    \item Helped organize the 17th annual Conference on Higher Education Pedagogy (\href{https://chep.teaching.vt.edu/}{CHEP}), reviewing submissions, coordinating sessions, and developing a custom Python application to automate post-conference booklet creation
+    \item Systematically reviewed empirical research on Collaborative Online Interactive Learning (COIL) to assist in faculty training program development and institutional integration
+    \item Created resources for faculty including presentations, research compilations, and implementation guides to support teaching excellence and innovation
+\end{cvitems}
+
+% \needspace{13\baselineskip} % Check if we need to page break
+
+%--Global Product Development Engineering at GM--
+{\bf Global Product Development Engineering} \hfill {\ June, 2021 - June, 2023 }\\ 
+\emph{General Motors} \hfill {\ {Warren, MI}}\\
+{Software Engineer - Software Defined Vehicle}
+\begin{cvitems}
+    \item Responsible for developing next-gen software infrastructures and technology for software-defined vehicles
+    \item Key implementation role in mobile app development, in-vehicle interfaces, and back-end deployment
+    \item Established and applied testing protocols including CI/CD pipelines, automated build processes, and testing mechanisms
+\end{cvitems}
+{Infotainment Technical Program Manager}
+\begin{cvitems}
+    \item Part of an integral team to plan, execute, and deliver leading-edge technology to our customers
+    \item Worked with global partners, external suppliers, and internal teams to track, drive, support, and report vehicle readiness metrics
+\end{cvitems}
+{Complexity Optimization Engineer}
+\begin{cvitems}
+    \item Engaged in measuring, managing strategy, and reducing program hardware and software complexity
+    \item Optimized tactics for efficient build combinations and part reuse across programs and vehicle subsystems
+\end{cvitems}
+
+%--Autonomy Systems Research Engineering at Caterpillar--
+{\bf Autonomy Systems Research} \hfill {\ May, 2019 - Dec., 2020 }\\ 
+\emph{Caterpillar Inc.} \hfill {\ {Peoria, IL and Blacksburg, VA}}\\
+{Software Engineer I}
+\begin{cvitems}
+    \item Implemented a control interface for autonomy simulation platform using ROS, teleoperation control, and robot modeling software
+    \item Validated and integrated sensor data on large-scale machinery into algorithms for mapping and navigation via complex data structures
+    \item Developed CI/CD protocols and workflows for software distribution using Docker, ROS, and the C++ testing framework
+\end{cvitems}
+
+\end{rSection}
+
+%--------------------------------------------------------------------------------
+%    GRANTS & AWARDS
+%-----------------------------------------------------------------------------------------------
+\begin{rSection}{Grants \& Awards}
+
+{\bf Co-Principal Investigator} \hfill {\ Fall, 2025}\\
+\textbf{Bridging the Conversational AI Gap: Synthetic Dataset Generation for Engineering Education Dialogue}\\
+NSF CCSS Seed Grant (\$4,500), Cornell University - 10-month project
+\begin{cvitems}
+    \item Developing novel methodology for creating synthetic speech datasets preserving conversational phenomena critical to workplace learning research (overlapping speech, strategic pauses, collaborative turn-taking)
+    \item Fine-tuning open-source ASR models using 500-1,000 multi-speaker dialogue samples generated via ElevenLabs API to enable large-scale analysis of engineering classroom interactions
+    \item Applying synthetic data to study feedback literacy in design studios and facilitated dialogues about research group culture and inclusion
+    \item Publicly archiving all synthetic audio, generation parameters, and evaluation results in Cornell CSSR Data \& Reproduction Archive for reproducible research across institutions
+    \item Positions research program for larger NSF/NIH proposals by demonstrating technical feasibility of computational methods in engineering education research
+\end{cvitems}
+
+\needspace{10\baselineskip} % Check if we need to page break
+
+{\bf Co-Facilitator} \hfill {\ Fall, 2025}\\
+\textbf{Fulbright Brazil International Collaboration}\\
+Virginia Tech and Brazilian Universities Partnership
+\begin{cvitems}
+    \item Selected by Fulbright Brazil with advisor and VT colleagues for intensive 3-day faculty development program examining GAI adoption in higher education workplace contexts
+    \item Presented to 80+ engineering faculty from dozens of Brazilian universities on sociotechnical dimensions of GAI integration: technical fundamentals, assessment transformation, ethics, institutional policy development, faculty-student relationship dynamics
+    \item Served as technical expert and instructional designer facilitating cross-cultural dialogue about workplace technology adoption and organizational change
+\end{cvitems}
+
+{\bf Nominee} \hfill {\ 2025}\\
+\textbf{Google PhD Fellowship in Human-Computer Interaction}\\
+Nominated by Virginia Tech for national fellowship
+
+\needspace{3\baselineskip} % Check if we need to page break
+
+{\bf Honorable Mention} \hfill {\ 2025}\\
+\textbf{NSF Graduate Research Fellowship Program}\\
+National Science Foundation
+
+\end{rSection}
+
+%--------------------------------------------------------------------------------
+%    PROJECTS
+%-----------------------------------------------------------------------------------------------
+\begin{rSection}{Projects}
+
+% Ducky AI Assistant
+{\bf Ducky}{\hspace{2em}} \hfill {Fall, 2025} \\
+AI-powered software developer assistant built with Streamlit providing intelligent development support through specialized features for CS 5740: AI Tools for Software Engineers
+\begin{cvitems}
+    \item Developed ReAct-pattern agent system with sandboxed tool execution capabilities, enabling GAI agents to autonomously perform file operations, code editing, and multi-step task completion with security through path validation
+    \item Implemented dual interface architecture: rich web interface with Monaco editor integration and CLI interface, supporting persona-based agent behaviors across software development roles (planning, development, QA, operations)
+    \item Integrated RAG (Retrieval Augmented Generation) using local sentence-transformers for offline-capable document queries and comprehensive LLM integration with OpenAI-compatible APIs supporting function calling and streaming responses
+    \item Built with modern Python tooling including uv for dependency management, demonstrating full-stack development skills including async programming, state management, UI/UX design, and secure tool execution patterns
+\end{cvitems}
+
+% Between the Lines Bookstore
+{\bf Between the Lines}{\hspace{2em}} \hfill {Fall, 2025} \\
+React + TypeScript bookstore e-commerce application developed for CS 5244: Web App Development
+\begin{cvitems}
+    \item Built full-stack e-commerce site using React + TypeScript with Vite, evolving from Figma and static HTML/CSS into a complete bookstore application with shopping cart, category browsing, and checkout functionality
+    \item Developed Java servlet backend (MitchBookstoreTransact) running on Tomcat to handle categories, books, and order processing with RESTful API design
+    \item Implemented state management using React Context providers (CategoryContext, CartContext, OrderDetailsProvider) with useReducer pattern for cart and order state, including persistent cart state via localStorage
+    \item Created component-based architecture with React Router v6 for navigation across six main routes: home, category pages, cart, checkout, and order confirmation
+    \item Integrated Formik/Yup for form validation with custom validators for phone numbers and credit cards, ensuring robust client-side validation throughout checkout flow
+\end{cvitems}
+
+% College of Engineering Course Collection Tool
+{\bf Graduate Courses Analysis Tool}{\hspace{2em} [\href{https://course-extractor-rior.onrender.com/}{Web}], [\href{https://github.com/mitchg10/course-extractor}{Code}]} \hfill {Nov., 2023 - May, 2025} \\
+Full-stack web application for College of Engineering Associate Dean for graduate enrollment patterns
+\begin{cvitems}
+    \item Developed tool extracting structured course data from PDF timetables, identifying underenrolled graduate courses for strategic enrollment analysis and resource allocation decisions
+    \item Technology Stack: React/Tailwind frontend, FastAPI backend, PyMuPDF for PDF processing, AWS S3 for production storage
+    \item Implemented automated ETL pipeline for processing university course enrollment data at scale with cross-listing identification and data enrichment via VT Timetable API
+    \item Containerized application using Docker for reproducible deployment and maintenance
+\end{cvitems}
+
+%--Epistemic Knowledge Analysis--
+{\bf Epistemic Climate Analysis in CS Education}{\hspace{2em} [\href{https://github.com/mitchg10/NLP_FinalProject}{Code}]} \hfill {Sept., 2024 - June, 2025} \\
+Sociotechnical analysis of knowledge representation in computer science textbooks using STS frameworks and computational methods
+\begin{cvitems}
+    \item Developed novel methodology analyzing epistemic climate in CS textbooks using large language models, examining how different knowledge types shape students' understanding of legitimate expertise and disciplinary identity
+    \item Created comprehensive coding scheme for 12 knowledge types (procedural, conceptual, historical, etc.) grounded in engineering education research and STS literature on epistemic cultures
+    \item Implemented retrieval-augmented generation approach for large-scale textbook analysis, demonstrating how computational methods can reveal patterns in how disciplines present and value different forms of knowledge
+    \item Generated insights about knowledge hierarchies in undergraduate CS education, revealing sociotechnical dimensions of how textbooks as material artifacts shape epistemic thinking
+    \item Published findings at ASEE 2025 Annual Conference
+\end{cvitems}
+
+\end{rSection}
+
+%--------------------------------------------------------------------------------
+%    SERVICE
+%-----------------------------------------------------------------------------------------------
+
+\begin{rSection}{Service}
+
+{\bf Associate Chair, Panelist, \& Facilitated Discussion Mediator}\\
+\emph{Virginia Tech Graduate Honor System} \hfill {\ Aug., 2023 - Present}
+\begin{itemize}
+    \item \vspace{-0.5em} Serve as a trained facilitator for academic integrity discussions between faculty and students, mediating resolution of potential honor code violations through structured dialogue \vspace{-0.3em}
+    \item  \vspace{-0.5em} Participate in Review Panels that evaluate evidence and determine outcomes in academic integrity cases, upholding university standards while ensuring fair process \vspace{-0.3em}
+    \item  \vspace{-0.5em} Help educate the graduate community on academic integrity standards, ethical research practices, and honor system processes \vspace{-0.3em}
+    \item  \vspace{-0.5em} Collaborate with diverse stakeholders including faculty, administrators, and students across disciplines to resolve cases annually \vspace{-0.3em}
+\end{itemize} 
+
+{\bf Graduate Student Search Committee Member}\\
+\emph{Department of Graduate and Professional Studies} \hfill {\ Summer, 2025}
+\begin{itemize}
+    \item[] \vspace{-0.5em} \hspace{-1em} Served on faculty search committee for GHS chair position, evaluating candidates and participating in selection process
+\end{itemize}
+
+{\bf Mentor, NSF Graduate Research Fellowship Program Applications}\\
+\emph{Cornell University} \hfill {\ Fall, 2025}
+\begin{itemize}
+    \item[] \vspace{-0.5em} \hspace{-1em} Provided application review, feedback, and mentorship to Cornell graduate students applying for NSF GRFP
+\end{itemize}
+
+{\bf Graduate Ambassador}\\
+\emph{Department of Engineering Education} \hfill {\ Aug., 2024 - May, 2025}
+
+{\textbf {Reviewer}, College of Engineering Torgersen Research Excellence Award} \hfill {May, 2025} \\[0.5ex]
+{\textbf {Reviewer}, ASEE Annual Conference} \hfill {May 2024, 2025, 2026} \\[0.5ex]
+{\textbf {Reviewer}, International Journal of Qualitative Methods} \hfill {Nov., 2024 \& Sept., 2025} \\[0.5ex]
+{\textbf {Reviewer}, Capstone Design Conference} \hfill {May, 2024} \\[0.5ex]
+{\textbf {President Emeritus}, Hillel at Virginia Tech} \hfill {Dec., 2018 - Dec., 2020}
+\end{rSection}
+
+\needspace{4\baselineskip} % Check if we need to page break
+
+%--------------------------------------------------------------------------------
+%    Invited Talks/Presentations
+%-----------------------------------------------------------------------------------------------
+\begin{rSection}{Invited Talks, Workshops, and Presentations} 
+
+{\bf Workshop}{, \emph{Virginia Tech Graduate Instructors}} {\hfill (planned) March, 2026}
+\begin{itemize}
+    \item \vspace{-0.5em} \hspace{-1em} Initiated and lead a three-student group to organize a workshop for Virginia Tech graduate instructors about GAI course policies
+    \item \vspace{-0.5em} \hspace{-1em} Addressing a critical need through participatory instruction and activities that promote GAI literacy
+    \item \vspace{-0.5em} \hspace{-1em} Received IRB approval to study the workshop's implementation and effectiveness, with plans to publish results  
+    \item \vspace{-0.5em} \hspace{-1em} Leveraging networks and existing partnerships with the Graduate Honor System (GHS), the Center for Excellence in Teaching and Learning (CETL), the center for Technology-Enhanced Learning and Online Strategies (TLOS), and departmental leadership to host and market the event.
+\end{itemize}
+
+\needspace{5\baselineskip} % Check if we need to page break
+
+{\bf Guest Lecturer}{, \emph{GRAD 5004: Graduate Teaching Assistant Workshop }} {\hfill Feb., 2026} \\
+\emph{Virginia Tech (Dr. Kevin Eager)}\\
+"Scholarly Ethics" presentation to in-coming GTAs at Virginia Tech, addressing topics like academic and professional integrity, the VT Undergraduate and Graduate Honor Systems, GTA integrity responsibilities, GAI use, and contemporary literature about cheating.  
+
+{\bf Guest Lecturer}{, \emph{ECE Graduate Student Seminar}} {\hfill Dec., 2025} \\
+\emph{University of Pittsburgh}\\
+"AI Research Ethics in Engineering Education" co-presented with Andrew Katz to ECE graduate students examining ethical dimensions of AI research in educational contexts
+% \vspace{-0.5em}
+
+{\bf Guest Lecturer}{, \emph{ME 397/379M Qualitative Research Methods}} {\hfill Nov., 2025} \\
+\emph{University of Texas at Austin (Dr. Maura Borrego)}\\
+"Large Language Models in Qualitative Engineering Education Research: Technical Methods and Methodological Considerations"
+\begin{itemize}
+    \item \vspace{-0.5em} \hspace{-1em} Examined human vs. machine pattern recognition, current GAI approaches for qualitative research, researcher positionality, translational challenges, and shifting definitions of "intelligence"
+    \item \vspace{-0.5em} \hspace{-1em} Addressed methodological questions about computational approaches to qualitative work and implications for research practice
+    \item \vspace{-0.5em} \hspace{-1em} Instructor feedback: "Students were honestly blown away...for many of them it was the highlight of the semester"
+\end{itemize}
+% \vspace{-0.5em}
+
+{\bf Invited Presentations}{, \emph{Cornell DBER Research Group (2 presentations)}} {\hfill Oct., 2025} \\
+\emph{Cornell University}\\
+Presented technical background of large language models, AI history, and sociotechnical applications in engineering education research; demonstrated how computational methods intersect with critical perspectives on workplace learning and expertise
+% \vspace{-0.5em}
+
+{\bf Conference Presentation}{, \emph{2025 ASEE Annual Conference}} {\hfill June, 2025}
+\begin{itemize}
+    \item \vspace{-0.5em} \hspace{-1em} "Automated Analysis of Knowledge Types in Computer Science Textbooks: A Natural Language Processing Approach to Understanding Epistemic Climate" - exploring the use of LLMs to evaluate types of knowledge described in computer science textbooks
+    \item \vspace{-0.5em} \hspace{-1em} "Beyond Calculations: Engineering Judgment as Epistemic Cognition in Engineering Education" - arguing for greater psychological interrogation of "engineering judgment" 
+\end{itemize}
+% \vspace{-0.5em}
+
+% \vspace{-0.5em}
+
+% {Oct., 2025\hspace{1em}}{\bf Attendee}{, \emph{Trevor Pinch Memorial Lecture Series}} {\hfill Ithaca, NY} \\
+% Cornell University Science \& Technology Studies Department\\
+% Participated in memorial series for pioneering STS scholar, engaging with questions about social construction of technology and ethnographic methods in workplace studies
+% \vspace{-0.5em}
+
+{\bf Invited Student}{, \emph{Board of Visitors}} {\hfill May, 2025} \\
+\emph{Virginia Tech}\\
+Discussed research on GAI adoption in higher education and ongoing projects examining workplace technology integration with university leadership
+% \vspace{-0.5em}
+
+{\bf Panelist}{, \emph{2024 Capstone Design Conference}} {\hfill June, 2024} \\
+Panel discussion examining teamwork dynamics and collaborative practices in capstone engineering workplace contexts
+% \vspace{-0.5em}
+
+{\bf Conference Presentation}{, \emph{2024 ASEE Annual Conference}} {\hfill June, 2024} \\
+"Reimagining Behavioral Analysis in Engineering Education: A Theoretical Exploration of Reasoned Action Approach" - examining decision-making in engineering student workplace teams
+% \vspace{-0.5em}
+
+{\bf Conference Poster}{, \emph{2024 Capstone Design Conference}} {\hfill June, 2024} \\
+"Why do capstone students choose to perform behaviors? Differing prevalence in collaborative choices"
+% \vspace{-0.5em}
+
+{\bf Panelist}{, \emph{Virginia Tech Interdisciplinary Capstone (IDC) course}} {\hfill Oct., 2023} \\
+Discussion of engineering industry workplace practices and career pathways with capstone students
+\vspace{-0.5em}
+
+\end{rSection}
+
+%--------------------------------------------------------------------------------
+%    TEACHING EXPERIENCE
+%-----------------------------------------------------------------------------------------------
+\needspace{10\baselineskip} % Check if we need to page break
+
+\begin{rSection}{Teaching Experience}
+
+% Big brothers big sisters
+{\bf Big Brothers Big Sisters of Metropolitan Detroit} \hfill {\ {Detroit, MI}}\\
+Academic Tutor \hfill {\ Aug., 2021 - June, 2023}
+\begin{itemize}
+  \item \vspace{-0.5em} Helped create and support mission for one-on-one mentoring sessions and academic assistance \vspace{-0.3em}
+  \item \vspace{-0.5em} Exposure to COVID-19 instruction methods and challenges thereof \vspace{-0.3em}
+  % \item \vspace{-0.5em} Conviction to enable success regardless of socioeconomic background or previous academic performance \vspace{-0.3em}
+\end{itemize} 
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Technical Skills}
+
+{\bf Qualitative Methods:} Ethnography, participant observation, semi-structured interviews, grounded theory, symbolic interactionism, ethnomethodology, thematic analysis, discourse and conversational analysis, content analysis\\
+{\bf Theoretical Frameworks:} Engineering expertise, sociology of expertise, Science \& Technology Studies (STS), epistemic cultures, epistemic thinking, social construction of technology, engineering studies, academic integrity and cheating, human-computer interactions (HCI)\\
+{\bf Computational Methods:} Natural language processing, large language models (LLMs), prompt and context engineering, LLMs for qualitative research, retrieval-augmented generation (RAG), agent-based systems, computational text analysis\\
+{\bf Programming \& Tools:} Python, JavaScript, C++, SQL, React, FastAPI, Docker, Git, Jupyter notebooks, PyTorch, MCP, scikit-learn, HuggingFace Transformers, AI-based programming systems \\
+{\bf Mixed Methods:} Survey design (Qualtrics), descriptive statistics, correlation analysis, triangulation of qualitative and quantitative data\\
+{\bf Data Management:} DuckDB, MySQL, AWS S3, Azure, version control, reproducible research practices
+
+\end{rSection}
+
+% \newpage
+\thispagestyle{reference}
+
+%%%%%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%%%%%%%%%
+% The reference section has links to your references' websites and email addresses.
+
+% \noindent \begin{tabular}{@{} l l l}
+%  \Large{References} & \href{https://mediaschool.indiana.edu/people/profile.html?p=nicomart}{Nicole Martins} & \href{http://yongyeol.com/}{Yong-Yeol Ahn} \\
+%  & The Media School &  Luddy School of Informatics, Computing, and Engineering  \\
+%  & Indiana University Bloomington &  Indiana University Bloomington \\
+%  & \small{\href{mailto:nicomart@indiana.edu}{nicomart@indiana.edu},+1\,(812)\,855-7720} & \small{\href{mailto:yyahn@iu.edu}{yyahn@iu.edu},+1\,(812)\,856-2920} \\
+% && \\
+%  & \href{https://publichealth.indiana.edu/research/faculty-directory/profile.html?user=seo}{Dong-Chul Seo} & \href{https://www.daniellekilgo.com/}{Danielle Kilgo}  \\
+%  & School of Public Health &  Hubbard School of Journalism and Mass Communication \\
+%  & Indiana University Bloomington &  University of Minnesota \\
+%  & \small{\href{mailto:seo@indiana.edu}{seo@indiana.edu},+1\,(812)\,855-9379} & \small{\href{mailto:dkilgo@umn.edu}{dkilgo@umn.edu}} \\
+% \end{tabular}
+
+\end{document}----------------------------
