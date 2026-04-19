@@ -8,11 +8,11 @@ date: 2025-09-23
 location: "São Paulo, SP, Brazil"
 ---
 
-![Fulbright Brazil Workshop](/images/fulbright.JPG)
-
-I assisted my advisor, [Dr. Andrew Katz](https://www.enge.vt.edu/people/faculty/katz-andrew.html), along with Dr. Dayoung Kim, in delivering a three-day workshop hosted by Fulbright Brazil exploring how generative AI can transform engineering education. The workshop brought together university educators, industry experts, and thought leaders from across Brazil and beyond.
+I assisted my advisor, [Dr. Andrew Katz](https://enge.vt.edu/People/researchfaculty/andrewkatz.html), along with Dr. Dayoung Kim, in delivering a three-day workshop hosted by Fulbright Brazil exploring how generative AI can transform engineering education. The workshop brought together university educators, industry experts, and thought leaders from across Brazil and beyond.
 
 The overarching goal was to equip engineering faculty with the knowledge, skills, and strategies to responsibly integrate AI into curricula, pedagogy, and assessment — preparing the next generation of engineers for an AI-augmented future.
+
+![Fulbright Brazil Workshop](/images/fulbright.JPG)
 
 ## Workshop Overview
 
