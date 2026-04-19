@@ -4,7 +4,7 @@ collection: talks
 type: "Workshop"
 permalink: /talks/2026-03-15-vt-grad-instructor-workshop
 venue: "Virginia Tech Graduate Instructors"
-date: 2026-03-15
+date: 2026-03-26
 location: "Blacksburg, VA"
 ---
 
