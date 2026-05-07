@@ -9,7 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
-[Download PDF version](/files/Mitch Gerhardt CV Spring 2026.pdf){: .btn .btn--primary}
+[Download Short PDF version](/files/Mitch Gerhardt CV Spring 2026.pdf){: .btn .btn--primary}
+
+[Download Full PDF version](/files/Mitch Gerhardt CV Spring 2026 - 2 Page.pdf){: .btn .btn--primary}
 
 Research Interests
 ======
