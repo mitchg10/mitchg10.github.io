@@ -2,17 +2,24 @@
    DEFAULT THEME
    ========================================================================== */
 
+/* Palette */
+$palette-text               : #121504;
+$palette-bg                 : #fbfcf3;
+$palette-primary            : #afd133;
+$palette-secondary          : #8bd7e5;
+$palette-accent             : #5d74da;
+
 /* Color codes used for the theme */
-$gray                       : #7a8288;
-$dark-gray                  : mix(#000, $gray, 40%);
-$darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : #9ba1a6;
-$lighter-gray               : mix(#fff, $gray, 90%);
+$gray                       : mix(#fff, $palette-text, 50%);
+$dark-gray                  : mix(#000, $palette-text, 20%);
+$darker-gray                : $palette-text;
+$light-gray                 : mix(#fff, $palette-text, 70%);
+$lighter-gray               : mix(#fff, $palette-primary, 85%);
 
 /* Color codes used for the site */
 $danger-color               : #ee5f5b;
 $info-color                 : #2f7f93;
-$notice-color               : #7a8288;
+$notice-color               : $palette-primary;
 $success-color              : #62c462;
 $warning-color              : #f89406;
 
@@ -28,20 +35,31 @@ $sidebar-screen-min-width   : 1024px;
 
 /* Default light theme for the site */
 :root {
-    --global-base-color                 : #{$gray};
-    --global-bg-color                   : #fff;
-    --global-footer-bg-color            : #f2f3f3;
-    --global-border-color               : #{$lighter-gray};
-    --global-dark-border-color          : #bdc1c4;
+    --global-base-color                 : #{$palette-primary};
+    --global-bg-color                   : #{$palette-bg};
+    --global-footer-bg-color            : #{mix(#000, $palette-bg, 5%)};
+    --global-border-color               : #{mix(#fff, $palette-primary, 80%)};
+    --global-dark-border-color          : #{$palette-secondary};
     --global-code-background-color      : #fafafa;
-    --global-code-text-color            : #{$darker-gray};
-    --global-fig-caption-color          : mix(#fff,  #{$dark-gray}, 25%);
-    --global-link-color                 : #52adc8;
-    --global-link-color-hover           : mix(#000, #2f7f93, 25%);
-    --global-link-color-visited         : mix(#fff, #2f7f93, 25%);  
-    --global-masthead-link-color        : #{$dark-gray};
-    --global-masthead-link-color-hover  : mix(#000, #{$gray}, 25%);    
-    --global-text-color                 : #{$dark-gray};
-    --global-text-color-light           : #{$light-gray};
-    --global-thead-color                : #{$lighter-gray};
+    --global-code-text-color            : #{$palette-text};
+    --global-fig-caption-color          : #{mix(#fff, $palette-text, 40%)};
+    --global-link-color                 : #{$palette-accent};
+    --global-link-color-hover           : #{mix(#000, $palette-accent, 20%)};
+    --global-link-color-visited         : #{mix(#000, $palette-secondary, 20%)};
+    --global-masthead-link-color        : #{$palette-text};
+    --global-masthead-link-color-hover  : #{$palette-accent};
+    --global-text-color                 : #{$palette-text};
+    --global-text-color-light           : #{mix(#fff, $palette-text, 50%)};
+    --global-thead-color                : #{mix(#fff, $palette-primary, 85%)};
+    --github-icon-color                 : #{$github-color};
+}
+
+:root ::-moz-selection {
+    color: #fff;
+    background: #{$palette-accent};
+}
+
+:root ::selection {
+    color: #fff;
+    background: #{$palette-accent};
 }

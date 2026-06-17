@@ -45,6 +45,17 @@
     }
   }
 
+  /* primary — uses the theme accent color (blue in light, green in dark) */
+
+  &--primary {
+    background-color: var(--global-link-color);
+    color: var(--global-bg-color) !important;
+
+    &:hover {
+      background-color: var(--global-link-color-hover);
+    }
+  }
+
   /* for dark backgrounds */
 
   &--inverse {

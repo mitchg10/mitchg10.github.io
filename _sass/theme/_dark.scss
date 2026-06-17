@@ -2,24 +2,31 @@
    DARK THEME
    ========================================================================== */
 
+/* Palette */
+$palette-text               : #f8fbea;
+$palette-bg                 : #0b0c03;
+$palette-primary            : #aacc2e;
+$palette-secondary          : #1a6774;
+$palette-accent             : #253ca2;
+
 /* Color codes used for the theme */
 $gray                       : #7a8288;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 
-$background                 : #474747;
-$background-light           : mix(#fff, $background, 80%);
-$background-lighter         : mix(#fff, $background, 90%);
-$text                       : #ffffff;
-$link                       : #0ea1c5;
-$link-dark                  : mix(#000, $link, 25%);
-$link-light                 : mix(#fff, $link, 25%);
+$background                 : $palette-bg;
+$background-light           : mix(#fff, $palette-bg, 15%);
+$background-lighter         : mix(#fff, $palette-bg, 25%);
+$text                       : $palette-text;
+$link                       : $palette-primary;
+$link-dark                  : mix(#000, $palette-primary, 20%);
+$link-light                 : mix(#fff, $palette-primary, 20%);
 
 /* Color codes used for the site */
 $danger-color               : #ee5f5b;
 $info-color                 : #2f7f93;
-$notice-color               : #7a8288;
+$notice-color               : $palette-primary;
 $success-color              : #62c462;
 $warning-color              : #f89406;
 
@@ -35,20 +42,31 @@ $sidebar-screen-min-width   : 1024px;
 
 /* Dark theme for the site */
 html[data-theme="dark"] {
-    --global-base-color                 : #{$background};
-    --global-bg-color                   : #{$background};
-    --global-footer-bg-color            : #{$background};
-    --global-border-color               : #{$light-gray};
+    --global-base-color                 : #{$palette-primary};
+    --global-bg-color                   : #{$palette-bg};
+    --global-footer-bg-color            : #{mix(#fff, $palette-bg, 3%)};
+    --global-border-color               : #{mix(#fff, $palette-bg, 20%)};
     --global-dark-border-color          : #{$background-light};
     --global-code-background-color      : #fafafa;
     --global-code-text-color            : #{$darker-gray};
-    --global-fig-caption-color          : #{$light-gray};
-    --global-link-color                 : #{$link};
-    --global-link-color-hover           : #{$link-dark};
-    --global-link-color-visited         : #{$link-light};
-    --global-masthead-link-color        : #{$text};
-    --global-masthead-link-color-hover  : #{$background-light};
-    --global-text-color                 : #{$text};
-    --global-text-color-light           : #{$light-gray};
+    --global-fig-caption-color          : #{mix(#fff, $palette-bg, 40%)};
+    --global-link-color                 : #{$palette-primary};
+    --global-link-color-hover           : #{$link-light};
+    --global-link-color-visited         : #{mix(#fff, $palette-secondary, 50%)};
+    --global-masthead-link-color        : #{$palette-text};
+    --global-masthead-link-color-hover  : #{$palette-primary};
+    --global-text-color                 : #{$palette-text};
+    --global-text-color-light           : #{mix(#fff, $palette-bg, 50%)};
     --global-thead-color                : #{$background-lighter};
+    --github-icon-color                 : #ffffff;
+}
+
+html[data-theme="dark"] ::-moz-selection {
+    color: #{$palette-bg};
+    background: #{$palette-primary};
+}
+
+html[data-theme="dark"] ::selection {
+    color: #{$palette-bg};
+    background: #{$palette-primary};
 }

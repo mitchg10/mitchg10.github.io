@@ -1,0 +1,638 @@
+# Research Connections Network Data
+# Edit nodes and links here; the visualization reads this file automatically.
+#
+# Node fields:
+#   id:         unique string key (used in links)
+#   label:      full name shown in tooltip header
+#   shortLabel: short name shown on the SVG canvas (≤14 chars ideal)
+#   role:       subtitle shown in tooltip
+#   type:       self | institution | international | person
+#   projects:   list of strings shown in tooltip
+
+nodes:
+
+  # SELF
+  - id: mitch
+    label: "Mitch Gerhardt"
+    shortLabel: "Mitch"
+    role: "PhD Candidate · Engineering Education + CS"
+    type: self
+    projects:
+      - "AI adoption in STEM higher education"
+      - "Engineering faculty mental models of AI"
+      - "Computational qualitative research methods"
+
+  # INSTITUTIONS — Virginia Tech
+  - id: vt
+    label: "Virginia Tech"
+    shortLabel: "Virginia Tech"
+    role: "Home Institution"
+    type: institution
+    projects:
+      - "Cross-institutional AI policy workshop (March 2026)"
+      - "AI governance leadership network"
+      - "Graduate instructor training on AI course policy"
+
+  - id: ideeas-lab
+    label: "IDEEAS Lab"
+    shortLabel: "IDEEAS Lab"
+    role: "Research Lab · Virginia Tech ENGE"
+    type: institution
+    projects:
+      - "Home research lab"
+      - "Engineering education research"
+      - "Mentoring younger scholars in engineering education"
+
+  - id: cetl
+    label: "Center for Excellence in Teaching and Learning"
+    shortLabel: "CETL"
+    role: "Teaching & Learning Center · Virginia Tech"
+    type: institution
+    projects:
+      - "Graduate assistantship 2024-2025 with Dr. Tiffany Shoop"
+      - "Co-developed CIRTL badging program for graduate instructors"
+      - "Faculty development programming"
+
+  - id: telos
+    label: "Technology-Enhanced Learning & Online Strategies"
+    shortLabel: "TELOS"
+    role: "EdTech Unit · Virginia Tech"
+    type: institution
+    projects:
+      - "Collaboration on AI policy and governance in courses"
+      - "Host workshops for graduate instructors on AI policy"
+      - "Future work exploring cross-institutional policies and governance"
+
+  - id: grad-honor
+    label: "Graduate Honor System"
+    shortLabel: "GHS"
+    role: "Academic Integrity · Virginia Tech"
+    type: institution
+    projects:
+      - "Associate Chair of GHS"
+      - "Adjudicating academic integrity cases at VT through panels and mediated discussions"
+      - "Organizing and facilitating workshops for graduate instructors on academic integrity and AI policy"
+
+  # INSTITUTIONS — Cornell
+  - id: cornell
+    label: "Cornell University"
+    shortLabel: "Cornell"
+    role: "Research Collaboration"
+    type: institution
+    projects:
+      - "LLMs reshaping qualitative research practice"
+      - "Discipline-based education research (DBER) community"
+      - "Invited presentations on LLMs in research (Oct 2025)"
+
+  - id: beears-group
+    label: "BEEARS Research Group"
+    shortLabel: "BEEARS Group"
+    role: "Research Group · Cornell"
+    type: institution
+    projects:
+      - "Partnership with Dr. Alex Werth on LLMs in qualitative research"
+      - "Mentoring undergraduate and graduate students in engineering education research"
+
+  - id: cornell-cder
+    label: "Cornell Discipline-Based Education Research"
+    shortLabel: "Cornell DBER"
+    role: "Research Community · Cornell"
+    type: institution
+    projects:
+      - "Discipline-based education research"
+      - "Presenting AI research across NY Upstate DBER community"
+
+  - id: cornell-sts
+    label: "Cornell STS Department"
+    shortLabel: "Cornell STS"
+    role: "Science, Technology & Society · Cornell"
+    type: institution
+    projects:
+      - "Active member of STS SSRG Weekly Reading Group"
+      - "Exploring sociotechnical perspectives on technology in higher education"
+      - "Ongoing collaborations exploring engineering studies in AI era"
+
+  # INSTITUTIONS — Other U.S.
+  - id: nyssa
+    label: "NY School Boards Assoc."
+    shortLabel: "NY School Boards"
+    role: "Policy & Governance"
+    type: institution
+    projects:
+      - "K-12 AI governance systems design"
+      - "Protecting students from AI-related harms"
+      - "Responsible AI exploration across school districts"
+
+  - id: unl
+    label: "University of Nebraska Lincoln"
+    shortLabel: "U. Nebraska"
+    role: "Research Collaboration"
+    type: institution
+    projects:
+      - "Ongoing research exploring mechanical engineering master's students"
+      - "Exploring potential partnerships with Dr. Mark Stone and Dr. Jessica Deters on AI adoption in engineering education"
+
+  - id: u-buffalo
+    label: "University at Buffalo"
+    shortLabel: "U. Buffalo"
+    role: "Research Collaboration"
+    type: institution
+    projects:
+      - "Engineering education research collaborations with PI and students"
+
+  - id: mit
+    label: "Massachusetts Institute of Technology "
+    shortLabel: "MIT"
+    role: "Research Collaboration"
+    type: institution
+    projects:
+      - "Collaboration with Dr. Berwick"
+
+  - id: st-vincent
+    label: "St. Vincent College"
+    shortLabel: "St. Vincent"
+    role: "Research Collaboration"
+    type: institution
+    projects:
+      - "Advising Dr. Mike Robinson on developing engineering judgement in project-based learning environments"
+
+  - id: msoe
+    label: "Milwaukee School of Engineering"
+    shortLabel: "MSOE"
+    role: "Research Collaboration"
+    type: institution
+    projects:
+      - "Collaboration with Dr. Brian Faulkner exploring the role of engineering judgement in engineering education"
+
+  - id: ut-austin
+    label: "University of Texas at Austin"
+    shortLabel: "UT Austin"
+    role: "Research Collaboration"
+    type: institution
+    projects:
+      - "Partnership with Dr. Maura Borrego on engineering graduate students and AI adoption in qualitative methods"
+
+  - id: tamu
+    label: "Texas A&M University"
+    shortLabel: "Texas A&M"
+    role: "Research Collaboration"
+    type: institution
+    projects:
+      - "Collaboration with Dr. Noemi Mendoza Diaz on engineering faculty wellbeing"
+
+  - id: gmu
+    label: "George Mason University"
+    shortLabel: "George Mason"
+    role: "Research Collaboration"
+    type: institution
+    projects:
+      - "Engineering education collaborations"
+
+  - id: penn-state
+    label: "Penn State"
+    shortLabel: "Penn State"
+    role: "Research Collaboration"
+    type: institution
+    projects:
+      - "Engineering education collaborations"
+
+  - id: youngstown-state
+    label: "Youngstown State University"
+    shortLabel: "Youngstown State"
+    role: "Research Collaboration"
+    type: institution
+    projects:
+      - "Engineering education collaborations"
+
+  - id: osu
+    label: "The Ohio State University"
+    shortLabel: "Ohio State"
+    role: "Research Collaboration"
+    type: institution
+    projects:
+      - "Publications with Dr. Benjamin Ahn and Dr. Emily Dringinberg on psychological frameworks in engineering education"
+      - "Mentorship from Dr. Rachel Kajfez on career preparedness and job market strategy"
+
+  - id: kern
+    label: "Kern Family Foundation"
+    shortLabel: "Kern Foundation"
+    role: "Funding & Programming"
+    type: institution
+    projects:
+      - "Attended the Emerging Engineering Educators (EMEE) workshop in June 2026"
+
+  # INTERNATIONAL
+  - id: brazil
+    label: "Fulbright Brazil"
+    shortLabel: "Fulbright Brazil"
+    role: "International Collaboration"
+    type: international
+    projects:
+      - "Transnational AI governance coordination"
+      - "Multi-day workshops in São Paulo (Sept 2025)"
+      - "Washington DC convening (May 2026)"
+
+  - id: cput
+    label: "Cape Peninsula University of Technology"
+    shortLabel: "CPUT"
+    role: "International Collaboration · South Africa"
+    type: international
+    projects:
+      - "Collaboration with Dr. Jenni Case on engineering curricular changes in response to AI"
+
+  # PERSONS — VT Engineering Education
+  - id: andrew-katz
+    label: "Dr. Andrew Katz"
+    shortLabel: "Dr. Katz"
+    role: "PI, IDEEAS Lab · Virginia Tech"
+    type: person
+    projects:
+      - "Dissertation advisor"
+      - "Graduate assistantship on NSF CAREER project"
+      - "Ongoing explorations of LLMs in qualitative research methods"
+
+  - id: david-knight
+    label: "Dr. David Knight"
+    shortLabel: "Dr. Knight"
+    role: "Interim Dean · College of Engineering"
+    type: person
+    projects:
+      - "Mentor since undergraduate studies"
+      - "Graduate assistantship exploring STEM master's workforce"
+
+  - id: holly-matusovich
+    label: "Dr. Holly Matusovich"
+    shortLabel: "Dr. Matusovich"
+    role: "Assoc. Dean for Graduate & Professional Studies · College of Engineering"
+    type: person
+    projects:
+      - "Dissertation committee member"
+      - "Built a custom web application for graduate coordinators to monitor low-enrollment classes"
+      - "Mentor on secondary data analysis and job market strategies"
+
+  - id: mags-blackie
+    label: "Dr. Mags Blackie"
+    shortLabel: "Dr. Blackie"
+    role: "Assoc. Director for the Centre for Advancing Undergraduate Science Education"
+    type: person
+    projects:
+      - "Mentor exploring sociological perspectives in engineering education"
+      - "Ongoing explorations of literature reviews in engineering education research"
+
+  - id: nicole-pitterson
+    label: "Dr. Nicole Pitterson"
+    shortLabel: "Dr. Pitterson"
+    role: "Assoc. Prof. · VT Engineering Education"
+    type: person
+    projects:
+      - "Dissertation committee member"
+      - "Graduate assistantship on student behavioral beliefs"
+      - "Mentor on educational psychological perspectives and figurative language"
+
+  - id: vt-enge-grads
+    label: "VT ENGE Graduate Students"
+    shortLabel: "ENGE Grad Stds"
+    role: "Doctoral Cohort · VT ENGE"
+    type: person
+    projects:
+      - "Peer collaboration and mentorship"
+      - "Former department ambassador"
+
+  - id: cornell-dber-grads
+    label: "Cornell DBER Graduate Students"
+    shortLabel: "DBER Grad Stds"
+    role: "Doctoral Cohorts · VT DBER"
+    type: person
+    projects:
+      - "Peer collaboration and mentorship"
+
+  # PERSONS — VT Computer Science
+  - id: sara-hooshangi
+    label: "Dr. Sara Hooshangi"
+    shortLabel: "Dr. Hooshangi"
+    role: "Collegiate Prof. · VT Computer Science"
+    type: person
+    projects:
+      - "MS master's advisor"
+      - "Active research on HCI and student-AI interactionsa"
+
+  - id: sanmay-das
+    label: "Dr. Sanmay Das"
+    shortLabel: "Dr. Das"
+    role: "Prof. · VT Computer Science"
+    type: person
+    projects:
+      - "MS master's committee member"
+
+  # PERSONS — VT Other
+  - id: peter-doolittle
+    label: "Dr. Peter Doolittle"
+    shortLabel: "Dr. Doolittle"
+    role: "Prof. · VT School of Education"
+    type: person
+    projects:
+      - "Former instructor and dissertation mentor"
+
+  - id: matthew-wisnioski
+    label: "Dr. Matthew Wisnioski"
+    shortLabel: "Dr. Wisnioski"
+    role: "Prof. · VT Dept. of STS"
+    type: person
+    projects:
+      - "Former undergraduate instructor and now-mentor for STS topic explorations"
+
+  - id: gary-downey
+    label: "Dr. Gary Downey"
+    shortLabel: "Dr. Downey"
+    role: "Alumni Distinguished Prof. · VT Dept. of STS"
+    type: person
+    projects:
+      - "Mentor through former collaboration with my grandfather!"
+
+  - id: aimee-surprenant
+    label: "Dr. Aimée Surprenant"
+    shortLabel: "Dr. Surprenant"
+    role: "Dean · VT Graduate School"
+    type: person
+    projects:
+      - "Graduate education leadership"
+      - "Graduate instructor and advisor for publication exploring interdisciplinary graduate education"
+
+  # PERSONS — Cornell
+  - id: alex-werth
+    label: "Dr. Alex Werth"
+    shortLabel: "Dr. Werth"
+    role: "PI, BEEARS Group · Cornell"
+    type: person
+    projects:
+      - "Research partnership exploring LLMs in engineering education research"
+      - "Ongoing project revealing challenges in AI-assisted transcription"
+
+  - id: maggie-webb
+    label: "Dr. Maggie Webb"
+    shortLabel: "Dr. Webb"
+    role: "Postdoctoral Fellow · Cornell"
+    type: person
+    projects:
+      - "Near-peer research and life mentor"
+      - "More collaborations than quantifiable"
+
+  - id: campbell-mccolley
+    label: "Dr. Campbell McColley"
+    shortLabel: "Dr. McColley"
+    role: "Postdoctoral Fellow · Cornell"
+    type: person
+    projects:
+      - "Near-peer research mentor"
+
+  # PERSONS — External Collaborators
+  - id: jessica-deters
+    label: "Dr. Jessica Deters"
+    shortLabel: "Dr. Deters"
+    role: "Asst. Prof. · University of Nebraska Lincoln"
+    type: person
+    projects:
+      - "Near-peer mentor and alumni of VT program"
+      - "Collaborator on engineering master's projects"
+
+  - id: ronnie-clements
+    label: "Dr. H. Ronald Clements"
+    shortLabel: "Dr. Clements"
+    role: "Postdoctoral Fellow · University of Nebraska Lincoln"
+    type: person
+    projects:
+      - "Near-peer mentor in engineering education"
+      - "Collaborator on mixed-methods workforce development projects"
+
+  - id: courtney-faber
+    label: "Dr. Courtney Faber"
+    shortLabel: "Dr. Faber"
+    role: "Assoc. Prof. · University at Buffalo"
+    type: person
+    projects:
+      - "Dissertation committee member"
+      - "Mentor on epistemic thinking in engineering education"
+
+  - id: mike-robinson
+    label: "Dr. Mike Robinson"
+    shortLabel: "Dr. Robinson"
+    role: "Asst. Prof. · St. Vincent College"
+    type: person
+    projects:
+      - "Co-author on publications exploring the role of epistemic thinking and engineering judgment"
+      - "Collaborating on project-based learning courses engaging epistemic thinking"
+
+  - id: brian-faulkner
+    label: "Dr. Brian Faulkner"
+    shortLabel: "Dr. Faulkner"
+    role: "Assoc. Prof. · Milwaukee School of Engineering"
+    type: person
+    projects:
+      - "Co-author on publications exploring the role of epistemic thinking and engineering judgment"
+
+  - id: maura-borrego
+    label: "Dr. Maura Borrego"
+    shortLabel: "Dr. Borrego"
+    role: "Prof. · University of Texas at Austin"
+    type: person
+    projects:
+      - "Research mentor and co-PI on engineering workforce project"
+      - "Presented to course about LLMs in qualitative methods"
+
+  - id: noemi-mendoza-diaz
+    label: "Dr. Noemi Mendoza Diaz"
+    shortLabel: "Dr. Diaz"
+    role: "Asst. Prof. · Texas A&M University"
+    type: person
+    projects:
+      - "Collaborating on projects exploring engineering faculty wellbeing in AI era"
+
+  - id: aditya-johri
+    label: "Dr. Aditya Johri"
+    shortLabel: "Dr. Johri"
+    role: "Prof. · George Mason University"
+    type: person
+    projects:
+      - "Sociotechnical perspectives in engineering education"
+      - "Collaborator for book chapter on LLMs in EER"
+      - "Co-panelists on AI in STEM doctoral education"
+
+  - id: stephanie-cutler
+    label: "Dr. Stephanie Cutler"
+    shortLabel: "Dr. Cutler"
+    role: "Assoc. Research Prof. · Penn State"
+    type: person
+    projects:
+      - "Mentor on pedgaogy and job market navigation through KEEN network"
+
+  - id: francis-ledesma
+    label: "Dr. Francis Ledesma"
+    shortLabel: "Dr. Ledesma"
+    role: "Asst. Teaching Prof. · Penn State"
+    type: person
+    projects:
+      - "Near-peer mentor and collaborator"
+
+  - id: siqing-wei
+    label: "Dr. Siqing Wei"
+    shortLabel: "Dr. Wei"
+    role: "Asst. Prof. · Youngstown State University"
+    type: person
+    projects:
+      - "Book chapter co-author"
+
+  - id: benjamin-ahn
+    label: "Dr. Benjamin Ahn"
+    shortLabel: "Dr. Ahn"
+    role: "Assoc. Prof. · The Ohio State University"
+    type: person
+    projects:
+      - "Co-PI on project exploring behavioral choice in engineering education"
+      - "Co-author on publications exploring the Reasoned Action Approach"
+
+  - id: emily-dringinberg
+    label: "Dr. Emily Dringenberg"
+    shortLabel: "Dr. Dringenberg"
+    role: "Assoc. Prof. · The Ohio State University"
+    type: person
+    projects:
+      - "Co-author on publications exploring the Reasoned Action Approach"
+
+  - id: rachel-kajfez
+    label: "Dr. Rachel Kajfez"
+    shortLabel: "Dr. Kajfez"
+    role: "Prof. · The Ohio State University"
+    type: person
+    projects:
+      - "Mentor through KEEN network on pedagogy and job readiness"
+
+  - id: douglas-melton
+    label: "Dr. Douglas Melton"
+    shortLabel: "Dr. Melton"
+    role: "Program Director · Kern Family Foundation"
+    type: person
+    projects:
+      - "Organizer of EMEE workshops"
+      - "Collaborating on AI initatives for KEEN network"
+
+  - id: jenni-case
+    label: "Dr. Jenni Case"
+    shortLabel: "Dr. Jenni Case"
+    role: "Prof. · Cape Peninsula University of Technology"
+    type: person
+    projects:
+      - "Former graduate instructor"
+      - "Dissertation mentor"
+      - "Co-author on publication exploring AI competency in engineering education"
+
+  - id: luiz-loureiro
+    label: "Dr. Luiz Valcov Loureiro"
+    shortLabel: "Dr. Loureiro"
+    role: "Executive Director · Fulbright Commission Brazil"
+    type: person
+    projects:
+      - "Fulbright Brazil program leadership"
+      - "Transnational AI governance coordination"
+
+  - id: ricardo-diogo
+    label: "Dr. Ricardo Alexandre Diogo"
+    shortLabel: "Dr. Diogo"
+    role: "Professor · PUCPR (Brazil)"
+    type: person
+    projects:
+      - "Fulbright Brazil program leadership"
+
+  - id: gabriella-fleming
+    label: "Dr. Gabriella Coloyan Fleming"
+    shortLabel: "Dr. Fleming"
+    role: "Founder & Principal · Oerlikon Research & Consulting | STEM "
+    type: person
+    projects:
+      - "Book chapter co-author"
+      - "Near-peer mentor and VT alumna"
+
+  - id: bob-berwick
+    label: "Dr. Bob Berwick"
+    shortLabel: "Dr. Berwick"
+    role: "Professor (Post Tenure) · Computer Science and Engineering and Computational Linguistics"
+    type: person
+    projects:
+      - "Career mentor and intellectual collaborator on AI in computing education"
+
+links:
+  # mitch → main institutions
+  - { source: mitch, target: vt }
+  - { source: mitch, target: ideeas-lab }
+  - { source: mitch, target: cornell }
+  - { source: mitch, target: nyssa }
+  - { source: mitch, target: brazil }
+  - { source: mitch, target: unl }
+  - { source: mitch, target: u-buffalo }
+  - { source: mitch, target: st-vincent }
+  - { source: mitch, target: msoe }
+  - { source: mitch, target: ut-austin }
+  - { source: mitch, target: tamu }
+  - { source: mitch, target: gmu }
+  - { source: mitch, target: penn-state }
+  - { source: mitch, target: osu }
+  - { source: mitch, target: kern }
+  - { source: mitch, target: cput }
+  - { source: mitch, target: youngstown-state }
+  - { source: mitch, target: mit }
+
+  # VT sub-graph
+  - { source: ideeas-lab, target: vt }
+  - { source: cetl, target: vt }
+  - { source: telos, target: vt }
+  - { source: grad-honor, target: vt }
+
+  # Cornell sub-graph
+  - { source: beears-group, target: cornell }
+  - { source: cornell-cder, target: cornell }
+  - { source: cornell-sts, target: cornell }
+
+  # VT ENGE persons
+  - { source: andrew-katz, target: ideeas-lab }
+  - { source: david-knight, target: vt }
+  - { source: holly-matusovich, target: vt }
+  - { source: mags-blackie, target: vt }
+  - { source: nicole-pitterson, target: vt }
+  - { source: vt-enge-grads, target: vt }
+
+  # VT CS persons
+  - { source: sara-hooshangi, target: vt }
+  - { source: sanmay-das, target: vt }
+
+  # VT Other persons
+  - { source: peter-doolittle, target: vt }
+  - { source: matthew-wisnioski, target: vt }
+  - { source: gary-downey, target: vt }
+  - { source: aimee-surprenant, target: vt }
+  - { source: gabriella-fleming, target: vt }
+
+  # Cornell persons
+  - { source: alex-werth, target: beears-group }
+  - { source: maggie-webb, target: beears-group }
+  - { source: campbell-mccolley, target: beears-group }
+  - { source: cornell-dber-grads, target: cornell-cder }
+
+  # External persons
+  - { source: jessica-deters, target: unl }
+  - { source: ronnie-clements, target: unl }
+  - { source: courtney-faber, target: u-buffalo }
+  - { source: mike-robinson, target: st-vincent }
+  - { source: brian-faulkner, target: msoe }
+  - { source: maura-borrego, target: ut-austin }
+  - { source: noemi-mendoza-diaz, target: tamu }
+  - { source: aditya-johri, target: gmu }
+  - { source: stephanie-cutler, target: penn-state }
+  - { source: francis-ledesma, target: penn-state }
+  - { source: benjamin-ahn, target: osu }
+  - { source: emily-dringinberg, target: osu }
+  - { source: rachel-kajfez, target: osu }
+  - { source: douglas-melton, target: kern }
+  - { source: jenni-case, target: cput }
+  - { source: luiz-loureiro, target: brazil }
+  - { source: ricardo-diogo, target: brazil }
+  - { source: siqing-wei, target: youngstown-state }
+  - { source: bob-berwick, target: mit }

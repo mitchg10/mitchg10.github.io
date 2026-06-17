@@ -22,7 +22,7 @@ repository               : "mitchg10/mitchg10.github.io.git"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "mitch_image.jpeg"
+  avatar           : "Mitch.png"
   name             : "Mitch Gerhardt"
   pronouns         : # example: "she/her"
   bio              : |-
@@ -307,7 +307,7 @@ plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-  # - jekyll-sitemap
+  - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
 
@@ -316,7 +316,7 @@ whitelist:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-  # - jekyll-sitemap
+  - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
 

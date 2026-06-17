@@ -5,7 +5,11 @@ permalink: /research/
 author_profile: true
 ---
 
-Higher education is one of the most consequential sites where AI is being integrated into society and one of the least understood. Students, instructors, researchers, and administrators are all using and thinking about AI differently, and the field lacks a clear picture of how adoption is actually unfolding. My research helps paint this picture with multiple brushes. Drawing on qualitative, quantitative, and mixed-methods traditions across education, sociology, and science and technology studies (STS), I investigate how students, faculty, institutions, and researchers internationally conceptualize AI, infuse it into their practices, and — in doing so — restructure the educational systems they constitute.
+Higher education presents one of the most consequential sites of AI integration, but is simultaneously one of the least understood. Students, instructors, researchers, and administrators use and think about AI differently, hindering educators' ability to obtain a clear picture of unfolding AI adoption. Interdisciplinary research is required to paint this picture across different contexts and populations. My research does exactly that using mixed-methods traditions across education, engineering, sociology, psychology, religious studies, philosophy, science and technology studies (STS), and history. I investigate how students, faculty, institutions, and researchers internationally conceptualize AI, infuse it into their practices, and — in doing so — restructure the educational systems they constitute. Importantly, underscoring all these approaches is a dedication to translate research findings into educational practice, whether faculty development programs, curricular frameworks, academic integrity systems, or student coursework. Application is central.
+
+## Collaborations
+
+{% include connections-network.html %}
 
 ## Research Program
 
@@ -25,15 +29,15 @@ Studying individual students and instructors is necessary but insufficient — i
 
 ### International
 
-AI adoption is not only a national question. Through an ongoing Fulbright Brazil collaboration, I study and support AI governance coordination at transnational scales — working with institutional leaders making decisions that impact real students. I participated in multi-day workshops in São Paulo in September 2025 and am continuing that collaboration ahead of a Washington DC convening in May 2026. See the [Fulbright Brazil workshop](/teaching/2025-09-fulbright-brazil) for details.
+AI adoption is not only a national question. Through an ongoing Fulbright Brazil collaboration, I study and support AI governance coordination at transnational scales, working with institutional leaders making decisions that impact real students. I participated in multi-day workshops in São Paulo in September 2025 and Washington DC in May 2026. See the [Fulbright Brazil workshop](/teaching/2025-09-fulbright-brazil) for details.
 
 ## Methods Contributions
 
-Alongside these research settings, I contribute to discourse about how researchers themselves use AI — and what responsible AI-infused methodology looks like.
+Alongside these research settings, I contribute to discourse about how researchers themselves use AI and what responsible AI-infused methodology looks like.
 
 My published article in the [*International Journal of Qualitative Methods*](/publication/2024-01-01-Using-Generative-Text-Models-to-Create-Qualitative-Codebooks-for-Student-Evaluations-of-Teaching) used LLMs to analyze qualitative educational data, interrogating LLM-infused workflows as a methodological intervention compared to human-based analysis. This work asks how LLMs afford and constrain research processes, and what constitutes "meaningful" and "trustworthy" findings when AI is part of the analytic chain.
 
-An in-review book chapter for the *2027 Cambridge International Handbook on Engineering Education Methods* provides a conceptual landscape for researchers navigating these systems, and a companion piece under review at *Studies in Engineering Education* reframes AI use in research as inherently interpretive work requiring appropriate technical and reflexive practices. A third in-progress article analyzes researcher conceptualizations of AI through conference publications — finding an overwhelming treatment of AI systems as instrumental "tools" rather than as transformational sociotechnical systems. See [Publications](/publications/) for the full list.
+An in-review book chapter for the *2027 Cambridge International Handbook on Engineering Education Methods* provides a conceptual landscape for researchers navigating these systems, and a companion piece under review at *Studies in Engineering Education* reframes AI use in research as inherently interpretive work requiring appropriate technical and reflexive practices. A third in-progress article analyzes researcher conceptualizations of AI through conference publications, finding an overwhelming treatment of AI systems as instrumental "tools" rather than as transformational sociotechnical systems. See [Publications](/publications/) for the full list.
 
 ## Governance & Outreach
 

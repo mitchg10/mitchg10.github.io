@@ -1,0 +1,373 @@
+<!-- Research Connections Network Visualization
+     To add/edit nodes and links: edit _data/connections_network.yml
+     Each node needs: id, label, shortLabel, role, type, projects[]
+     Types: self | institution | international | person              -->
+
+<style>
+/* ── Local theme tokens — light mode defaults ── */
+#cn-wrap {
+  --cn-bg-start:     #f8f9f0;
+  --cn-bg-end:       #f0f3e0;
+  --cn-border:       #c8d0a0;
+  --cn-text-muted:   #666;
+  --cn-label-fill:   #555;
+  --cn-hint-fill:    #c0c8d0;
+  --cn-tooltip-bg:   #ffffff;
+  --cn-tooltip-h4:   #111;
+  --cn-tooltip-role: #666;
+  --cn-tooltip-body: #333;
+}
+
+/* ── Dark mode overrides ── */
+html[data-theme="dark"] #cn-wrap {
+  --cn-bg-start:     #161a0d;
+  --cn-bg-end:       #0e100a;
+  --cn-border:       var(--global-border-color);
+  --cn-text-muted:   var(--global-text-color-light);
+  --cn-label-fill:   var(--global-text-color);
+  --cn-hint-fill:    var(--global-text-color-light);
+  --cn-tooltip-bg:   #1c1f0d;
+  --cn-tooltip-h4:   #f8fbea;
+  --cn-tooltip-role: #a8b08a;
+  --cn-tooltip-body: #d8e0c0;
+}
+
+#cn-wrap { margin: 1.5em 0; }
+#cn-wrap .cn-intro { color: var(--cn-text-muted); font-size: 0.9em; margin-bottom: 1em; }
+
+#cn-container {
+  width: 100%;
+  background: linear-gradient(150deg, var(--cn-bg-start) 0%, var(--cn-bg-end) 100%);
+  border-radius: 10px;
+  border: 1px solid var(--cn-border);
+  overflow: hidden;
+}
+#cn-svg { width: 100%; height: auto; display: block; }
+
+#cn-tooltip {
+  position: fixed;
+  background: #fff;
+  border: 1px solid #c8d0a0;
+  border-radius: 8px;
+  padding: 11px 14px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.35), 0 1px 6px rgba(0,0,0,0.2);
+  max-width: 220px;
+  font-size: 0.82em;
+  line-height: 1.45;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  z-index: 9999;
+}
+#cn-tooltip.show { opacity: 1; }
+#cn-tooltip h4 { margin: 0 0 2px 0; font-size: 1em; color: #111; }
+#cn-tooltip .cn-role { color: #666; font-size: 0.87em; margin-bottom: 7px; }
+#cn-tooltip ul { margin: 0; padding-left: 14px; color: #333; }
+#cn-tooltip li { margin-bottom: 2px; }
+
+html[data-theme="dark"] #cn-tooltip {
+  background: #1c1f0d;
+  border-color: #3a4020;
+}
+html[data-theme="dark"] #cn-tooltip h4 { color: #f8fbea; }
+html[data-theme="dark"] #cn-tooltip .cn-role { color: #a8b08a; }
+html[data-theme="dark"] #cn-tooltip ul { color: #d8e0c0; }
+
+.cn-node { cursor: grab; }
+.cn-node:active { cursor: grabbing; }
+#cn-svg { cursor: grab; }
+#cn-svg:active { cursor: grabbing; }
+.cn-node-head, .cn-node-body { transition: filter 0.12s; }
+.cn-node:hover .cn-node-head,
+.cn-node:hover .cn-node-body {
+  filter: brightness(1.15) drop-shadow(0 2px 8px rgba(0,0,0,0.3));
+}
+
+.cn-label {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 11px;
+  fill: var(--cn-label-fill);
+  text-anchor: middle;
+  pointer-events: none;
+}
+.cn-hint {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 10px;
+  fill: var(--cn-hint-fill);
+  text-anchor: middle;
+  font-style: italic;
+}
+
+.cn-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-top: 10px;
+  font-size: 0.8em;
+  color: var(--cn-text-muted);
+  justify-content: center;
+}
+.cn-legend-item { display: flex; align-items: center; gap: 5px; }
+.cn-legend-dot    { width: 11px; height: 11px; border-radius: 50%; flex-shrink: 0; }
+.cn-legend-square { width: 11px; height: 11px; border-radius: 2px;  flex-shrink: 0; }
+</style>
+
+<div id="cn-wrap">
+  <p class="cn-intro">Hover over a node to see shared projects. Scroll to zoom, drag the background to pan, or drag a node to rearrange.</p>
+  <div id="cn-container"><svg id="cn-svg"></svg></div>
+  <div class="cn-legend">
+    <span class="cn-legend-item"><span class="cn-legend-dot"    style="background:#5d74da"></span>Me</span>
+    <span class="cn-legend-item"><span class="cn-legend-square" style="background:#afd133"></span>Institution</span>
+    <span class="cn-legend-item"><span class="cn-legend-square" style="background:#52b788"></span>International</span>
+    <span class="cn-legend-item"><span class="cn-legend-dot"    style="background:#8bd7e5"></span>Collaborator</span>
+  </div>
+</div>
+<div id="cn-tooltip"></div>
+
+<script>
+(function () {
+
+var NODES = {{ site.data.connections_network.nodes | jsonify }};
+var LINKS = {{ site.data.connections_network.links | jsonify }};
+
+/* ── COLORS — read from site theme CSS variables at init time ────────── */
+function getCSSVar(v) {
+  return getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+}
+var COLOR = {
+  self:          getCSSVar('--global-accent')    || "#5d74da",
+  institution:   getCSSVar('--global-primary')   || "#afd133",
+  international: "#52b788",
+  person:        getCSSVar('--global-secondary') || "#8bd7e5"
+};
+
+/* ── ICON GEOMETRY ──────────────────────────────────────────────────── */
+function cfg(type) {
+  if (type === "self")
+    return { hr: 15, bw: 22, bh: 18, gap: 3, ly: 34 };
+  if (type === "institution" || type === "international")
+    return { hr: 10, bw: 15, bh: 12, gap: 2, ly: 23, sq: 15 };
+  return { hr: 10, bw: 15, bh: 12, gap: 2, ly: 24 };
+}
+
+function bodyD(type) {
+  var c = cfg(type), bw = c.bw, bh = c.bh, gap = c.gap, k = bw * 0.38;
+  return "M" + (-bw) + "," + bh +
+         " C" + (-bw) + ",0 " + (-k) + "," + (-gap) + " 0," + (-gap) +
+         " C" + k + "," + (-gap) + " " + bw + ",0 " + bw + "," + bh + " Z";
+}
+
+/* Annotate link colors before D3 mutates source/target to node objects */
+LINKS.forEach(function (l) {
+  var t = NODES.find(function (n) { return n.id === l.target; });
+  l.color = t ? COLOR[t.type] : "#aaa";
+});
+
+/* ── MAIN ────────────────────────────────────────────────────────────── */
+function init() {
+  var cont = document.getElementById("cn-container");
+  var W = cont.clientWidth || 720;
+  var H = Math.round(Math.max(500, W * 0.68));
+  var svg = d3.select("#cn-svg")
+    .attr("viewBox", "0 0 " + W + " " + H)
+    .attr("preserveAspectRatio", "xMidYMid meet");
+  var tip = d3.select("#cn-tooltip");
+
+  var scene = svg.append("g");
+  var zoom = d3.zoom()
+    .scaleExtent([0.15, 4])
+    .on("zoom", function(ev) { scene.attr("transform", ev.transform); });
+  svg.call(zoom);
+
+  var sim = d3.forceSimulation(NODES)
+    .alphaDecay(0.04)
+    .force("link", d3.forceLink(LINKS).id(function (d) { return d.id; }).distance(130).strength(0.55))
+    .force("charge", d3.forceManyBody().strength(-220))
+    .force("collide", d3.forceCollide().radius(function (d) {
+      var c = cfg(d.type);
+      return Math.max(c.hr * 2 + c.bh, c.bw) + 32;
+    }).strength(0.85))
+    .force("x", d3.forceX(W / 2).strength(0.06))
+    .force("y", d3.forceY(H / 2).strength(0.06));
+
+  /* pin Mitch at center */
+  var me = NODES.find(function (n) { return n.id === "mitch"; });
+  me.fx = W / 2;
+  me.fy = H / 2;
+
+  /* curved thread paths */
+  var linkEls = scene.append("g").selectAll("path")
+    .data(LINKS).join("path")
+    .attr("fill", "none")
+    .attr("stroke", function (d) { return d.color; })
+    .attr("stroke-width", 2.5)
+    .attr("stroke-dasharray", "6 4")
+    .attr("stroke-linecap", "round")
+    .attr("opacity", 0.65);
+
+  /* BFS: returns [[a,b], ...] node-id pairs on the shortest path from startId to mitch */
+  function pathToMitch(startId) {
+    if (startId === "mitch") return [];
+    var adj = {};
+    NODES.forEach(function(n) { adj[n.id] = []; });
+    LINKS.forEach(function(l) {
+      var s = l.source.id, t = l.target.id;
+      adj[s].push(t);
+      adj[t].push(s);
+    });
+    var parent = {}, queue = [startId];
+    parent[startId] = null;
+    while (queue.length) {
+      var curr = queue.shift();
+      if (curr === "mitch") break;
+      adj[curr].forEach(function(nb) {
+        if (!(nb in parent)) { parent[nb] = curr; queue.push(nb); }
+      });
+    }
+    var pairs = [], node = "mitch";
+    while (parent[node] !== null && parent[node] !== undefined) {
+      pairs.push([node, parent[node]]);
+      node = parent[node];
+    }
+    return pairs;
+  }
+
+  /* node groups */
+  var nodeEls = scene.append("g").selectAll("g")
+    .data(NODES).join("g")
+    .attr("class", "cn-node")
+    .call(d3.drag()
+      .on("start", function (ev, d) {
+        ev.sourceEvent.stopPropagation();
+        if (!ev.active) sim.alphaTarget(0.3).restart();
+        if (d.id !== "mitch") { d.fx = d.x; d.fy = d.y; }
+      })
+      .on("drag", function (ev, d) {
+        if (d.id !== "mitch") { d.fx = ev.x; d.fy = ev.y; }
+      })
+      .on("end", function (ev, d) {
+        if (!ev.active) sim.alphaTarget(0);
+        if (d.id !== "mitch") { d.fx = null; d.fy = null; }
+      }))
+    .on("mouseover", function (ev, d) {
+      var pathLinks = pathToMitch(d.id);
+      linkEls
+        .attr("opacity", function (l) {
+          var s = l.source.id, t = l.target.id;
+          if (s === d.id || t === d.id) return 1;
+          if (pathLinks.some(function(p) { return (p[0]===s&&p[1]===t)||(p[0]===t&&p[1]===s); })) return 1;
+          return 0.1;
+        })
+        .attr("stroke-width", function (l) {
+          var s = l.source.id, t = l.target.id;
+          if (s === d.id || t === d.id) return 4;
+          if (pathLinks.some(function(p) { return (p[0]===s&&p[1]===t)||(p[0]===t&&p[1]===s); })) return 4;
+          return 2.5;
+        });
+      tip.html(
+        "<h4>" + d.label + "</h4>" +
+        "<div class='cn-role'>" + d.role + "</div>" +
+        "<ul>" + d.projects.map(function (p) { return "<li>" + p + "</li>"; }).join("") + "</ul>"
+      ).classed("show", true);
+    })
+    .on("mousemove", function (ev) {
+      tip.style("left", (ev.clientX + 14) + "px").style("top", (ev.clientY - 10) + "px");
+    })
+    .on("mouseout", function () {
+      linkEls.attr("opacity", 0.65).attr("stroke-width", 2.5);
+      tip.classed("show", false);
+    });
+
+  /* draw icons + labels */
+  nodeEls.each(function (d) {
+    var g = d3.select(this);
+    var color = COLOR[d.type];
+    var c = cfg(d.type);
+
+    if (d.type === "institution" || d.type === "international") {
+      var sq = c.sq;
+      g.append("rect").attr("class", "cn-node-body")
+        .attr("x", -sq).attr("y", -sq)
+        .attr("width", sq * 2).attr("height", sq * 2)
+        .attr("rx", 2).attr("ry", 2)
+        .attr("fill", color).attr("stroke", "white").attr("stroke-width", 2.5);
+    } else {
+      g.append("circle").attr("class", "cn-node-head")
+        .attr("r", c.hr).attr("cx", 0).attr("cy", -(c.hr + c.gap))
+        .attr("fill", color).attr("stroke", "white").attr("stroke-width", 2.5);
+
+      g.append("path").attr("class", "cn-node-body")
+        .attr("d", bodyD(d.type)).attr("fill", color).attr("opacity", 0.88);
+    }
+
+    var words = d.shortLabel.split(" ");
+    var lines = (d.shortLabel.length > 14 && words.length >= 2)
+      ? [words.slice(0, Math.ceil(words.length / 2)).join(" "),
+         words.slice(Math.ceil(words.length / 2)).join(" ")]
+      : [d.shortLabel];
+
+    var txt = g.append("text").attr("class", "cn-label");
+    lines.forEach(function (ln, i) {
+      txt.append("tspan").attr("x", 0)
+        .attr("dy", i === 0 ? c.ly + "px" : "1.2em")
+        .text(ln);
+    });
+  });
+
+  svg.append("text").attr("class", "cn-hint")
+    .attr("x", W / 2).attr("y", H - 8)
+    .text("Scroll to zoom · Drag background to pan · Drag nodes to rearrange · Hover for details");
+
+  /* tick: soft-wall boundary (velocity correction, not position snap) + update positions */
+  var pad = 60;
+  sim.on("tick", function () {
+    NODES.forEach(function (d) {
+      if (d.fx == null) {
+        if (d.x < pad)     d.vx += (pad - d.x) * 0.1;
+        if (d.x > W - pad) d.vx += (W - pad - d.x) * 0.1;
+        if (d.y < pad)     d.vy += (pad - d.y) * 0.1;
+        if (d.y > H - pad) d.vy += (H - pad - d.y) * 0.1;
+      }
+    });
+
+    linkEls.attr("d", function (d) {
+      var x1 = d.source.x, y1 = d.source.y, x2 = d.target.x, y2 = d.target.y;
+      var mx = (x1 + x2) / 2, my = (y1 + y2) / 2;
+      var dx = x2 - x1, dy = y2 - y1;
+      var cx = mx - dy * 0.18, cy = my + dx * 0.18;
+      return "M" + x1 + "," + y1 + " Q" + cx + "," + cy + " " + x2 + "," + y2;
+    });
+
+    nodeEls.attr("transform", function (d) {
+      return "translate(" + d.x + "," + d.y + ")";
+    });
+  });
+
+  sim.on("end", function() {
+    var xs = NODES.map(function(d) { return d.x; });
+    var ys = NODES.map(function(d) { return d.y; });
+    var x0 = Math.min.apply(null, xs) - 60;
+    var y0 = Math.min.apply(null, ys) - 60;
+    var x1 = Math.max.apply(null, xs) + 60;
+    var y1 = Math.max.apply(null, ys) + 60;
+    var scale = Math.min(0.95, Math.min(W / (x1 - x0), H / (y1 - y0)));
+    var tx = (W - scale * (x0 + x1)) / 2;
+    var ty = (H - scale * (y0 + y1)) / 2;
+    svg.transition().duration(750).call(
+      zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(scale)
+    );
+  });
+}
+
+/* load D3 v7 from CDN if not already present */
+if (typeof d3 !== "undefined") {
+  init();
+} else {
+  var s = document.createElement("script");
+  s.src = "https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js";
+  s.onload = init;
+  document.head.appendChild(s);
+}
+
+})();
+</script>

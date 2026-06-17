@@ -95,12 +95,15 @@
   }
 
   img {
-    max-width: 175px;
+    max-width: 36px;
+    max-height: 36px;
     border-radius: 50%;
     width: 175px;
     height: 175px;
     object-fit: cover;
     @include breakpoint($large) {
+      max-width: 175px;
+      max-height: 175px;
       padding: 5px;
       border: 1px solid var(--global-border-color);
     }
@@ -238,7 +241,7 @@
     width: 0;
     border-style: solid;
     border-width: 0 10px 10px;
-    border-color: #fff transparent;
+    border-color: var(--global-bg-color) transparent;
     z-index: 1;
 
     @include breakpoint($large) {
