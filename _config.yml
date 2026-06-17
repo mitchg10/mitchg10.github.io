@@ -13,7 +13,7 @@ title                    : "Mitch Gerhardt"
 title_separator          : "-"
 name                     : &name "Mitch Gerhrdt" 
 description              : &description "personal description"
-url                      : https://mitchg10.github.io 
+url                      : https://mitchgerhardt.com
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "mitchg10/mitchg10.github.io.git"
 

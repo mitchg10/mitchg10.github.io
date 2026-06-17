@@ -98,12 +98,12 @@
     max-width: 36px;
     max-height: 36px;
     border-radius: 50%;
-    width: 175px;
-    height: 175px;
     object-fit: cover;
     @include breakpoint($large) {
       max-width: 175px;
       max-height: 175px;
+      width: 175px;
+      height: 175px;
       padding: 5px;
       border: 1px solid var(--global-border-color);
     }
