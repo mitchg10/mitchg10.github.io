@@ -25,11 +25,15 @@ Academic personal website built with Jekyll, forked from [academicpages template
 **Live Reload Workflow - Two Terminals:**
 ```bash
 # Terminal 1: Auto-rebuild on file changes
-bundle exec jekyll build --watch
+bundle exec jekyll build --watch --config _config.yml,_config.dev.yml
 
 # Terminal 2: Serve with CORS support
 cd _site && python3 ../serve.py
 ```
+
+**Important — always include `--config _config.yml,_config.dev.yml` for local builds.** `_config.yml` sets `url: https://mitchgerhardt.com` (the production domain) for GitHub Pages. Every page includes assets (JS, CSS) via a `base_path` built from `site.url`, so without the `_config.dev.yml` override (which sets `url: "http://localhost:4000"`), the browser tries to load those assets from the live production domain instead of your local server — they'll 404 or silently fail if the change hasn't been deployed yet, breaking JS-driven features (e.g. the publications search/filter UI) while the rest of the page still renders. `dev.sh` already applies this override; only the manual/two-terminal and Docker workflows need the flag added explicitly.
+
+`_config.dev.yml` is gitignored and never reaches GitHub Pages, so production builds always use the correct `url` from `_config.yml` alone — publishing is unaffected by this override.
 
 **Why Python Server Instead of Jekyll's Default?**
 
@@ -37,15 +41,16 @@ Jekyll's built-in WEBrick server doesn't properly serve web font files (.woff, .
 
 **Key files:**
 - `serve.py` - Python HTTP server with CORS headers
-- `dev.sh` - Convenience script (build + serve)
+- `dev.sh` - Convenience script (build + serve), already applies `_config.dev.yml`
+- `_config.dev.yml` - Local-only override (gitignored) that points asset URLs at `localhost:4000` instead of production
 
 **Manual Jekyll commands (if needed):**
 ```bash
 # Install Ruby dependencies
 bundle install
 
-# Build site only (output to _site/)
-bundle exec jekyll build
+# Build site only (output to _site/), using the local dev config override
+bundle exec jekyll build --config _config.yml,_config.dev.yml
 
 # Note: 'jekyll serve' works but icons won't display properly
 ```
@@ -54,11 +59,13 @@ bundle exec jekyll build
 
 ```bash
 # Run with Docker Compose (includes live reload)
-docker-compose up
+docker-compose -f docker-compose.yaml up
 
 # Access at http://localhost:4000
 # Note: Also uses WEBrick, may have icon display issues
 ```
+
+The Docker command (`docker-compose.yaml`) also passes `--config _config.yml,_config.dev.yml` to `jekyll serve` for the same reason described above — `_config.dev.yml` is bind-mounted from the host along with the rest of the repo, so it's visible inside the container even though it's gitignored.
 
 ### JavaScript Build
 

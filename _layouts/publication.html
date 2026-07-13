@@ -1,0 +1,190 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<style>
+  .pub-detail-meta {
+    color: var(--global-text-color-light, #666);
+    font-size: 0.92em;
+    margin-bottom: 0.5em;
+  }
+  .pub-detail-authors {
+    font-style: italic;
+    margin-bottom: 0.25em;
+  }
+  .pub-detail-venue {
+    margin-bottom: 1.25em;
+  }
+  .pub-section {
+    margin-bottom: 1.75em;
+  }
+  .pub-section h2 {
+    font-size: 1.05em;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--global-text-color-light, #666);
+    border-bottom: 1px solid var(--global-border-color, #e0e0e0);
+    padding-bottom: 0.3em;
+    margin-bottom: 0.65em;
+  }
+  .pub-section p,
+  .pub-section ol {
+    margin: 0;
+    font-size: 0.97em;
+    line-height: 1.65;
+  }
+  .pub-section ol {
+    padding-left: 1.4em;
+  }
+  .pub-section ol li {
+    margin-bottom: 0.35em;
+  }
+  .pub-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em;
+    margin-top: 0.25em;
+  }
+  .pub-tag {
+    display: inline-block;
+    font-size: 0.78em;
+    padding: 0.2em 0.65em;
+    border-radius: 3px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    background: var(--global-bg-color, #e8f0fe);
+    background: color-mix(in srgb, var(--global-accent-color) 15%, var(--global-bg-color));
+    color: var(--global-accent-color, #1a56a8);
+    text-decoration: none;
+  }
+  .pub-citation {
+    font-size: 0.82em;
+    color: var(--global-text-color-light, #666);
+    border-top: 1px solid var(--global-border-color, #e0e0e0);
+    padding-top: 1em;
+    margin-top: 2em;
+    line-height: 1.55;
+  }
+  .pub-tags a.pub-tag { text-decoration: none; cursor: pointer; }
+  .pub-tags a.pub-tag:hover { opacity: 0.85; text-decoration: none; }
+</style>
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <article class="page" itemscope itemtype="http://schema.org/ScholarlyArticle">
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
+
+    <div class="page__inner-wrap">
+      <header>
+        {% if page.title %}
+          <h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+        {% endif %}
+
+        {% if page.author %}
+          <p class="pub-detail-authors">{{ page.author }}</p>
+        {% endif %}
+
+        {% if page.venue and page.date %}
+          <p class="pub-detail-venue pub-detail-meta">
+            <i>{{ page.venue }}</i>, {{ page.date | date: "%Y" }}
+          </p>
+        {% endif %}
+
+      </header>
+
+      <section class="page__content" itemprop="text">
+
+        {% if page.plain_language_summary and page.plain_language_summary != "" %}
+          <div class="pub-section">
+            <h2>Plain Language Summary</h2>
+            <p>{{ page.plain_language_summary }}</p>
+          </div>
+        {% endif %}
+
+        {% if page.contribution_summary and page.contribution_summary != "" %}
+          <div class="pub-section">
+            <h2>Contribution</h2>
+            <p>{{ page.contribution_summary }}</p>
+          </div>
+        {% endif %}
+
+        {% if page.research_questions %}
+          {% assign rq_has_content = false %}
+          {% for rq in page.research_questions %}
+            {% if rq and rq != "" %}{% assign rq_has_content = true %}{% endif %}
+          {% endfor %}
+          {% if rq_has_content %}
+            <div class="pub-section">
+              <h2>Research Questions</h2>
+              <ol>
+                {% for rq in page.research_questions %}
+                  {% if rq and rq != "" %}<li>{{ rq }}</li>{% endif %}
+                {% endfor %}
+              </ol>
+            </div>
+          {% endif %}
+        {% endif %}
+
+        {% if page.methods and page.methods != "" %}
+          <div class="pub-section">
+            <h2>Methods</h2>
+            <p>{{ page.methods }}</p>
+          </div>
+        {% endif %}
+
+        {% if page.key_findings and page.key_findings != "" %}
+          <div class="pub-section">
+            <h2>Key Findings</h2>
+            <p>{{ page.key_findings }}</p>
+          </div>
+        {% endif %}
+
+        {% if page.implications and page.implications != "" %}
+          <div class="pub-section">
+            <h2>Implications</h2>
+            <p>{{ page.implications }}</p>
+          </div>
+        {% endif %}
+
+        {% if page.tags %}
+          {% assign tags_has_content = false %}
+          {% for tag in page.tags %}
+            {% if tag and tag != "" %}{% assign tags_has_content = true %}{% endif %}
+          {% endfor %}
+          {% if tags_has_content %}
+            <div class="pub-section">
+              <h2>Tags</h2>
+              <div class="pub-tags">
+                {% for tag in page.tags %}
+                  {% if tag and tag != "" %}
+                    <a href="{{ base_path }}/publications/?tag={{ tag | url_encode }}" class="pub-tag">{{ tag }}</a>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+        {% endif %}
+
+        {% if page.citation and page.citation != "" %}
+          <div class="pub-citation">
+            <strong>Citation:</strong> {{ page.citation }}
+            {% if page.slidesurl %}
+              <br><a href="{{ page.slidesurl }}">Download Slides</a>
+            {% endif %}
+            {% if page.bibtexurl %}
+              {% if page.slidesurl %} | {% else %}<br>{% endif %}<a href="{{ page.bibtexurl }}">Download BibTeX</a>
+            {% endif %}
+          </div>
+        {% endif %}
+
+      </section>
+
+      {% if page.share %}{% include social-share.html %}{% endif %}
+
+    </div>
+  </article>
+</div>

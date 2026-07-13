@@ -44,6 +44,7 @@ $sidebar-screen-min-width   : 1024px;
 html[data-theme="dark"] {
     --global-base-color                 : #{$palette-primary};
     --global-bg-color                   : #{$palette-bg};
+    --global-secondary-color            : #{$palette-secondary};
     --global-footer-bg-color            : #{mix(#fff, $palette-bg, 3%)};
     --global-border-color               : #{mix(#fff, $palette-bg, 20%)};
     --global-dark-border-color          : #{$background-light};
@@ -51,6 +52,7 @@ html[data-theme="dark"] {
     --global-code-text-color            : #{$darker-gray};
     --global-fig-caption-color          : #{mix(#fff, $palette-bg, 40%)};
     --global-link-color                 : #{$palette-primary};
+    --global-accent-color               : #{$palette-accent};
     --global-link-color-hover           : #{$link-light};
     --global-link-color-visited         : #{mix(#fff, $palette-secondary, 50%)};
     --global-masthead-link-color        : #{$palette-text};

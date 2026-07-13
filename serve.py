@@ -102,6 +102,12 @@ class DevHandler(http.server.SimpleHTTPRequestHandler):
                     break
             else:
                 return super().send_head()
+        elif not os.path.isfile(path) and not path.endswith(('.html', '.htm')):
+            # Mirror GitHub Pages: extensionless permalinks (e.g. /publication/foo)
+            # resolve to foo.html on disk.
+            candidate = path + '.html'
+            if os.path.isfile(candidate):
+                path = candidate
 
         if path.endswith(('.html', '.htm')) and os.path.isfile(path):
             try:
@@ -114,6 +120,7 @@ class DevHandler(http.server.SimpleHTTPRequestHandler):
                 self.send_header('Content-Type', 'text/html; charset=utf-8')
                 self.send_header('Content-Length', str(len(content)))
                 self.send_header('Last-Modified', self.date_time_string(os.path.getmtime(path)))
+                self.send_header('Cache-Control', 'no-cache, must-revalidate')
                 self.end_headers()
                 return BytesIO(content)
             except OSError:

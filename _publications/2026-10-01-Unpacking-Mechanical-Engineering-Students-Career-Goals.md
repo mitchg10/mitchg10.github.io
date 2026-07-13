@@ -1,12 +1,26 @@
 ---
-title: "WIP: Unpacking Mechanical Engineering Students&apos; Career Goals, Skill Development, and Perspectives on Industry"
-author: "Herman Ronald Clements III, Mitchell Gerhardt, Jessica Deters, Shawn Sun, David Knight, Maura Borrego, Andrew Katz, Riya Budhathoki"
+title: "Mechanical Engineering Students’ Perspectives on Career Goals, Skills, and Industry"
+author: "Herman Ronald Clements III, Jessica Deters, Mitchell Gerhardt, Shawn Sun, David Knight, Maura Borrego, Andrew Katz, Riya Budhathoki"
 collection: publications
 category: conferences
 permalink: /publication/2026-10-01-Unpacking-Mechanical-Engineering-Students-Career-Goals
-date: 2026-10-01
-venue: 'In the proceedings of 2026 Frontiers in Education Conference'
-citation: 'Clements III, H. R., Gerhardt, M., Deters, J., Sun, S., Knight, D., Borrego, M., Katz, A., &amp; Budhathoki, R. (2026, October). WIP: Unpacking Mechanical Engineering Students&apos; Career Goals, Skill Development, and Perspectives on Industry. 2026 Frontiers in Education Conference.'
+date: 2026-06-30
+venue: 'In the proceedings of the 36th Australasian Association for Engineering Education Annual Conference'
+citation: 'Clements III, H. R., Deters, J., Gerhardt, M., Sun, S., Knight, D., Borrego, M., Katz, A., &amp; Budhathoki, R. (2026, October). WIP: Unpacking Mechanical Engineering Students&apos; Career Goals, Skill Development, and Perspectives on Industry. 36th Australasian Association for Engineering Education Annual Conference.'
 # paperurl: 'https://fie-conference.org/TBD'
+plain_language_summary: "We look at how mechanical engineering master's students decide to pursue their degree, what skills they hope to gain, and how these decisions connect to what they believe industry wants from them. Master's students are a large and fast-growing part of the engineering workforce, yet most existing research treats them as an afterthought to Ph.D. students rather than as a group with their own goals. Drawing on interviews with students nearing the end of their programs, we find that their reasons for enrolling extend well beyond the usual assumption of chasing a higher salary, encompassing personal interest, access to specific career paths, and timing relative to the job market. This is a work-in-progress report, so what we present here are preliminary codes and patterns from an ongoing qualitative study rather than final conclusions."
+contribution_summary: "Building on college-choice frameworks originally developed for undergraduate enrollment, we adapt Perna's model to the master's engineering context and present an emergent qualitative codebook, developed from semi-structured interviews, that reframes master's enrollment as shaped by a broader range of considerations, e.g., intrinsic learning, mobility and access, and opportunity cost, than the economic-gain framing that dominates prior literature on this population."
+research_questions: 
+- "What do engineering master's students consider when choosing to pursue a master's degree?"
+- "What skills and expertise are students hoping to gain in their master's programs?"
+- "How do these perspectives relate to students' views of industry?"
+methods: "We conducted semi-structured interviews with 16 mechanical engineering master's students across 6 institutions drawn from the top 20 master's-granting programs in the 2023 \"ASEE: By the Numbers\" report, restricting our sample to students in their final or penultimate semester who intended the master's as a terminal degree; at the time of this WIP, we report preliminary analysis of 9 of these interviews, two from returning students with at least a year of industry experience. Interviews addressed students' motivations for enrolling, their intended and actualized skill development, their perceptions of industry demands, and their beliefs about engineering, and were grounded first by a screening survey used to orient the discussion. Our analytical approach at this stage centers on reflexive research memos and open coding, following Saldaña (2021), with the goal of developing a more refined codebook rather than reporting finalized results."
+key_findings: "Across four high-level categories, i.e., pathway into the master's degree, desired and attained skill development, perceptions of industry, and beliefs about engineering, we identified subcodes that complicate the conventional economic-gain narrative: students described socioeconomic context, opportunity cost, mobility and access, industry-related skill need, intrinsic learning and growth, and anticipated challenge as distinct, often co-occurring reasons for enrolling. Skill development was discussed through both competitiveness (positioning relative to other engineers) and proficiency (capability to perform the job), while perceptions of industry surfaced tensions around credential inflation, e.g., roles increasingly asking for a master's degree alongside work experience, and gaps between explicit and implicit signals of what employers prioritize. We also noticed an emergent pattern around alignment or misalignment between students' personally held beliefs about engineering and those they perceive in prospective employers, which appeared to inform career decision-making in ways not centered on economic considerations alone."
+implications: "Because mechanical engineering is a highly flexible field, we suggest there is an opportunity to support students' career choices and graduate training through forms of alignment beyond salary and credentialing, e.g., fit between personal values and industry sectors, or between desired skill development and available coursework. As data collection continues toward a target of 20 interviews and coding is refined, we intend to return to the surrounding contextual layers of the conceptual framework to develop recommendations for academic institutions on program quality and for industry on recruitment and retention of the master's-level engineering workforce."
+tags:
+   - "Graduate Education"
+   - "Workforce Development"
+   - "Engineering Education"
+   - "Qualitative Methodologies"
 ---
 <!-- Use [Google Scholar](https://scholar.google.com/scholar?q=Unpacking+Mechanical+Engineering+Students+Career+Goals){:target="_blank"} for full citation -->

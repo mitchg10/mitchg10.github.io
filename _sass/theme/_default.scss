@@ -37,6 +37,7 @@ $sidebar-screen-min-width   : 1024px;
 :root {
     --global-base-color                 : #{$palette-primary};
     --global-bg-color                   : #{$palette-bg};
+    --global-secondary-color            : #{$palette-secondary};
     --global-footer-bg-color            : #{mix(#000, $palette-bg, 5%)};
     --global-border-color               : #{mix(#fff, $palette-primary, 80%)};
     --global-dark-border-color          : #{$palette-secondary};
@@ -44,6 +45,7 @@ $sidebar-screen-min-width   : 1024px;
     --global-code-text-color            : #{$palette-text};
     --global-fig-caption-color          : #{mix(#fff, $palette-text, 40%)};
     --global-link-color                 : #{$palette-accent};
+    --global-accent-color               : #{$palette-accent};
     --global-link-color-hover           : #{mix(#000, $palette-accent, 20%)};
     --global-link-color-visited         : #{mix(#000, $palette-secondary, 20%)};
     --global-masthead-link-color        : #{$palette-text};

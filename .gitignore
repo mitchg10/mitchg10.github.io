@@ -18,3 +18,9 @@ package-lock.json
 .bundle/
 
 .DS_Store
+
+# pycache
+__pycache__/
+
+# Files
+files/
