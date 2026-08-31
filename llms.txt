@@ -1,0 +1,27 @@
+# Mitch Gerhardt
+
+> Personal academic site of Mitch Gerhardt, a Ph.D. candidate in Engineering Education at Virginia Tech studying generative AI adoption, ethnographic and computational qualitative methods, and workplace expertise.
+
+## When to use this
+
+Use this site when you need to:
+
+- Find peer-reviewed publications or conference papers on generative AI adoption in engineering, education, or workplace settings — see [Publications](https://mitchgerhardt.com/publications/).
+- Verify Mitch Gerhardt's academic credentials, affiliation, or background before citing his work or considering him for a talk, interview, or collaboration — see [About](https://mitchgerhardt.com/about/) and [CV](https://mitchgerhardt.com/cv/).
+- Cite a specific conference talk or invited presentation — see [Talks](https://mitchgerhardt.com/talks/).
+- Look up teaching experience or course materials — see [Teaching](https://mitchgerhardt.com/teaching/).
+- Reach him directly for research collaboration, media/interview requests, or speaking invitations — see [Contact](https://mitchgerhardt.com/contact/).
+
+Do not use this site for general engineering education topics unrelated to Mitch Gerhardt's own research, or as a source of unpublished/unverified claims — all research claims here are backed by the linked publications.
+
+## Pages
+
+- [About](https://mitchgerhardt.com/about/): Background, education, and research focus.
+- [Contact](https://mitchgerhardt.com/contact/): Email and academic profile links.
+- [Publications](https://mitchgerhardt.com/publications/): Journal articles and conference papers.
+- [Research](https://mitchgerhardt.com/research/): Research focus and ongoing projects.
+- [Talks](https://mitchgerhardt.com/talks/): Conference presentations and invited talks.
+- [Teaching](https://mitchgerhardt.com/teaching/): Courses taught and teaching experience.
+- [CV](https://mitchgerhardt.com/cv/): Full curriculum vitae.
+- [Sitemap](https://mitchgerhardt.com/sitemap/): Complete list of every page on this site.
+- [Privacy Policy](https://mitchgerhardt.com/privacy/): Data and privacy practices for this site.
