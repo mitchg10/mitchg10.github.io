@@ -1,5 +1,6 @@
 # Run with: bundle exec jekyll build --config _config.yml,_config.dev.yml && bundle exec rspec
 require_relative "spec_helper"
+require "json"
 
 RSpec.describe "agent readiness" do
   describe "homepage heading order (fix: H1 must be first heading)" do
@@ -65,6 +66,59 @@ RSpec.describe "agent readiness" do
       expect(hrefs.any? { |h| h.to_s.end_with?("/about/") }).to be(true)
       expect(hrefs.any? { |h| h.to_s.end_with?("/contact/") }).to be(true)
       expect(hrefs.any? { |h| h.to_s.end_with?("/privacy/") }).to be(true)
+    end
+  end
+
+  describe "metadata completeness (fix: canonical, html lang, og:image, og:type)" do
+    it "has all four metadata signals on the homepage" do
+      doc = parsed_site_page("index.html")
+      expect(doc.at_css("html")["lang"]).to eq("en")
+      expect(doc.at_css('link[rel="canonical"]')).not_to be_nil
+      expect(doc.at_css('meta[property="og:image"]')).not_to be_nil
+      expect(doc.at_css('meta[property="og:type"]')).not_to be_nil
+    end
+
+    it "defaults og:type to website on non-dated pages" do
+      doc = parsed_site_page("index.html")
+      expect(doc.at_css('meta[property="og:type"]')["content"]).to eq("website")
+    end
+
+    it "sets og:type to article on dated collection pages" do
+      dated_page = Dir.glob(File.join(SITE_DIR, "publication", "*.html")).first ||
+                   Dir.glob(File.join(SITE_DIR, "talks", "*.html")).first
+      skip "no built dated collection pages found" unless dated_page
+      doc = Nokogiri::HTML(File.read(dated_page))
+      expect(doc.at_css('meta[property="og:type"]')["content"]).to eq("article")
+    end
+
+    it "renders a meta description on pages without an excerpt (fix: page.excerpt guard bug)" do
+      doc = parsed_site_page("index.html")
+      description = doc.at_css('meta[name="description"]')
+      expect(description).not_to be_nil
+      expect(description["content"]).not_to be_empty
+    end
+  end
+
+  describe "JSON-LD structured data (fix: complete Person node)" do
+    it "has a Person node with name, description, url, image, and sameAs links" do
+      doc = parsed_site_page("index.html")
+      nodes = doc.css('script[type="application/ld+json"]').map { |s| JSON.parse(s.text) }
+      person = nodes.find { |n| n["@type"] == "Person" }
+
+      expect(person).not_to be_nil
+      expect(person["name"]).to eq("Mitch Gerhardt")
+      expect(person["description"]).not_to be_nil
+      expect(person["description"]).not_to eq("personal description")
+      expect(person["url"]).not_to be_empty
+      expect(person["image"]).not_to be_empty
+      expect(person["sameAs"]).to be_an(Array)
+      expect(person["sameAs"]).not_to be_empty
+    end
+
+    it "does not emit a conflicting Organization node alongside Person" do
+      doc = parsed_site_page("index.html")
+      types = doc.css('script[type="application/ld+json"]').map { |s| JSON.parse(s.text)["@type"] }
+      expect(types).to eq(["Person"])
     end
   end
 end

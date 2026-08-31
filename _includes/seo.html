@@ -48,7 +48,7 @@
   <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
 {% endif %}
 
-{% if page.excerpt %}
+{% if seo_description %}
   <meta property="og:description" name="description" content="{{ seo_description }}">
 {% endif %}
 
@@ -87,11 +87,15 @@
   <meta property="og:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endif %}">
 {% elsif page.header.overlay_image %}
   <meta property="og:image" content="{% if page.header.overlay_image contains "://" %}{{ page.header.overlay_image }}{% else %}{{ page.header.overlay_image | prepend: "/images/" | prepend: base_path }}{% endif %}">
+{% elsif site.og_image %}
+  <meta property="og:image" content="{{ site.og_image | prepend: "/images/" | prepend: base_path }}">
 {% endif %}
 
 {% if page.date %}
   <meta property="og:type" content="article">
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{% else %}
+  <meta property="og:type" content="website">
 {% endif %}
 
 {% if paginator.previous_page %}
@@ -101,7 +105,7 @@
   <link rel="next" href="{{ paginator.next_page_path | prepend: seo_url }}">
 {% endif %}
 
-{% if site.og_image %}
+{% if site.social.type == "Organization" %}
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -113,13 +117,29 @@
 {% endif %}
 
 {% if site.social %}
+  {% assign seo_same_as = "" | split: "," %}
+  {% if site.author.orcid %}
+    {% assign seo_same_as = seo_same_as | push: site.author.orcid %}
+  {% endif %}
+  {% if site.author.googlescholar %}
+    {% assign seo_same_as = seo_same_as | push: site.author.googlescholar %}
+  {% endif %}
+  {% if site.author.github %}
+    {% assign seo_github_url = site.author.github | prepend: "https://github.com/" %}
+    {% assign seo_same_as = seo_same_as | push: seo_github_url %}
+  {% endif %}
+  {% assign seo_person_image = site.author.avatar | prepend: "/images/" | prepend: base_path %}
+
   <script type="application/ld+json">
     {
       "@context" : "http://schema.org",
       "@type" : "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
-      "name" : "{{ site.social.name | default: site.name }}",
+      "name" : {{ site.social.name | default: site.name | jsonify }},
+      "description" : {{ site.description | jsonify }},
       "url" : {{ seo_url | jsonify }},
-      "sameAs" : {{ site.social.links | jsonify }}
+      "image" : {{ seo_person_image | jsonify }},
+      "affiliation" : {{ site.author.employer | jsonify }},
+      "sameAs" : {{ seo_same_as | jsonify }}
     }
   </script>
 {% endif %}

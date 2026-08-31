@@ -11,8 +11,8 @@ locale                   : "en-US"
 site_theme               : "default"
 title                    : "Mitch Gerhardt"
 title_separator          : "-"
-name                     : &name "Mitch Gerhrdt" 
-description              : &description "personal description"
+name                     : &name "Mitch Gerhardt"
+description              : &description "Personal academic site of Mitch Gerhardt, a Ph.D. candidate in Engineering Education at Virginia Tech studying generative AI adoption, ethnographic and computational qualitative methods, and workplace expertise."
 url                      : https://mitchgerhardt.com
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "mitchg10/mitchg10.github.io.git"
@@ -140,7 +140,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : "Mitch.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
