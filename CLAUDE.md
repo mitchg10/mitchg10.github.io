@@ -226,6 +226,24 @@ After modifying `_config.yml`, restart Jekyll server (changes not auto-reloaded)
 
 For all other files (markdown, layouts, includes), Jekyll live reload applies changes automatically.
 
+### Linking Slides to a Talk
+
+Talks can link to a published deck via a `slidesurl` field in the frontmatter of
+`_talks/*.md`:
+
+```yaml
+slidesurl: "https://mitchg10.github.io/slides/<slug>/"
+```
+
+`_layouts/talk.html` renders it as a "View Slides" button, guarded by
+`{% if page.slidesurl %}` so talks without slides are unaffected. This mirrors
+the `slidesurl` field publications already use in `_layouts/single.html`.
+
+The decks themselves live in `mitchg10/presentations` and are published as
+single self-contained HTML files (via its `build-slides.sh`) to the separate
+`mitchg10/slides` GitHub Pages repo — deliberately kept out of this repo so the
+Jekyll build stays fast and the site stays small.
+
 ### Modifying Navigation
 
 Edit `_data/navigation.yml` to add/remove header menu items. Order in file determines display order.
