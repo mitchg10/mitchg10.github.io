@@ -1,0 +1,54 @@
+{%- comment -%}
+  Renders the summary sections of a publication — plain language summary,
+  contribution, research questions, methods, key findings, implications, tags.
+
+  Section list, order, headings and render type live in
+  _data/publication_sections.yml — add or reorder sections there, not here.
+
+  An item may withhold any section by naming its field in `masked_sections:`,
+  which is how work in submission or under review keeps findings off the public
+  page while the prose stays in the file. A masked section emits nothing at all
+  — no heading, no placeholder — so it is indistinguishable from a field that
+  was never filled.
+
+  Usage:
+    {% include publication-sections.html item=page %}
+
+  Emits nothing when the item has no summary fields, so items without them are
+  byte-for-byte untouched.
+{%- endcomment -%}
+{%- assign item = include.item -%}
+{%- assign masked = item.masked_sections -%}
+{%- for spec in site.data.publication_sections -%}
+  {%- unless masked contains spec.field -%}
+    {%- assign section_value = item[spec.field] -%}
+    {%- if spec.type == "prose" -%}
+      {%- if section_value and section_value != "" -%}
+        <div class="pub-section">
+          <h2>{{ spec.heading }}</h2>
+          <p>{{ section_value }}</p>
+        </div>
+      {%- endif -%}
+    {%- else -%}
+      {%- assign section_items = section_value | where_exp: "v", "v != ''" -%}
+      {%- if section_items and section_items.size > 0 -%}
+        <div class="pub-section">
+          <h2>{{ spec.heading }}</h2>
+          {%- if spec.type == "list" -%}
+            <ol>
+              {%- for section_item in section_items -%}
+                <li>{{ section_item }}</li>
+              {%- endfor -%}
+            </ol>
+          {%- elsif spec.type == "tags" -%}
+            <div class="pub-tags">
+              {%- for section_item in section_items -%}
+                <a href="{{ base_path }}/publications/?tag={{ section_item | url_encode }}" class="pub-tag">{{ section_item }}</a>
+              {%- endfor -%}
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    {%- endif -%}
+  {%- endunless -%}
+{%- endfor -%}

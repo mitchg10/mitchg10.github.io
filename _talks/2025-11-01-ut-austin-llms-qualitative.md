@@ -8,4 +8,4 @@ date: 2025-11-01
 location: "Austin, TX"
 ---
 
-Examined human vs. machine pattern recognition, current GAI approaches for qualitative research, researcher positionality, translational challenges, and shifting definitions of "intelligence." Addressed methodological questions about computational approaches to qualitative work and implications for research practice.
+Examined human vs. machine pattern recognition, current GenAI approaches for qualitative research, researcher positionality, translational challenges, and shifting definitions of "intelligence." Addressed methodological questions about computational approaches to qualitative work and implications for research practice.

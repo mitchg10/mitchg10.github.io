@@ -1,0 +1,45 @@
+/* ==========================================================================
+   AI SUMMARY NOTE
+   ========================================================================== */
+
+/*
+   Footnote disclosing that a page's summary text is LLM-drafted.
+   Rendered by _includes/ai-summary-note.html on any page with `ai_summary: true`.
+
+   Deliberately quieter than the .notice--* family in _notices.scss (no shadow,
+   no accent background) — this should read as a footnote sitting below the
+   content, in the same visual register as the .pub-citation block on
+   _layouts/publication.html. Colors come from the theme custom properties in
+   _sass/theme/_default.scss and _sass/theme/_dark.scss, so dark mode needs no
+   rules of its own.
+*/
+
+.ai-note {
+  margin-top: 2.5em;
+  padding-top: 1em;
+  border-top: 1px solid var(--global-border-color, #e0e0e0);
+  color: var(--global-text-color-light, #666);
+  font-size: 0.82em;
+  line-height: 1.55;
+
+  p {
+    margin: 0;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+  }
+
+  a {
+    color: var(--global-link-color, #1a56a8);
+    text-decoration: underline;
+  }
+}
+
+.ai-note__title {
+  margin: 0 0 0.4em;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: inherit;
+}

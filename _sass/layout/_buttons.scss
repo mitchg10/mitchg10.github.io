@@ -163,3 +163,18 @@
     font-size: $type-size-7;
   }
 }
+
+/*
+   Resource link row
+   ========================================================================== */
+
+/* Wraps the buttons emitted by _includes/resource-links.html so they sit in a
+   flowing row instead of stacking. Also used by the JS-built publication cards
+   in assets/js/publications-filter.js. */
+
+.resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 1em 0;
+}

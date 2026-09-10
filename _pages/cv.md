@@ -39,28 +39,32 @@ Education
 
 Book Chapters
 ======
-* **Leveraging Large Language Models in Engineering Education Research: Methods and Applications** (Under Revision)
-  * *2026 International Handbook of Engineering Education Research Methods*
+* **Leveraging Large Language Models in Engineering Education Research: Methods and Applications** (In Press)
+  * *2027 International Handbook of Engineering Education Research Methods*
   * **Mitchell Gerhardt**, Gabriella Coloyan Fleming, Siqing Wei, and Andrew Katz
   * Expected publication: February 2027
 
 Journal Publications
 ======
-* **Collaborative (In)decision: A Preliminary Investigation of the Differences in Undergraduate Engineering Capstone Students' Collaborative Behaviors** (Pending Publication)
-  * *International Journal of Engineering Education* - Special Issue for Capstone Design
+* **Collaborative (In)decision: A Preliminary Investigation of the Differences in Undergraduate Engineering Capstone Students' Collaborative Behaviors** (2025) [[Paper](https://www.ijee.ie/contents/c410425.html)]
+  * *International Journal of Engineering Education* - Volume 41, Issue 4, pp. 872-888 - Special Issue for Capstone Design
   * **Mitchell Gerhardt**, Mayar Madboly, Nicole Pitterson, Emily Dringenberg, and Benjamin Ahn
 
-* **Improving Engineering Education GAI Qualitative Research Workflow Quality: Techniques and Documentation Strategies** (Submitted)
+* **Improving Engineering Education GAI Qualitative Research Workflow Quality: Techniques and Documentation Strategies** (In Review)
   * *Studies in Engineering Education* - Special Issue on GAI in Methods
   * **Mitchell Gerhardt** and Andrew Katz
 
-* **Decade-Long Analysis of Skills in Mechanical Engineering Job Advertisements 2010-2022** (In Preparation)
-  * Targeting: ASME
+* **Decade-Long Analysis of Skills Across 1 Million Graduate-Level Job Advertisements** (Submitted)
+  * *Trends in Higher Education*
   * **Mitchell Gerhardt**, Shawn Sun, Andrew Katz, David Knight, Jessica Deters, Maura Borrego, Riya Budhathoki, and Herman Ronald Clements III
 
-* **Addictive GAI Use Among STEM Graduate Students: Dependency-Based Technological Diffusion** (In Preparation)
-  * Targeting: Computers & Education: AI
-  * **Mitchell Gerhardt** and Andrew Katz
+* **Toward Reflexive LLM-Infused Research: A Visual Guide for Qualitative Researchers Using LLMs** (In Preparation)
+  * *International Journal of Qualitative Methods* - Special Issue on Artificial Intelligence in the Analysis of Qualitative Data
+  * **Mitchell Gerhardt**, Kylee Shiekh, and Andrew Katz
+
+* **Voice or Speech? Fifty Years of Transcription and the Rise of AI-Based Transcription Systems** (In Preparation)
+  * *International Journal of Qualitative Methods* - Special Issue on Digital Transformation in Qualitative Research
+  * **Mitchell Gerhardt**, Alex Werth, and Soyeon Kim
 
 * **Using Generative Text Models to Create Qualitative Codebooks for Student Evaluations of Teaching** (November 2024) [[Paper](https://doi.org/10.1177/16094069241293283)]
   * *International Journal of Qualitative Methods* - Volume 23
@@ -68,21 +72,33 @@ Journal Publications
 
 Peer-Reviewed Conference Publications
 ======
-* **It's like "X": How Engineering Faculty Metaphors Construct (and Constrain) GAI Understanding in Engineering Education** (Accepted)
-  * *2026 ASEE Annual Conference & Exposition*
+* **What is Appropriate AI Use? Perceptions of Addictive AI Use Among STEM Graduate Student Coders** (Submitted)
+  * *58th ACM Technical Symposium on Computer Science Education (SIGCSE TS-2027)*
+  * **Mitchell Gerhardt**, Sara Hooshangi, and Andrew Katz
+
+* **The Jagged Edge of Adoption: Comparing GenAI Adoption Between Coding and Non-Coding STEM Graduate Students** (Submitted)
+  * *Symposium on Educational Advances in Artificial Intelligence (EAAI-27)*
+  * **Mitchell Gerhardt**, Sara Hooshangi, Sanmay Das, and Andrew Katz
+
+* **Mechanical Engineering Students' Perspectives on Career Goals, Skills, and Industry** (Accepted)
+  * *36th Australasian Association for Engineering Education Annual Conference* - October 2026
+  * Herman Ronald Clements III, Jessica Deters, **Mitchell Gerhardt**, Shawn Sun, David Knight, Maura Borrego, Andrew Katz, and Riya Budhathoki
+
+* **Understanding the Master's Engineering Workforce Landscape: Employer Demands and Student Goals** (June 2026)
+  * *2026 ASEE Annual Conference & Exposition* - Charlotte, NC
+  * Herman Ronald Clements III, **Mitchell Gerhardt**, Shawn Sun, Riya Budhathoki, Maura Borrego, Jessica Deters, Andrew Katz, and David Knight
+
+* **It's like "X": How Engineering Faculty Metaphors Construct (and Constrain) GAI Understanding in Engineering Education** (June 2026)
+  * *2026 ASEE Annual Conference & Exposition* - Charlotte, NC
   * **Mitchell Gerhardt**, Kylee Shiekh, Andrew Katz, and Benjamin Chaback
-
-* **WIP: Unpacking Mechanical Engineering Students' Career Goals, Skill Development, and Perspectives on Industry** (Accepted)
-  * *2026 Frontiers in Education Conference*
-  * Herman Ronald Clements III, **Mitchell Gerhardt**, Jessica Deters, Shawn Sun, David Knight, Maura Borrego, Andrew Katz, and Riya Budhathoki
-
-* **Understanding the Master's Engineering Workforce Landscape: Employer Demands and Student Goals** (Accepted)
-  * *2026 ASEE Annual Conference & Exposition*
-  * Herman Ronald Clements III, Riya Budhathoki, **Mitchell Gerhardt**, Jessica Deters, Shawn Sun, David Knight, Maura Borrego, and Andrew Katz
 
 * **When Can GAI be Used Anyway? An Analysis of Engineering Faculty's Generative AI Policies** (Under Revision)
   * *2026 ASEE Annual Conference & Exposition*
   * Benjamin Chaback, **Mitchell Gerhardt**, Andrew Katz, and Kylee Shiekh
+
+* **Inside the Mental Models: Instructor's Conceptions on Generative Artificial Intelligence** (May 2026)
+  * *2026 ASEE STL Conference* - Ithaca, NY
+  * Kylee Shiekh, Benjamin Chaback, **Mitchell Gerhardt**, and Andrew Katz
 
 * **Automated Analysis of Knowledge Types in Computer Science Textbooks: A Natural Language Processing Approach to Understanding Epistemic Climate** (June 2025) [[Paper](https://peer.asee.org/55491)]
   * *2025 ASEE Annual Conference & Exposition* - Montreal, QC, Canada
@@ -105,8 +121,8 @@ Research Experience
 * August 2025 - Present: **Research Assistant**
   * [Department of Engineering Education](https://enge.vt.edu/), Virginia Tech, Blacksburg, VA
   * [NSF Award #2339702](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2339702&HistoricalAwards=false): "CAREER: Minds and Machines: Exploring Engineering Faculty Member Mental Models of Generative AI and Instructional Decisions"
-  * Examining sociotechnical dimensions of GAI adoption in STEM higher education workplace contexts using mental model theory and Theory of Planned Behavior (TPB)
-  * Conducting qualitative interviews with faculty to understand how perceptions of GAI shape instructional decisions, assessment practices, and workplace norms around GAI use
+  * Examining sociotechnical dimensions of GenAI adoption in STEM higher education workplace contexts using mental model theory and Theory of Planned Behavior (TPB)
+  * Conducting qualitative interviews with faculty to understand how perceptions of GenAI shape instructional decisions, assessment practices, and workplace norms around GenAI use
   * Applying ethnomethodological and symbolic interactionist frameworks to analyze epistemic cultures and expertise recognition in AI-mediated educational environments
   * Developing LLM-based qualitative workflows to scale aspects of qualitative data analysis and make them available to fellow researchers
 
@@ -143,10 +159,10 @@ Research Experience
 
 * May 2025 - Present: **Principal Investigator, Graduate Student Survey Research**
   * Multi-institutional, Ithaca, NY
-  * IRB-approved multi-institutional study examining STEM graduate students' GAI use patterns
-  * Designed and distributed Qualtrics survey across a few universities collecting 100+ responses examining nuanced patterns of GAI adoption beyond reductive "cheating" narratives
+  * IRB-approved multi-institutional study examining STEM graduate students' GenAI use patterns
+  * Designed and distributed Qualtrics survey across a few universities collecting 100+ responses examining nuanced patterns of GenAI adoption beyond reductive "cheating" narratives
   * Applying mixed methods approach combining descriptive statistics, correlation analyses, demographic studies, and planned qualitative interviews
-  * Investigating workplace socialization processes, community norms around GAI use, and shifting definitions of legitimate expertise in graduate education contexts
+  * Investigating workplace socialization processes, community norms around GenAI use, and shifting definitions of legitimate expertise in graduate education contexts
 
 Professional Experience
 ======
@@ -190,13 +206,13 @@ Grants & Awards
   * Applying synthetic data to study feedback literacy in design studios and facilitated dialogues about research group culture and inclusion
   * Publicly archiving all synthetic audio, generation parameters, and evaluation results in Cornell CSSR Data & Reproduction Archive for reproducible research across institutions
   * Positions research program for larger NSF/NIH proposals by demonstrating technical feasibility of computational methods in engineering education research
+  * See the Transcription page for our paper! 
 
-* Fall 2025: **Co-Facilitator**
+* Fall 2025: **Selected Participant**
   * **Fulbright Brazil International Collaboration**
   * Virginia Tech and Brazilian Universities Partnership
-  * Selected by Fulbright Brazil with advisor and VT colleagues for intensive 3-day faculty development program examining GAI adoption in higher education workplace contexts
-  * Presented to 80+ engineering faculty from dozens of Brazilian universities on sociotechnical dimensions of GAI integration: technical fundamentals, assessment transformation, ethics, institutional policy development, faculty-student relationship dynamics
-  * Served as technical expert and instructional designer facilitating cross-cultural dialogue about workplace technology adoption and organizational change
+  * Selected by Fulbright Brazil with advisor and VT colleagues to design and deliver a faculty development program examining GenAI adoption in higher education workplace contexts
+  * Delivered as a two-part workshop series: São Paulo, Brazil (September 2025) and Arlington, VA (May 2026) — see Teaching Experience
 
 * 2025: **Nominee**, Google PhD Fellowship in Human-Computer Interaction
   * Nominated by Virginia Tech for national fellowship
@@ -206,9 +222,16 @@ Grants & Awards
 
 Projects
 ======
+* **Presentation Maker (`pres`)** (April 2026 - Present) [[Code](https://github.com/mitchg10/pres)]
+  * Python CLI that scaffolds, previews, and exports Quarto RevealJS presentations and 24x36-inch academic posters for the IDEEAS Lab
+  * Built an interactive wizard (Typer, questionary, Pydantic) that generates decks from brand-themed templates and reusable partials, with department-specific logos and color palettes driven by a single brand configuration file
+  * Developed a Playwright-based capture pipeline (`pres shot`) that screenshots slides, fragment reveals, timed animation frames, and contact sheets, paired with an automated report flagging content overflow, console errors, and failed requests, allowing coding agents to visually verify slide edits
+  * Implemented single-file export that inlines reveal.js, fonts, images, and CDN libraries into a self-contained HTML deck presentable without internet access
+  * Added LAN preview with QR code for phone and tablet review, PDF export, and a pytest suite with GitHub Actions CI for packaging and CLI checks
+
 * **Ducky** (Fall 2025)
   * AI-powered software developer assistant built with Streamlit providing intelligent development support through specialized features for CS 5740: AI Tools for Software Engineers
-  * Developed ReAct-pattern agent system with sandboxed tool execution capabilities, enabling GAI agents to autonomously perform file operations, code editing, and multi-step task completion with security through path validation
+  * Developed ReAct-pattern agent system with sandboxed tool execution capabilities, enabling GenAI agents to autonomously perform file operations, code editing, and multi-step task completion with security through path validation
   * Implemented dual interface architecture: rich web interface with Monaco editor integration and CLI interface, supporting persona-based agent behaviors across software development roles (planning, development, QA, operations)
   * Integrated RAG (Retrieval Augmented Generation) using local sentence-transformers for offline-capable document queries and comprehensive LLM integration with OpenAI-compatible APIs supporting function calling and streaming responses
   * Built with modern Python tooling including uv for dependency management, demonstrating full-stack development skills including async programming, state management, UI/UX design, and secure tool execution patterns
@@ -260,21 +283,30 @@ Service
 
 Invited Talks, Workshops, and Presentations
 ======
-* (Planned) March 2026: **Workshop**, *Virginia Tech Graduate Instructors*
-  * Initiated and lead a three-student group to organize a workshop for Virginia Tech graduate instructors about GAI course policies
-  * Addressing a critical need through participatory instruction and activities that promote GAI literacy
-  * Received IRB approval to study the workshop's implementation and effectiveness, with plans to publish results
-  * Leveraging networks and existing partnerships with the Graduate Honor System (GHS), the Center for Excellence in Teaching and Learning (CETL), the center for Technology-Enhanced Learning and Online Strategies (TLOS), and departmental leadership to host and market the event
+* June 2026: **Conference Presentation**, *2026 ASEE Annual Conference*, Charlotte, NC [[Slides](https://mitchgerhardt.com/slides/asee-2026/)]
+  * "It's like 'X': How Engineering Faculty Metaphors Construct (and Constrain) GAI Understanding in Engineering Education" - examining how the metaphors engineering faculty reach for shape what they take GenAI to be, and what those framings foreclose
+
+* June 2026: **Panelist**, *2026 ASEE Annual Conference*, Charlotte, NC
+  * "Impact of Generative AI Applications on Current Doctoral Practices and Implications for the Future" - panel discussion on how GenAI is reshaping doctoral research practices, advising relationships, and disciplinary norms
+
+* May 2026: **Conference Poster**, *2026 NY Upstate DBER Conference*, Cornell University [[Poster](/files/2026-nyber-conf.pdf)]
+  * "Doomed by Design: The Moving Target Paradox of Faculty AI Development" - arguing that faculty developers encounter such varied backgrounds, access levels, institutional policies, and attitudes toward AI that broadly applicable guidance becomes untenable, requiring context-specific approaches instead
+
+* March 2026: **Workshop**, *Virginia Tech Graduate Instructors*
+  * Initiated and led a three-student group to organize a workshop for Virginia Tech graduate instructors about GenAI course policies
+  * Addressed a critical need through participatory instruction and activities that promote GenAI literacy
+  * Received IRB approval to study the workshop's implementation and effectiveness; analysis of results is ongoing
+  * Leveraged networks and existing partnerships with the Graduate Honor System (GHS), the Center for Excellence in Teaching and Learning (CETL), the center for Technology-Enhanced Learning and Online Strategies (TLOS), and departmental leadership to host and market the event
 
 * February 2026: **Guest Lecturer**, *GRAD 5004: Graduate Teaching Assistant Workshop*, Virginia Tech (Dr. Kevin Eager)
-  * "Scholarly Ethics" presentation to in-coming GTAs at Virginia Tech, addressing topics like academic and professional integrity, the VT Undergraduate and Graduate Honor Systems, GTA integrity responsibilities, GAI use, and contemporary literature about cheating
+  * "Scholarly Ethics" presentation to in-coming GTAs at Virginia Tech, addressing topics like academic and professional integrity, the VT Undergraduate and Graduate Honor Systems, GTA integrity responsibilities, GenAI use, and contemporary literature about cheating
 
 * December 2025: **Guest Lecturer**, *ECE Graduate Student Seminar*, University of Pittsburgh
   * "AI Research Ethics in Engineering Education" co-presented with Andrew Katz to ECE graduate students examining ethical dimensions of AI research in educational contexts
 
 * November 2025: **Guest Lecturer**, *ME 397/379M Qualitative Research Methods*, University of Texas at Austin (Dr. Maura Borrego)
   * "Large Language Models in Qualitative Engineering Education Research: Technical Methods and Methodological Considerations"
-  * Examined human vs. machine pattern recognition, current GAI approaches for qualitative research, researcher positionality, translational challenges, and shifting definitions of "intelligence"
+  * Examined human vs. machine pattern recognition, current GenAI approaches for qualitative research, researcher positionality, translational challenges, and shifting definitions of "intelligence"
   * Addressed methodological questions about computational approaches to qualitative work and implications for research practice
   * Instructor feedback: "Students were honestly blown away...for many of them it was the highlight of the semester"
 
@@ -286,7 +318,7 @@ Invited Talks, Workshops, and Presentations
   * "Beyond Calculations: Engineering Judgment as Epistemic Cognition in Engineering Education" - arguing for greater psychological interrogation of "engineering judgment"
 
 * May 2025: **Invited Student**, *Board of Visitors*, Virginia Tech
-  * Discussed research on GAI adoption in higher education and ongoing projects examining workplace technology integration with university leadership
+  * Discussed research on GenAI adoption in higher education and ongoing projects examining workplace technology integration with university leadership
 
 * June 2024: **Panelist**, *2024 Capstone Design Conference*
   * Panel discussion examining teamwork dynamics and collaborative practices in capstone engineering workplace contexts
@@ -302,6 +334,19 @@ Invited Talks, Workshops, and Presentations
 
 Teaching Experience
 ======
+* May 2026: **Co-Facilitator**, *Fulbright Brazil Workshop (Part 2): Getting Dirty with Generative AI*
+  * Virginia Tech Arlington Campus, Arlington, VA (May 18-21, 2026)
+  * Second half of a two-part Fulbright Brazil series cultivating AI literacy among Brazilian engineering faculty, trading lecture-style instruction and short breakouts for prolonged discussion and collaboration so participants left with actionable, specific AI supports for their own courses and institutions
+  * Led three sessions: "AI Capabilities Update: What's Changed Since Fall 2025," "Pedagogy Challenges in the AI Era: Apply-Then-Consult," and "What Could Go Wrong: Implementation Reality Check"
+  * Developed the workshop's through-line, the "Moving Target Paradox," accounting for contextual variation across access and infrastructure, institutional AI policy, teaching context and class size, and faculty beliefs and habits
+  * Presented the resulting analysis as a poster at the 2026 NY Upstate DBER Conference at Cornell University
+
+* September 2025: **Co-Facilitator**, *Fulbright Brazil Workshop: Innovating Engineering Education with Generative AI*
+  * INOVA.USP, Campus da Cidade Universitária, São Paulo, Brazil (September 23-25, 2025)
+  * Intensive three-day faculty development program examining GenAI adoption in higher education workplace contexts, delivered with Dr. Andrew Katz and Dr. Dayoung Kim
+  * Presented to 80+ engineering faculty from dozens of Brazilian universities on sociotechnical dimensions of GenAI integration: technical fundamentals, assessment transformation, ethics, institutional policy development, and faculty-student relationship dynamics
+  * Served as technical expert and instructional designer facilitating cross-cultural dialogue about workplace technology adoption and organizational change
+
 * August 2021 - June 2023: **Academic Tutor**
   * Big Brothers Big Sisters of Metropolitan Detroit, Detroit, MI
   * Helped create and support mission for one-on-one mentoring sessions and academic assistance

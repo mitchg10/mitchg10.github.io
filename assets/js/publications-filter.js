@@ -14,6 +14,34 @@
       .replace(/&gt;/g, '>');
   }
 
+  function escapeAttr(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/"/g, '&quot;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+  }
+
+  // Mirrors _includes/resource-links.html, driven by the same _data/resource_links.yml spec.
+  function buildResourceLinks(pub) {
+    const specs = Array.isArray(window.resourceLinkSpecs) ? window.resourceLinkSpecs : [];
+    const resources = pub.resources || {};
+
+    const anchors = specs
+      .map(function (spec) {
+        const url = resources[spec.field];
+        if (!url) return '';
+        const classes = ['btn', spec.class, 'btn--small'].filter(Boolean).join(' ');
+        return `<a href="${escapeAttr(decodeHtml(url))}" class="${classes}" target="_blank" rel="noopener noreferrer">` +
+          `<i class="${escapeAttr(spec.icon)}" aria-hidden="true"></i> ${spec.label}` +
+          `<span class="screen-reader-text"> (opens in a new tab)</span></a>`;
+      })
+      .filter(Boolean)
+      .join('');
+
+    return anchors ? `<div class="resource-links">${anchors}</div>` : '';
+  }
+
   function buildCard(pub) {
     const title = decodeHtml(pub.title);
     const author = decodeHtml(pub.author);
@@ -48,6 +76,7 @@
           </p>
           ${summary ? `<p class="pub-card-summary">${summary}</p>` : ''}
           ${tagHtml ? `<p class="pub-tags">${tagHtml}</p>` : ''}
+          ${buildResourceLinks(pub)}
         </article>
       </div>`;
   }

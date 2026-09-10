@@ -306,6 +306,14 @@ nodes:
     projects:
       - "Peer collaboration and mentorship"
 
+  - id: cornell-dber-postdocs
+    label: "Cornell DBER Postdoctoral Researchers"
+    shortLabel: "DBER Postdocs"
+    role: "Postdoctoral Cohorts · VT DBER"
+    type: person
+    projects:
+      - "Peer collaboration and mentorship"
+
   # PERSONS — VT Computer Science
   - id: sara-hooshangi
     label: "Dr. Sara Hooshangi"
@@ -314,7 +322,7 @@ nodes:
     type: person
     projects:
       - "MS master's advisor"
-      - "Active research on HCI and student-AI interactionsa"
+      - "Active research on HCI and student-AI interactions"
 
   - id: sanmay-das
     label: "Dr. Sanmay Das"
@@ -323,6 +331,7 @@ nodes:
     type: person
     projects:
       - "MS master's committee member"
+      - "Jointly investigating different student-AI interactions patterns for coders vs. non-coders"
 
   # PERSONS — VT Other
   - id: peter-doolittle
@@ -615,6 +624,7 @@ links:
   - { source: maggie-webb, target: beears-group }
   - { source: campbell-mccolley, target: beears-group }
   - { source: cornell-dber-grads, target: cornell-cder }
+  - { source: cornell-dber-postdocs, target: cornell-cder }
 
   # External persons
   - { source: jessica-deters, target: unl }

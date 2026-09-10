@@ -425,6 +425,16 @@ National Science Foundation
 %-----------------------------------------------------------------------------------------------
 \begin{rSection}{Projects}
 
+% Presentation Maker CLI
+{\bf Presentation Maker (pres)}{\hspace{2em} [\href{https://github.com/mitchg10/pres}{Code}]} \hfill {Apr., 2026 - Present} \\
+Python CLI that scaffolds, previews, and exports Quarto RevealJS presentations and 24$\times$36 inch academic posters for the IDEEAS Lab
+\begin{cvitems}
+    \item Built an interactive wizard (Typer, questionary, Pydantic) that generates decks from brand-themed templates and reusable partials, with department-specific logos and color palettes driven by a single brand configuration file
+    \item Developed a Playwright-based capture pipeline that screenshots slides, fragment reveals, timed animation frames, and contact sheets, paired with an automated report flagging content overflow, console errors, and failed requests, allowing coding agents to visually verify slide edits
+    \item Implemented single-file export that inlines reveal.js, fonts, images, and CDN libraries into a self-contained HTML deck presentable without internet access
+    \item Added LAN preview with QR code for phone and tablet review, PDF export, and a pytest suite with GitHub Actions CI for packaging and CLI checks
+\end{cvitems}
+
 % Ducky AI Assistant
 {\bf Ducky}{\hspace{2em}} \hfill {Fall, 2025} \\
 AI-powered software developer assistant built with Streamlit providing intelligent development support through specialized features for CS 5740: AI Tools for Software Engineers

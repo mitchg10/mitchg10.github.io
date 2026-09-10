@@ -1,0 +1,22 @@
+{%- comment -%}
+  Discreet footnote disclosing that on-page summaries are LLM-drafted.
+
+  Usage, mirroring _includes/resource-links.html:
+    {% include ai-summary-note.html item=page %}
+
+  Renders only when the item sets `ai_summary: true`, applied per collection in
+  the _config.yml `defaults:` block (publications, talks, teaching). Any single
+  page can opt out with `ai_summary: false` in its own frontmatter.
+
+  Emits nothing at all — not even whitespace — otherwise, so pages without the
+  flag are byte-for-byte untouched. This matters because _layouts/single.html
+  is shared with _posts, _pages and _portfolio, which do not disclose.
+{%- endcomment -%}
+{%- assign item = include.item -%}
+{%- if item.ai_summary -%}
+{%- include base_path -%}
+<aside class="ai-note" role="note">
+  <h2 class="ai-note__title">A note on these summaries</h2>
+  <p>Some summaries and descriptions on this site were drafted with a language model then checked by me. That said, I tend to avoid using them for the papers themselves (i.e., for publication writing), and have many opinions about why. Happy to share if you're interested! <a href="{{ base_path }}/contact/">Get in touch</a>.</p>
+</aside>
+{%- endif -%}
