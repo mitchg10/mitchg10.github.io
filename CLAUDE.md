@@ -232,7 +232,7 @@ Any item in **any** collection (publications, talks, teaching, portfolio, posts)
 can attach resource links purely through frontmatter — no layout edits:
 
 ```yaml
-slidesurl: "https://mitchg10.github.io/slides/<slug>/"
+slidesurl: "https://mitchgerhardt.com/slides/<slug>/"
 paperurl:  "https://doi.org/..."
 posterurl: "/files/poster.pdf"
 codeurl:   "https://github.com/..."
@@ -281,9 +281,18 @@ Styling lives in `_sass/layout/_buttons.scss` (`.resource-links` flex row).
 The decks themselves live in `mitchg10/presentations` and are published as
 single self-contained HTML files (via its `build-slides.sh`) to the separate
 `mitchg10/slides` GitHub Pages repo — deliberately kept out of this repo so the
-Jekyll build stays fast and the site stays small. **That repo does not exist
-yet**, so `_talks/2027-06-23-asee-like-X.md` keeps its `slidesurl` commented
-out; uncomment it once the deck is actually published, or the button 404s.
+Jekyll build stays fast and the site stays small. That repo is live, and each
+deck is served at its own slug: `https://mitchgerhardt.com/slides/<slug>/`. Use
+that custom domain rather than `mitchg10.github.io/slides/<slug>/` — both
+resolve, but the former matches `site.url` and the rest of the site's links.
+
+There is **no index at `/slides/`** (it 404s) and no build-time check that a
+`slidesurl` points at something real, so a deck that hasn't been published yet
+produces a button that 404s on click. Verify before adding one:
+
+```bash
+curl -s -o /dev/null -w "%{http_code}\n" https://mitchgerhardt.com/slides/<slug>/
+```
 
 ### AI Summary Disclosure
 
