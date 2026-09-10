@@ -8,4 +8,4 @@ date: 2026-02-01
 location: "Blacksburg, VA"
 ---
 
-Presentation to incoming GTAs at Virginia Tech, addressing topics like academic and professional integrity, the VT Undergraduate and Graduate Honor Systems, GTA integrity responsibilities, GAI use, and contemporary literature about cheating.
+Presentation to incoming GTAs at Virginia Tech, addressing topics like academic and professional integrity, the VT Undergraduate and Graduate Honor Systems, GTA integrity responsibilities, GenAI use, and contemporary literature about cheating.

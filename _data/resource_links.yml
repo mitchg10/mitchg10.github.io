@@ -1,0 +1,41 @@
+# Resource links attachable to any collection item's front matter.
+#
+# Add any of these fields to a publication, talk, teaching, portfolio or post
+# file and a button is rendered automatically on both its detail page and its
+# listing card. No layout edits required.
+#
+# Consumed by:
+#   - _includes/resource-links.html  (Liquid, all detail pages + listing cards)
+#   - _pages/publications.html       (serializes these fields into window.publicationsData)
+#   - assets/js/publications-filter.js (renders the same buttons in JS-built cards)
+#
+# Order here is the order buttons appear. Adding a resource type = one entry here.
+#
+# Every button opens in a new tab (target="_blank" rel="noopener noreferrer") with a
+# visually hidden "(opens in a new tab)" cue. Slide decks in particular are
+# self-contained Reveal pages with no way back to this site; the same reasoning
+# applies to the off-site papers and files behind the other fields. Both renderers
+# above emit this unconditionally — there is no per-entry opt-out.
+
+- field: slidesurl
+  label: View Slides
+  icon: fa-solid fa-display
+  class: btn--primary
+- field: paperurl
+  label: Read Paper
+  icon: fa-solid fa-file-lines
+- field: posterurl
+  label: Poster
+  icon: fa-solid fa-image
+- field: codeurl
+  label: Code
+  icon: fa-brands fa-github
+- field: videourl
+  label: Video
+  icon: fa-solid fa-video
+- field: bibtexurl
+  label: BibTeX
+  icon: fa-solid fa-quote-right
+- field: link
+  label: Direct Link
+  icon: fa-solid fa-arrow-up-right-from-square

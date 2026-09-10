@@ -226,6 +226,161 @@ After modifying `_config.yml`, restart Jekyll server (changes not auto-reloaded)
 
 For all other files (markdown, layouts, includes), Jekyll live reload applies changes automatically.
 
+### Attaching Slides and Other Resources to Any Item
+
+Any item in **any** collection (publications, talks, teaching, portfolio, posts)
+can attach resource links purely through frontmatter — no layout edits:
+
+```yaml
+slidesurl: "https://mitchgerhardt.com/slides/<slug>/"
+paperurl:  "https://doi.org/..."
+posterurl: "/files/poster.pdf"
+codeurl:   "https://github.com/..."
+videourl:  "https://..."
+bibtexurl: "/files/ref.bib"
+link:      "https://..."
+```
+
+Each field present renders a button; slides gets the theme accent
+(`.btn--primary`), the rest are plain `.btn`. Items declaring none of these
+fields emit nothing at all — not even whitespace.
+
+**Every resource button opens in a new tab** (`target="_blank"
+rel="noopener noreferrer"`) with a hidden `.screen-reader-text` "(opens in a new
+tab)" cue. Published decks are self-contained Reveal pages that capture the
+browser and offer no way back to the site; the other fields point off-site or at
+a file. This is unconditional — there is no per-entry opt-out. Slide links written
+inline in body copy need the same treatment by hand, via a kramdown span IAL:
+`[Deck](url){:target="_blank" rel="noopener noreferrer"}` (see
+`_teaching/2026-05-fulbright-dc.md`).
+
+**The single source of truth is `_data/resource_links.yml`.** To add a new
+resource type, add one entry there (field, label, Font Awesome icon, optional
+class); nothing else needs editing. The order in that file is the button order.
+
+Three consumers read that spec:
+- `_includes/resource-links.html` — the shared renderer. Call it as
+  `{% include resource-links.html item=page %}` on detail pages, or
+  `{% include resource-links.html item=post size="small" %}` on listing cards.
+  It relies on Jekyll document drops supporting dynamic key lookup
+  (`item[spec.field]`), which is verified working.
+- `_pages/publications.html` — serializes the fields into
+  `window.publicationsData[].resources` and emits the spec list as
+  `window.resourceLinkSpecs`.
+- `assets/js/publications-filter.js` — `buildResourceLinks()` mirrors the Liquid
+  include for the JS-rendered publication cards. **The publications index hides
+  the static Liquid list once JS runs, so a change to the include alone is
+  invisible there** — both halves must stay in sync, which is why they share the
+  data file.
+
+Buttons are suppressed on related-post grid cards (`include.type == "grid"` in
+`_includes/archive-single.html`), where they would be noise.
+
+Styling lives in `_sass/layout/_buttons.scss` (`.resource-links` flex row).
+
+The decks themselves live in `mitchg10/presentations` and are published as
+single self-contained HTML files (via its `build-slides.sh`) to the separate
+`mitchg10/slides` GitHub Pages repo — deliberately kept out of this repo so the
+Jekyll build stays fast and the site stays small. That repo is live, and each
+deck is served at its own slug: `https://mitchgerhardt.com/slides/<slug>/`. Use
+that custom domain rather than `mitchg10.github.io/slides/<slug>/` — both
+resolve, but the former matches `site.url` and the rest of the site's links.
+
+There is **no index at `/slides/`** (it 404s) and no build-time check that a
+`slidesurl` points at something real, so a deck that hasn't been published yet
+produces a button that 404s on click. Verify before adding one:
+
+```bash
+curl -s -o /dev/null -w "%{http_code}\n" https://mitchgerhardt.com/slides/<slug>/
+```
+
+### AI Summary Disclosure
+
+Publication, talk, and teaching pages carry a discreet footnote disclosing that
+their summaries and descriptions are LLM-drafted and human-checked, with a link
+to `/contact/`.
+
+The note is rendered by `_includes/ai-summary-note.html` and is **config-driven,
+not hard-coded in a layout**. It renders only when a page has `ai_summary: true`,
+which is set per collection in the `defaults:` block of `_config.yml` for
+`publications`, `talks`, and `teaching`.
+
+Two consequences worth knowing:
+
+- To add or remove a whole collection from the disclosure, edit `_config.yml` —
+  don't touch the layouts. To exempt one page, set `ai_summary: false` in its own
+  frontmatter.
+- The flag (rather than the layout) is what scopes the note, because
+  `_layouts/single.html` is shared by `_posts`, `_pages`, `_portfolio`, and
+  `_teaching`. Only `_teaching` sets the flag, so the others render nothing —
+  the include emits no output at all, not even whitespace, when the flag is absent.
+
+The include is called from all three layouts (`publication.html`, `talk.html`,
+`single.html`) as the last element inside `<section class="page__content">`.
+Styling lives in `_sass/layout/_ai-note.scss` (imported from
+`assets/css/main.scss`), deliberately quieter than the `.notice--*` family and
+themed via the `--global-*` custom properties so dark mode needs no extra rules.
+
+`llms.txt` carries the machine-readable counterpart of the same disclosure —
+keep the two in sync if the wording changes.
+
+Note that `_config.yml` changes are not picked up by `--watch`; restart the server.
+
+### Masking Summary Sections on Unpublished Publications
+
+A publication that is in submission or under review can withhold individual
+summary sections from its rendered page while keeping the prose in the file,
+ready to reveal on acceptance. List the field names in its frontmatter:
+
+```yaml
+masked_sections:
+  - key_findings
+  - implications
+```
+
+A masked section emits nothing at all — no heading, no placeholder — so it looks
+exactly like a field that was never filled. Most publications have no
+`masked_sections`; omit the field rather than writing an empty list.
+
+**The single source of truth is `_data/publication_sections.yml`**, which defines
+what sections exist, their order on the page, their headings, and their render
+type (`prose`, `list`, `tags`). The `field:` values there are also the only valid
+entries in `masked_sections` — a name not in that file masks nothing and fails
+silently, with no build error. To add or reorder a section, edit that file alone.
+
+Two consumers read the spec:
+
+- `_includes/publication-sections.html` — the renderer, called from
+  `_layouts/publication.html` as
+  `{% include publication-sections.html item=page %}`. It is deliberately
+  generic (`item=`, not `page.`), so `talk.html` / `single.html` could adopt it
+  if those collections ever grow structured summaries.
+- `_pages/publications.html` — applies the mask to `plain_language_summary`
+  when serializing `window.publicationsData`, so a masked summary also drops the
+  blurb from the card on `/publications/`.
+
+Unlike the resource-links pattern, **`assets/js/publications-filter.js` needs no
+masking logic** — it consumes the already-masked value and its existing
+`${summary ? … : ''}` guard renders no `.pub-card-summary` for an empty string.
+There is no duplicated half to keep in sync here.
+
+One asymmetry by design: masking `tags` hides only the detail page's Tags
+section. The index cards' keyword pills and the Topic dropdown are built from the
+tag union in `getUniqueTags()`, so the paper stays filterable — silently dropping
+it from topic navigation would be worse than the inconsistency.
+
+**This is not an embargo.** `_publications/*.md` is public in this repo, so
+masking hides prose from the rendered site, not from github.com. It is the right
+tool for not advertising unreviewed findings; genuinely sensitive text should be
+left out of the file entirely.
+
+The `paper-yaml-formatter` skill treats masking as an approval gate — it offers
+`key_findings` + `implications` for papers whose citation reads `(Submitted)` or
+`(In Press)`, and never masks silently.
+
+`_data/*.yml` changes do require a rebuild, but `--watch` picks them up; only
+`_config.yml` needs a restart.
+
 ### Modifying Navigation
 
 Edit `_data/navigation.yml` to add/remove header menu items. Order in file determines display order.

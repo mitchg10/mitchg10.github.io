@@ -6,6 +6,7 @@ permalink: /talks/2026-06-23-asee-like-X
 venue: "2026 ASEE Annual Conference & Exposition"
 date: 2026-06-23
 location: "Charlotte, NC"
+slidesurl: "https://mitchgerhardt.com/slides/asee-2026/"
 ---
 
 Presenting work examining the figurative language used to describe "AI" from engineering instructors from Spring 2025. Findings revealed wide variety in conceptualizations of AI, raising the imperative for faculty developers to work as "translators" between meaning-making systems. 

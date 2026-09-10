@@ -8,4 +8,4 @@ date: 2025-05-01
 location: "Blacksburg, VA"
 ---
 
-Discussed research on GAI adoption in higher education and ongoing projects examining workplace technology integration with university leadership.
+Discussed research on GenAI adoption in higher education and ongoing projects examining workplace technology integration with university leadership.

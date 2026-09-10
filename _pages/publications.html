@@ -107,6 +107,15 @@ author_profile: true
 window.publicationsData = [
   {% for post in site.publications reversed %}
   {% assign clean_tags = post.tags | where_exp: "t", "t != ''" %}
+  {% comment %}
+    A publication in submission may withhold its summary via `masked_sections:`
+    (see _data/publication_sections.yml). Mask it here rather than in the JS, so
+    the card blurb disappears along with the detail-page section.
+  {% endcomment %}
+  {% assign card_summary = "" %}
+  {% unless post.masked_sections contains "plain_language_summary" %}
+    {% assign card_summary = post.plain_language_summary | default: "" %}
+  {% endunless %}
   {
     "title": {{ post.title | jsonify }},
     "author": {{ post.author | jsonify }},
@@ -117,9 +126,12 @@ window.publicationsData = [
     "url": {{ post.url | jsonify }},
     "citation": {{ post.citation | default: "" | jsonify }},
     "tags": {{ clean_tags | jsonify }},
-    "plain_language_summary": {{ post.plain_language_summary | default: "" | jsonify }}
+    "plain_language_summary": {{ card_summary | jsonify }},
+    "resources": { {% for spec in site.data.resource_links %}{{ spec.field | jsonify }}: {{ post[spec.field] | default: "" | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %} }
   }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ];
+// Same spec list the Liquid include uses, so JS-built cards cannot drift out of sync.
+window.resourceLinkSpecs = {{ site.data.resource_links | jsonify }};
 </script>
 <script src="{{ base_path }}/assets/js/publications-filter.js"></script>

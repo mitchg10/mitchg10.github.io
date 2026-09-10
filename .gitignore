@@ -22,5 +22,9 @@ package-lock.json
 # pycache
 __pycache__/
 
+# Claude Code local state (skills in .claude/skills/ are tracked)
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+
 # Files
 files/

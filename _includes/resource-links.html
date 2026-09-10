@@ -1,0 +1,28 @@
+{%- comment -%}
+  Renders a button row for whichever resource fields an item declares.
+
+  Spec list lives in _data/resource_links.yml — add a field there, not here.
+
+  Usage:
+    {% include resource-links.html item=page %}                 detail pages
+    {% include resource-links.html item=post size="small" %}    listing cards
+
+  Emits nothing at all — not even whitespace — when the item declares none of
+  the fields, so items without resources are byte-for-byte untouched.
+{%- endcomment -%}
+{%- assign item = include.item -%}
+{%- capture resource_links_html -%}
+  {%- for spec in site.data.resource_links -%}
+    {%- assign resource_url = item[spec.field] -%}
+    {%- if resource_url and resource_url != "" -%}
+      {%- capture resource_btn_class -%}
+        btn{% if spec.class %} {{ spec.class }}{% endif %}{% if include.size == 'small' %} btn--small{% endif %}
+      {%- endcapture -%}
+      <a href="{{ resource_url }}" class="{{ resource_btn_class }}" target="_blank" rel="noopener noreferrer"><i class="{{ spec.icon }}" aria-hidden="true"></i> {{ spec.label }}<span class="screen-reader-text"> (opens in a new tab)</span></a>
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign resource_links_present = resource_links_html | strip -%}
+{%- if resource_links_present != "" -%}
+<div class="resource-links">{{ resource_links_present }}</div>
+{%- endif -%}

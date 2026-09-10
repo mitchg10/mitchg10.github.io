@@ -1,0 +1,43 @@
+# Summary sections rendered on a publication detail page, in this order.
+#
+# Consumed by:
+#   - _includes/publication-sections.html  (renders the sections)
+#   - _pages/publications.html             (mask check when serializing card summaries)
+#
+# A publication may withhold any of these from the rendered page by listing its
+# `field` under `masked_sections:` in its own front matter — used for work that
+# is in submission or under review. A masked section vanishes entirely: no
+# heading, no placeholder. See CLAUDE.md.
+#
+# The `field` values here are the ONLY valid entries in `masked_sections`. A
+# name that does not appear below masks nothing and fails silently.
+#
+# Caveat worth knowing: masking `tags` hides only this page's Tags section. The
+# publications index still builds its keyword pills and Topic dropdown from the
+# tag union, so the paper stays filterable there by design.
+#
+# type: prose  -> <p>{{ value }}</p>
+#       list   -> <ol><li>…</li></ol>
+#       tags   -> linked .pub-tag pills
+
+- field: plain_language_summary
+  heading: Plain Language Summary
+  type: prose
+- field: contribution_summary
+  heading: Contribution
+  type: prose
+- field: research_questions
+  heading: Research Questions
+  type: list
+- field: methods
+  heading: Methods
+  type: prose
+- field: key_findings
+  heading: Key Findings
+  type: prose
+- field: implications
+  heading: Implications
+  type: prose
+- field: tags
+  heading: Tags
+  type: tags
