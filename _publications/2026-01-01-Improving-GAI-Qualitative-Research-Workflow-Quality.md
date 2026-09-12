@@ -5,8 +5,8 @@ collection: publications
 category: manuscripts
 permalink: /publication/2026-01-01-Improving-GAI-Qualitative-Research-Workflow-Quality
 date: 2026-06-02
-venue: 'Studied in Engineering Education - Special Issue on GAI in Methods'
-citation: 'Gerhardt, M., &amp; Katz, A. (Submitted). Improving Engineering Education GAI Qualitative Research Workflow Quality: Techniques and Documentation Strategies. Studied in Engineering Education.'
+venue: 'Studies in Engineering Education - Special Issue on GAI in Methods'
+citation: 'Gerhardt, M., &amp; Katz, A. (Submitted). Improving Engineering Education GAI Qualitative Research Workflow Quality: Techniques and Documentation Strategies. Studies in Engineering Education.'
 # paperurl: 'TBD'
 plain_language_summary: "AI chatbots like ChatGPT are increasingly used by qualitative researchers to help analyze interview and survey data, but there's no shared sense of what counts as doing this well. This paper works through the specific choices researchers make along the way (e.g., which model to use, how to phrase instructions, how much randomness to allow, how to check the AI's work), and explains why each shapes what a study ultimately finds. Rather than issuing a checklist, we treat these as decisions requiring the same kind of justification researchers already give for other methodological choices, like how they selected interview participants. The aim is to help researchers, and the reviewers evaluating their work, judge when AI-assisted analysis has been done thoughtfully and appropriately."
 contribution_summary: "Through a concept synthesis of technical and reflexive considerations, the paper articulates a set of \"threshold concepts\" — API access, task scoping, structured output schemas, model and temperature selection, prompt engineering techniques, and researcher-in-the-loop evaluation — that together define a spectrum of quality for LLM-infused qualitative data analysis, illustrated with empirical comparisons of output variations across models and temperature settings."
