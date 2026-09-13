@@ -9,9 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
-[Download Short PDF version](/files/Mitch Gerhardt CV Short.pdf){: .btn .btn--primary}
+<!-- [Download Short PDF version](/files/Mitch Gerhardt CV Short.pdf){: .btn .btn--primary} -->
 
-[Download Full PDF version](/files/Mitch Gerhardt CV Spring 2026 - 2 Page.pdf){: .btn .btn--primary}
+[Download Full PDF version](/files/MitchGerhardt_CV_Fall2026.pdf){: .btn .btn--primary}
 
 Research Interests
 ======
@@ -84,17 +84,17 @@ Peer-Reviewed Conference Publications
   * *36th Australasian Association for Engineering Education Annual Conference* - October 2026
   * Herman Ronald Clements III, Jessica Deters, **Mitchell Gerhardt**, Shawn Sun, David Knight, Maura Borrego, Andrew Katz, and Riya Budhathoki
 
-* **Understanding the Master's Engineering Workforce Landscape: Employer Demands and Student Goals** (June 2026)
+* **Understanding the Master's Engineering Workforce Landscape: Employer Demands and Student Goals** (June 2026) [[Paper](https://peer.asee.org/61155)]
   * *2026 ASEE Annual Conference & Exposition* - Charlotte, NC
   * Herman Ronald Clements III, **Mitchell Gerhardt**, Shawn Sun, Riya Budhathoki, Maura Borrego, Jessica Deters, Andrew Katz, and David Knight
 
-* **It's like "X": How Engineering Faculty Metaphors Construct (and Constrain) GAI Understanding in Engineering Education** (June 2026)
+* **It's like "X": How Engineering Faculty Metaphors Construct (and Constrain) GAI Understanding in Engineering Education** (June 2026) [[Paper](https://peer.asee.org/60248)]
   * *2026 ASEE Annual Conference & Exposition* - Charlotte, NC
   * **Mitchell Gerhardt**, Kylee Shiekh, Andrew Katz, and Benjamin Chaback
 
-* **When Can GAI be Used Anyway? An Analysis of Engineering Faculty's Generative AI Policies** (Under Revision)
-  * *2026 ASEE Annual Conference & Exposition*
-  * Benjamin Chaback, **Mitchell Gerhardt**, Andrew Katz, and Kylee Shiekh
+* **When Can GAI be Used Anyway? An Analysis of Engineering Faculty's Generative AI Policies** (June 2026) [[Paper](https://peer.asee.org/60771)]
+  * *2026 ASEE Annual Conference & Exposition* - Charlotte, NC
+  * Benjamin Chaback, Andrew Katz, and **Mitchell Gerhardt**
 
 * **Inside the Mental Models: Instructor's Conceptions on Generative Artificial Intelligence** (May 2026)
   * *2026 ASEE STL Conference* - Ithaca, NY

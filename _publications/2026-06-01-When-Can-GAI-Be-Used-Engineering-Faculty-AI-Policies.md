@@ -1,13 +1,13 @@
 ---
 title: "When Can GAI be Used Anyway? An Analysis of Engineering Faculty&apos;s Generative AI Policies"
-author: "Benjamin Chaback, Mitchell Gerhardt, Andrew Katz, Kylee Shiekh"
+author: "Benjamin Chaback, Andrew Katz, Mitchell Gerhardt"
 collection: publications
 category: conferences
 permalink: /publication/2026-06-01-When-Can-GAI-Be-Used-Engineering-Faculty-AI-Policies
 date: 2026-06-01
 venue: 'In the proceedings of 2026 ASEE Annual Conference &amp; Exposition'
-citation: 'Chaback, B., Gerhardt, M., Katz, A., &amp; Shiekh, K. (2026, June). When Can GAI be Used Anyway? An Analysis of Engineering Faculty&apos;s Generative AI Policies. 2026 ASEE Annual Conference &amp; Exposition.'
-# paperurl: 'https://peer.asee.org/TBD'
+citation: 'Chaback, B., Katz, A., & Gerhardt, M. (2026). When Can AI be Used Anyway? An Analysis of Engineering Faculty’s Generative AI Policies. 2026 ASEE Annual Conference & Exposition Proceedings, 60771. https://doi.org/10.18260/1-2--60771'
+paperurl: 'https://peer.asee.org/60771'
 plain_language_summary: "This paper analyzes how engineering professors and instructors decide when students in their classes are allowed to use generative AI tools like ChatGPT. Because there is currently no single university-wide rule, students often face very different expectations from one class to the next. Drawing on interviews with 169 engineering faculty and instructors across 18 universities, we sorted their policies into three groups: no restriction, some restriction, and full restriction. We found that most instructors land in the middle, allowing generative AI for some tasks (like debugging code or brainstorming) while prohibiting it for others, and that they mostly build these policies on their own rather than following a shared institutional standard."
 contribution_summary: "We extend prior institutional-level generative AI policy research by empirically mapping instructor-level classroom policies in engineering specifically, applying a deductive content-analysis codebook grounded in Policy Diffusion Theory to characterize both the restriction level and the underlying motivators/objectives behind 169 faculty members' and instructors' generative AI policies."
 research_questions: 
