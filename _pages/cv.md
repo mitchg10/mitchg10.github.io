@@ -74,7 +74,7 @@ Peer-Reviewed Conference Publications
 ======
 * **What is Appropriate AI Use? Perceptions of Addictive AI Use Among STEM Graduate Student Coders** (Submitted)
   * *58th ACM Technical Symposium on Computer Science Education (SIGCSE TS-2027)*
-  * **Mitchell Gerhardt**, Sara Hooshangi, and Andrew Katz
+  * **Mitchell Gerhardt**, Andrew Katz, and Sara Hooshangi
 
 * **The Jagged Edge of Adoption: Comparing GenAI Adoption Between Coding and Non-Coding STEM Graduate Students** (Submitted)
   * *Symposium on Educational Advances in Artificial Intelligence (EAAI-27)*

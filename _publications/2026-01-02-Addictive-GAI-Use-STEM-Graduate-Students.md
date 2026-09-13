@@ -1,6 +1,6 @@
 ---
 title: "What is Appropriate AI Use? Perceptions of Addictive AI Use Among STEM Graduate Student Coders"
-author: "Mitchell Gerhardt, Sara Hooshangi, and Andrew Katz"
+author: "Mitchell Gerhardt, Andrew Katz, and Sara Hooshangi"
 collection: publications
 category: conferences
 permalink: /publication/2026-01-02-Addictive-GAI-Use-STEM-Graduate-Students
