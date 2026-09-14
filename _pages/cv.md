@@ -283,6 +283,9 @@ Service
 
 Invited Talks, Workshops, and Presentations
 ======
+* November 2026: **Guest Lecturer**, *ME 397/379M Qualitative Research Methods*, University of Texas at Austin (Dr. Maura Borrego)
+  * "Large Language Models in Qualitative Engineering Education Research: Technical Methods and Methodological Considerations" - return engagement with the fall 2026 cohort, examining human vs. machine pattern recognition, current GenAI approaches for qualitative research, researcher positionality, and methodological implications of computational approaches to qualitative work
+
 * June 2026: **Conference Presentation**, *2026 ASEE Annual Conference*, Charlotte, NC [[Slides](https://mitchgerhardt.com/slides/asee-2026/)]
   * "It's like 'X': How Engineering Faculty Metaphors Construct (and Constrain) GAI Understanding in Engineering Education" - examining how the metaphors engineering faculty reach for shape what they take GenAI to be, and what those framings foreclose
 
