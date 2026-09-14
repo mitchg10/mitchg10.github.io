@@ -28,3 +28,6 @@ __pycache__/
 
 # Files
 files/
+
+# Serena
+.serena/

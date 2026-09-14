@@ -200,7 +200,7 @@ Grants & Awards
 ======
 * Fall 2025: **Co-Principal Investigator**
   * **Bridging the Conversational AI Gap: Synthetic Dataset Generation for Engineering Education Dialogue**
-  * NSF CCSS Seed Grant ($4,500), Cornell University - 10-month project
+  * CCSS Seed Grant ($4,500), Cornell University - 10-month project
   * Developing novel methodology for creating synthetic speech datasets preserving conversational phenomena critical to workplace learning research (overlapping speech, strategic pauses, collaborative turn-taking)
   * Fine-tuning open-source ASR models using 500-1,000 multi-speaker dialogue samples generated via ElevenLabs API to enable large-scale analysis of engineering classroom interactions
   * Applying synthetic data to study feedback literacy in design studios and facilitated dialogues about research group culture and inclusion
