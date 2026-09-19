@@ -222,6 +222,18 @@ Grants & Awards
 
 Projects
 ======
+* **Overleaf LLM Assistance (`OverleafMCP`)** (August 2026 - Present) [[Code](https://github.com/mitchg10/OverleafMCP)]
+  * Fork from `mjyoo2/OverleafMCP` with features added for functionality
+  * Includes support for quicker LLM segmentation, reading, and writing of Overleaf files
+  * Screenshot and snapshot features enable easy figure adjustments 
+  * Citation checker verifies consistent format, retrievable citations, and up-to-date preprints/published papers
+
+* **Transcript Mapping** (August 2026 - Present) [[Code](https://github.com/mitchg10/interview-graph)] [[Website](https://mitchgerhardt.com/interview-graph/)]
+  * Knowledge-graphing inspired attempt to map features contained in interview transcripts
+  * Stack: Next.js 14 (App Router), TypeScript, Neo4j 5, react-force-graph-2d, bun, Docker Compose, GitHub Pages
+  * Illustrates how qualitative transcripts might provide transverable context for LLMs
+  * The demo runs on synthetic data: every participant, quote, institution and department in it was invented to match the *structure* of the real graph without reproducing any of its content
+
 * **Presentation Maker (`pres`)** (April 2026 - Present) [[Code](https://github.com/mitchg10/pres)]
   * Python CLI that scaffolds, previews, and exports Quarto RevealJS presentations and 24x36-inch academic posters for the IDEEAS Lab
   * Built an interactive wizard (Typer, questionary, Pydantic) that generates decks from brand-themed templates and reusable partials, with department-specific logos and color palettes driven by a single brand configuration file
