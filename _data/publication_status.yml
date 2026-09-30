@@ -1,0 +1,25 @@
+# Publication status → venue-line wording.
+#
+# Set `status:` in a publication's front matter to one of the values below.
+# Omit it for published work — `published` is the default.
+#
+# Consumers:
+#   _includes/publication-venue-line.html   detail pages and Liquid listings
+#   _pages/publications.html                serializes prefix/show_year for the JS cards
+#
+# show_year is false where `date` is only a sort key, not a publication year.
+# An unrecognized status renders the bare venue (no prefix, no year), so a typo
+# can never silently claim "Published in".
+
+- status: published
+  prefix: "Published in"
+  show_year: true
+- status: in-press
+  prefix: "Forthcoming in"
+  show_year: true
+- status: submitted
+  prefix: "Under review at"
+  show_year: false
+- status: in-preparation
+  prefix: "In preparation for"
+  show_year: false

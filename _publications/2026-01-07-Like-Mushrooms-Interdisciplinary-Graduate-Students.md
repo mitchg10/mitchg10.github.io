@@ -7,6 +7,7 @@ permalink: /publication/2026-01-07-Like-Mushrooms-Interdisciplinary-Graduate-Stu
 date: 2026-09-12
 venue: 'Studies in Graduate and Postdoctoral Education'
 citation: 'Gerhardt, M. (In Preparation). Like Mushrooms: Interdisciplinary Graduate Students Are the Fungi of Higher Education Ecosystems. Studies in Graduate and Postdoctoral Education.'
+status: in-preparation
 # paperurl: 'TBD'
 masked_sections:
   - key_findings

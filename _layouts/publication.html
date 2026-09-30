@@ -90,7 +90,7 @@ layout: default
 
         {% if page.venue and page.date %}
           <p class="pub-detail-venue pub-detail-meta">
-            <i>{{ page.venue }}</i>, {{ page.date | date: "%Y" }}
+            {% include publication-venue-line.html item=page %}
           </p>
         {% endif %}
 

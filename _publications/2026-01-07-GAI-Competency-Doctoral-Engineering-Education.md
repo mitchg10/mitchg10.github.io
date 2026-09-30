@@ -7,6 +7,7 @@ permalink: /publication/2026-01-07-GAI-Competency-Doctoral-Engineering-Education
 date: 2026-09-12
 venue: 'European Journal of Engineering Education'
 citation: 'Gerhardt, M. (In Preparation). What Should Graduate Engineering Students Learn About Generative AI? A Critical Review of GAI Competency in Engineering Graduate Education. European Journal of Engineering Education.'
+status: in-preparation
 # paperurl: 'TBD'
 masked_sections:
   - key_findings

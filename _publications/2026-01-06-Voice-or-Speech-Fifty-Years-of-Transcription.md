@@ -7,6 +7,7 @@ permalink: /publication/2026-01-06-Voice-or-Speech-Fifty-Years-of-Transcription
 date: 2026-09-09
 venue: 'International Journal of Qualitative Methods - Special Issue on Digital Transformation in Qualitative Research: Ethically Approaching New Methodological Horizons'
 citation: 'Gerhardt, M., Werth, A., & Kim, S. (In Preparation). Revisiting Transcription in the Age of AI: A Critical Review of Transcription in Qualitative Research. International Journal of Qualitative Methods.'
+status: in-preparation
 # paperurl: 'TBD'
 masked_sections:
   - methods

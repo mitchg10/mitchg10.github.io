@@ -54,7 +54,9 @@
       ? `<a href="${pub.url}" rel="permalink">${title}</a>`
       : title;
 
-    const metaLine = `Published in <em>${venue}</em>, ${pub.year}`;
+    // Prefix and year visibility come from _data/publication_status.yml via publications.html.
+    const metaLine = [pub.venue_prefix, `<em>${venue}</em>`].filter(Boolean).join(' ') +
+      (pub.show_year ? `, ${pub.year}` : '');
 
     const tagHtml = [
       categoryLabel ? `<span class="pub-tag pub-tag--category">${categoryLabel}</span>` : '',

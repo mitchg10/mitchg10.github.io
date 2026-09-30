@@ -381,6 +381,31 @@ The `paper-yaml-formatter` skill treats masking as an approval gate — it offer
 `_data/*.yml` changes do require a rebuild, but `--watch` picks them up; only
 `_config.yml` needs a restart.
 
+### Publication Status (Venue Line Wording)
+
+A publication's venue line ("Published in *Venue*, YEAR") is driven by an
+optional `status:` frontmatter field. Omit it for published work.
+
+| `status`         | Renders                               |
+|------------------|---------------------------------------|
+| *(omitted)*      | Published in *Venue*, YEAR            |
+| `in-press`       | Forthcoming in *Venue*, YEAR          |
+| `submitted`      | Under review at *Venue*               |
+| `in-preparation` | In preparation for *Venue*            |
+
+The year is dropped for submitted/in-preparation work because its `date` is only
+a sort key. An unrecognized value renders the bare *Venue* with no prefix, so a
+typo never claims "Published in". The `citation` field is independent. Keep its
+APA "(Submitted)" / "(In Press)" marker in step with `status` by hand.
+
+**The single source of truth is `_data/publication_status.yml`.** Consumers:
+- `_includes/publication-venue-line.html`, called from `_includes/archive-single.html`
+  (listings) and `_layouts/publication.html` (detail page).
+- `_pages/publications.html`, which resolves the spec in Liquid and serializes
+  `venue_prefix` / `show_year` into `window.publicationsData`.
+  `assets/js/publications-filter.js` only consumes those, and has no status logic
+  of its own.
+
 ### Modifying Navigation
 
 Edit `_data/navigation.yml` to add/remove header menu items. Order in file determines display order.

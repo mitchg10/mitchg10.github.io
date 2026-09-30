@@ -7,6 +7,7 @@ permalink: /publication/2026-01-05-Toward-Reflexive-LLM-Infused-Research
 date: 2026-09-09
 venue: 'International Journal of Qualitative Methods - Special Issue on Artificial Intelligence in the Analysis of Qualitative Data'
 citation: 'Gerhardt, M., Shiekh, K., & Katz, A. (Submitted). Refutable Reflexivity: A Theoretical and Visual Model for LLM-Infused Qualitative Research. International Journal of Qualitative Methods.'
+status: submitted
 # paperurl: 'TBD'
 masked_sections:
   - methods

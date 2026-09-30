@@ -1,0 +1,19 @@
+{%- comment -%}
+  Renders "<prefix> <i>Venue</i>, YEAR" according to the item's `status`.
+
+  Wording lives in _data/publication_status.yml — add a status there, not here.
+
+  Usage:
+    {% include publication-venue-line.html item=page %}
+    {% include publication-venue-line.html item=post %}
+
+  Emits only the inline text; the caller supplies the wrapping element.
+{%- endcomment -%}
+{%- assign item = include.item -%}
+{%- assign venue_status = item.status | default: "published" -%}
+{%- assign venue_spec = site.data.publication_status | where: "status", venue_status | first -%}
+{%- if venue_spec -%}
+{{ venue_spec.prefix }} <i>{{ item.venue }}</i>{% if venue_spec.show_year %}, {{ item.date | default: "1900-01-01" | date: "%Y" }}{% endif %}
+{%- else -%}
+<i>{{ item.venue }}</i>
+{%- endif -%}

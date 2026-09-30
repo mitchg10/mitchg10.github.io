@@ -116,12 +116,17 @@ window.publicationsData = [
   {% unless post.masked_sections contains "plain_language_summary" %}
     {% assign card_summary = post.plain_language_summary | default: "" %}
   {% endunless %}
+  {% comment %} Resolve status wording here so the JS never needs its own copy. {% endcomment %}
+  {% assign pub_status = post.status | default: "published" %}
+  {% assign status_spec = site.data.publication_status | where: "status", pub_status | first %}
   {
     "title": {{ post.title | jsonify }},
     "author": {{ post.author | jsonify }},
     "venue": {{ post.venue | jsonify }},
     "date": {{ post.date | date: "%Y-%m-%d" | jsonify }},
     "year": {{ post.date | date: "%Y" | jsonify }},
+    "venue_prefix": {{ status_spec.prefix | default: "" | jsonify }},
+    "show_year": {% if status_spec.show_year %}true{% else %}false{% endif %},
     "category": {{ post.category | jsonify }},
     "url": {{ post.url | jsonify }},
     "citation": {{ post.citation | default: "" | jsonify }},

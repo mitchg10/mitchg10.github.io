@@ -64,6 +64,8 @@ class DevHandler(http.server.SimpleHTTPRequestHandler):
         self.send_header('Access-Control-Allow-Origin', '*')
         self.send_header('Access-Control-Allow-Methods', 'GET, OPTIONS')
         self.send_header('Access-Control-Allow-Headers', 'Content-Type')
+        # Revalidate every asset, not just HTML, so edited JS/CSS is never served stale.
+        self.send_header('Cache-Control', 'no-cache, must-revalidate')
         super().end_headers()
 
     def do_OPTIONS(self):
@@ -83,7 +85,6 @@ class DevHandler(http.server.SimpleHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-Type', 'application/json')
         self.send_header('Content-Length', str(len(body)))
-        self.send_header('Cache-Control', 'no-cache')
         self.end_headers()
         self.wfile.write(body)
 
@@ -120,7 +121,6 @@ class DevHandler(http.server.SimpleHTTPRequestHandler):
                 self.send_header('Content-Type', 'text/html; charset=utf-8')
                 self.send_header('Content-Length', str(len(content)))
                 self.send_header('Last-Modified', self.date_time_string(os.path.getmtime(path)))
-                self.send_header('Cache-Control', 'no-cache, must-revalidate')
                 self.end_headers()
                 return BytesIO(content)
             except OSError:
