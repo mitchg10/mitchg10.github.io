@@ -60,7 +60,7 @@ Journal Publications
 
 * **Refutable Reflexivity: A Theoretical and Visual Model for LLM-Infused Qualitative Research** (Submitted)
   * *International Journal of Qualitative Methods* - Special Issue on Artificial Intelligence in the Analysis of Qualitative Data
-  * **Mitchell Gerhardt**, Kylee Shiekh, and Andrew Katz
+  * **Mitchell Gerhardt**, Kylee Shiekh, Andrew Katz, and Benjamin Chaback
 
 * **The Problem With Prompting: Using Decision Models for Traceable and Justifiable GenAI-Infused Qualitative Data Analysis** (In Preparation)
   * *Organizational Research Methods*

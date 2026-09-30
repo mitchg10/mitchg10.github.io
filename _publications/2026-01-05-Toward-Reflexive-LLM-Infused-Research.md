@@ -1,12 +1,12 @@
 ---
 title: "Refutable Reflexivity: A Theoretical and Visual Model for LLM-Infused Qualitative Research"
-author: "Mitchell Gerhardt, Kylee Shiekh, Andrew Katz"
+author: "Mitchell Gerhardt, Kylee Shiekh, Andrew Katz, Benjamin Chaback"
 collection: publications
 category: manuscripts
 permalink: /publication/2026-01-05-Toward-Reflexive-LLM-Infused-Research
 date: 2026-09-09
 venue: 'International Journal of Qualitative Methods - Special Issue on Artificial Intelligence in the Analysis of Qualitative Data'
-citation: 'Gerhardt, M., Shiekh, K., & Katz, A. (Submitted). Refutable Reflexivity: A Theoretical and Visual Model for LLM-Infused Qualitative Research. International Journal of Qualitative Methods.'
+citation: 'Gerhardt, M., Shiekh, K., Katz, A., & Chaback, B. E. (Submitted). Refutable Reflexivity: A Theoretical and Visual Model for LLM-Infused Qualitative Research. International Journal of Qualitative Methods.'
 status: submitted
 # paperurl: 'TBD'
 masked_sections:
