@@ -9,4 +9,6 @@ location: "Charlotte, NC"
 slidesurl: "https://mitchgerhardt.com/slides/asee-2026/"
 ---
 
-Presenting work examining the figurative language used to describe "AI" from engineering instructors from Spring 2025. Findings revealed wide variety in conceptualizations of AI, raising the imperative for faculty developers to work as "translators" between meaning-making systems. 
+Presenting work examining the figurative language used to describe "AI" from engineering instructors from Spring 2025. Findings revealed wide variety in conceptualizations of AI, raising the imperative for faculty developers to work as "translators" between meaning-making systems.
+
+Re-presented by invitation to the Upstate NY DBER Network (hosted by Cornell University, via Zoom) on October 1, 2026.

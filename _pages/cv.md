@@ -40,7 +40,7 @@ Education
 Book Chapters
 ======
 * **Leveraging Large Language Models in Engineering Education Research: Methods and Applications** (In Press)
-  * *2027 International Handbook of Engineering Education Research Methods*
+  * *2027 International Handbook of Engineering Education Research Methods* (Sage)
   * **Mitchell Gerhardt**, Gabriella Coloyan Fleming, Siqing Wei, and Andrew Katz
   * Expected publication: February 2027
 
@@ -58,11 +58,19 @@ Journal Publications
   * *Trends in Higher Education*
   * **Mitchell Gerhardt**, Shawn Sun, Andrew Katz, David Knight, Jessica Deters, Maura Borrego, Riya Budhathoki, and Herman Ronald Clements III
 
-* **Toward Reflexive LLM-Infused Research: A Visual Guide for Qualitative Researchers Using LLMs** (In Preparation)
+* **Refutable Reflexivity: A Theoretical and Visual Model for LLM-Infused Qualitative Research** (Submitted)
   * *International Journal of Qualitative Methods* - Special Issue on Artificial Intelligence in the Analysis of Qualitative Data
   * **Mitchell Gerhardt**, Kylee Shiekh, and Andrew Katz
 
-* **Voice or Speech? Fifty Years of Transcription and the Rise of AI-Based Transcription Systems** (In Preparation)
+* **The Problem With Prompting: Using Decision Models for Traceable and Justifiable GenAI-Infused Qualitative Data Analysis** (In Preparation)
+  * *Organizational Research Methods*
+  * **Mitchell Gerhardt** and Andrew Katz
+
+* **What is Appropriate AI Use? Perceptions of Addictive AI Use Among STEM Graduate Student Coders** (In Preparation)
+  * *Computers & Education: Artificial Intelligence*
+  * **Mitchell Gerhardt**, Andrew Katz, and Sara Hooshangi
+
+* **Revisiting Transcription in the Age of AI: A Critical Review of Transcription in Qualitative Research** (In Preparation)
   * *International Journal of Qualitative Methods* - Special Issue on Digital Transformation in Qualitative Research
   * **Mitchell Gerhardt**, Alex Werth, and Soyeon Kim
 
@@ -72,10 +80,6 @@ Journal Publications
 
 Peer-Reviewed Conference Publications
 ======
-* **What is Appropriate AI Use? Perceptions of Addictive AI Use Among STEM Graduate Student Coders** (Submitted)
-  * *58th ACM Technical Symposium on Computer Science Education (SIGCSE TS-2027)*
-  * **Mitchell Gerhardt**, Andrew Katz, and Sara Hooshangi
-
 * **The Jagged Edge of Adoption: Comparing GenAI Adoption Between Coding and Non-Coding STEM Graduate Students** (Submitted)
   * *Symposium on Educational Advances in Artificial Intelligence (EAAI-27)*
   * **Mitchell Gerhardt**, Sara Hooshangi, Sanmay Das, and Andrew Katz
@@ -160,7 +164,7 @@ Research Experience
 * May 2025 - Present: **Principal Investigator, Graduate Student Survey Research**
   * Multi-institutional, Ithaca, NY
   * IRB-approved multi-institutional study examining STEM graduate students' GenAI use patterns
-  * Designed and distributed Qualtrics survey across a few universities collecting 100+ responses examining nuanced patterns of GenAI adoption beyond reductive "cheating" narratives
+  * Designed and distributed Qualtrics survey across six R1 institutions collecting 370+ responses examining nuanced patterns of GenAI adoption beyond reductive "cheating" narratives
   * Applying mixed methods approach combining descriptive statistics, correlation analyses, demographic studies, and planned qualitative interviews
   * Investigating workplace socialization processes, community norms around GenAI use, and shifting definitions of legitimate expertise in graduate education contexts
 
@@ -171,7 +175,7 @@ Professional Experience
   * Worked with Dr. Tiffany Shoop on various teaching and learning initiatives
   * Conducted mid-semester feedback sessions across various disciplines, gathering and analyzing student input to help faculty enhance teaching effectiveness and student engagement
   * Developed and presented a faculty workshop on Interactive Lecturing with approximately 30 attendees, providing resources and strategies for enhancing student engagement in the classroom
-  * Co-led the implementation of the [CIRTL](https://cirtl.vt.edu/) (Center for the Integration of Research, Teaching, and Learning) program at Virginia Tech, researching best practices and developing an institutional implementation strategy for Practitioner and Scholar CIRTL levels leveraging cross-campus resources and partnerships
+  * Helped plan the rollout of the Practitioner and Scholar levels of the [CIRTL](https://cirtl.vt.edu/) (Center for the Integration of Research, Teaching, and Learning) program at Virginia Tech, researching best practices and contributing to an institutional implementation strategy leveraging cross-campus resources and partnerships
   * Helped organize the 17th annual Conference on Higher Education Pedagogy ([CHEP](https://chep.teaching.vt.edu/)), reviewing submissions, coordinating sessions, and developing a custom Python application to automate post-conference booklet creation
   * Systematically reviewed empirical research on Collaborative Online Interactive Learning (COIL) to assist in faculty training program development and institutional integration
   * Created resources for faculty including presentations, research compilations, and implementation guides to support teaching excellence and innovation
@@ -200,7 +204,7 @@ Grants & Awards
 ======
 * Fall 2025: **Co-Principal Investigator**
   * **Bridging the Conversational AI Gap: Synthetic Dataset Generation for Engineering Education Dialogue**
-  * CCSS Seed Grant ($4,500), Cornell University - 10-month project
+  * Cornell Center for Social Sciences (CCSS) Seed Grant, Cornell University - 10-month project
   * Developing novel methodology for creating synthetic speech datasets preserving conversational phenomena critical to workplace learning research (overlapping speech, strategic pauses, collaborative turn-taking)
   * Fine-tuning open-source ASR models using 500-1,000 multi-speaker dialogue samples generated via ElevenLabs API to enable large-scale analysis of engineering classroom interactions
   * Applying synthetic data to study feedback literacy in design studios and facilitated dialogues about research group culture and inclusion
@@ -295,11 +299,18 @@ Service
 
 Invited Talks, Workshops, and Presentations
 ======
+* October 2026: **Conference Presentation**, *2026 NEASTE Regional Conference*
+  * "Are We Talking About the Same Summer? Mentor-Mentee Perception Alignment and the Question of AI in Engineering Internships" - with Dr. Maggie Webb; work with a Rice University bridge program examining how students recognized differences between how practitioners and instructors orient toward AI in engineering internships
+
+* September 2026: **Invited Presentation**, *Department of Agricultural, Leadership, and Community Education*, Virginia Tech
+  * "Responsible GenAI Use: GenAI, Course Policy, and Academic Integrity in ALCE" - department meeting with ~30 faculty and graduate students on GenAI course policy and academic integrity
+
 * November 2026: **Guest Lecturer**, *ME 397/379M Qualitative Research Methods*, University of Texas at Austin (Dr. Maura Borrego)
   * "Large Language Models in Qualitative Engineering Education Research: Technical Methods and Methodological Considerations" - return engagement with the fall 2026 cohort, examining human vs. machine pattern recognition, current GenAI approaches for qualitative research, researcher positionality, and methodological implications of computational approaches to qualitative work
 
 * June 2026: **Conference Presentation**, *2026 ASEE Annual Conference*, Charlotte, NC [[Slides](https://mitchgerhardt.com/slides/asee-2026/)]
   * "It's like 'X': How Engineering Faculty Metaphors Construct (and Constrain) GAI Understanding in Engineering Education" - examining how the metaphors engineering faculty reach for shape what they take GenAI to be, and what those framings foreclose
+  * Re-presented by invitation to the Upstate NY DBER Network, hosted by Cornell University (virtual), October 2026
 
 * June 2026: **Panelist**, *2026 ASEE Annual Conference*, Charlotte, NC
   * "Impact of Generative AI Applications on Current Doctoral Practices and Implications for the Future" - panel discussion on how GenAI is reshaping doctoral research practices, advising relationships, and disciplinary norms
@@ -313,8 +324,9 @@ Invited Talks, Workshops, and Presentations
   * Received IRB approval to study the workshop's implementation and effectiveness; analysis of results is ongoing
   * Leveraged networks and existing partnerships with the Graduate Honor System (GHS), the Center for Excellence in Teaching and Learning (CETL), the center for Technology-Enhanced Learning and Online Strategies (TLOS), and departmental leadership to host and market the event
 
-* February 2026: **Guest Lecturer**, *GRAD 5004: Graduate Teaching Assistant Workshop*, Virginia Tech (Dr. Kevin Eager)
+* February 2026: **Guest Lecturer**, *GRAD 5004: Graduate Teaching Assistant Workshop*, Virginia Tech (Dean Kevin Edgar)
   * "Scholarly Ethics" presentation to in-coming GTAs at Virginia Tech, addressing topics like academic and professional integrity, the VT Undergraduate and Graduate Honor Systems, GTA integrity responsibilities, GenAI use, and contemporary literature about cheating
+  * Returned September 29, 2026 to present to the fall cohort of ~75 incoming GTAs
 
 * December 2025: **Guest Lecturer**, *ECE Graduate Student Seminar*, University of Pittsburgh
   * "AI Research Ethics in Engineering Education" co-presented with Andrew Katz to ECE graduate students examining ethical dimensions of AI research in educational contexts
@@ -372,6 +384,6 @@ Technical Skills
 * **Qualitative Methods:** Ethnography, participant observation, semi-structured interviews, grounded theory, symbolic interactionism, ethnomethodology, thematic analysis, discourse and conversational analysis, content analysis
 * **Theoretical Frameworks:** Engineering expertise, sociology of expertise, Science & Technology Studies (STS), epistemic cultures, epistemic thinking, social construction of technology, engineering studies, academic integrity and cheating, human-computer interactions (HCI)
 * **Computational Methods:** Natural language processing, large language models (LLMs), prompt and context engineering, LLMs for qualitative research, retrieval-augmented generation (RAG), agent-based systems, computational text analysis
-* **Programming & Tools:** Python, JavaScript, C++, SQL, React, FastAPI, Docker, Git, Jupyter notebooks, PyTorch, MCP, scikit-learn, HuggingFace Transformers, AI-based programming systems
+* **Programming & Tools:** Python, R, JavaScript, C++, SQL, React, FastAPI, Docker, Git, Jupyter notebooks, PyTorch, MCP, scikit-learn, HuggingFace Transformers, AI-based programming systems
 * **Mixed Methods:** Survey design (Qualtrics), descriptive statistics, correlation analysis, triangulation of qualitative and quantitative data
 * **Data Management:** DuckDB, MySQL, AWS S3, Azure, version control, reproducible research practices

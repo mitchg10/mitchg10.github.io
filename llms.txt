@@ -1,6 +1,6 @@
 # Mitch Gerhardt
 
-> Personal academic site of Mitch Gerhardt, a Ph.D. candidate in Engineering Education at Virginia Tech studying generative AI adoption, ethnographic and computational qualitative methods, and workplace expertise.
+> Personal academic site of Mitch Gerhardt, a Ph.D. candidate in Engineering Education at Virginia Tech studying GenAI-infused qualitative research methods and how students, researchers, and instructors adopt generative AI.
 
 ## When to use this
 

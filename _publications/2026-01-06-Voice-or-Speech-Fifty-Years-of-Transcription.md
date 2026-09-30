@@ -1,12 +1,12 @@
 ---
-title: "Voice or Speech? Fifty Years of Transcription and the Rise of AI-Based Transcription Systems"
+title: "Revisiting Transcription in the Age of AI: A Critical Review of Transcription in Qualitative Research"
 author: "Mitchell Gerhardt, Alex Werth, Soyeon Kim"
 collection: publications
 category: manuscripts
 permalink: /publication/2026-01-06-Voice-or-Speech-Fifty-Years-of-Transcription
 date: 2026-09-09
 venue: 'International Journal of Qualitative Methods - Special Issue on Digital Transformation in Qualitative Research: Ethically Approaching New Methodological Horizons'
-citation: 'Gerhardt, M., Werth, A., & Kim, S. (In Preparation). Voice or Speech? Fifty Years of Transcription and the Rise of AI-Based Transcription Systems. International Journal of Qualitative Methods.'
+citation: 'Gerhardt, M., Werth, A., & Kim, S. (In Preparation). Revisiting Transcription in the Age of AI: A Critical Review of Transcription in Qualitative Research. International Journal of Qualitative Methods.'
 # paperurl: 'TBD'
 masked_sections:
   - methods
@@ -23,4 +23,4 @@ tags:
   - "Transcription"
 ---
 
-<!-- Use [Google Scholar](https://scholar.google.com/scholar?q=Voice+or+Speech+Fifty+Years+of+Transcription+Rise+of+AI-Based+Transcription+Systems){:target="_blank"} for full citation -->
+<!-- Use [Google Scholar](https://scholar.google.com/scholar?q=Revisiting+Transcription+in+the+Age+of+AI+Critical+Review+of+Transcription+in+Qualitative+Research){:target="_blank"} for full citation -->

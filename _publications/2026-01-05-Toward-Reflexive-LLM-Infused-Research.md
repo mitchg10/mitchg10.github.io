@@ -1,12 +1,12 @@
 ---
-title: "Toward Reflexive LLM-Infused Research: A visual guide for qualitative researchers using LLMs"
+title: "Refutable Reflexivity: A Theoretical and Visual Model for LLM-Infused Qualitative Research"
 author: "Mitchell Gerhardt, Kylee Shiekh, Andrew Katz"
 collection: publications
 category: manuscripts
 permalink: /publication/2026-01-05-Toward-Reflexive-LLM-Infused-Research
 date: 2026-09-09
 venue: 'International Journal of Qualitative Methods - Special Issue on Artificial Intelligence in the Analysis of Qualitative Data'
-citation: 'Gerhardt, M., Shiekh, K., & Katz, A. (In Preparation). Toward Reflexive LLM-Infused Research: A visual guide for qualitative researchers using LLMs. International Journal of Qualitative Methods.'
+citation: 'Gerhardt, M., Shiekh, K., & Katz, A. (Submitted). Refutable Reflexivity: A Theoretical and Visual Model for LLM-Infused Qualitative Research. International Journal of Qualitative Methods.'
 # paperurl: 'TBD'
 masked_sections:
   - methods
@@ -22,4 +22,4 @@ tags:
   - "Engineering Education"
 ---
 
-<!-- Use [Google Scholar](https://scholar.google.com/scholar?q=Toward+Reflexive+LLM-Infused+Research+visual+guide+qualitative+researchers+using+LLMs){:target="_blank"} for full citation -->
+<!-- Use [Google Scholar](https://scholar.google.com/scholar?q=Refutable+Reflexivity+Theoretical+Visual+Model+LLM-Infused+Qualitative+Research){:target="_blank"} for full citation -->

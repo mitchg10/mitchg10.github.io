@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Mitch Gerhardt"
 title_separator          : "-"
 name                     : &name "Mitch Gerhardt"
-description              : &description "Personal academic site of Mitch Gerhardt, a Ph.D. candidate in Engineering Education at Virginia Tech studying generative AI adoption, ethnographic and computational qualitative methods, and workplace expertise."
+description              : &description "Personal academic site of Mitch Gerhardt, a Ph.D. candidate in Engineering Education at Virginia Tech studying GenAI-infused qualitative research methods and how students, researchers, and instructors adopt generative AI."
 url                      : https://mitchgerhardt.com
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "mitchg10/mitchg10.github.io.git"
