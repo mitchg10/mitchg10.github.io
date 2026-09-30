@@ -11,7 +11,7 @@ redirect_from:
 
 <!-- [Download Short PDF version](/files/Mitch Gerhardt CV Short.pdf){: .btn .btn--primary} -->
 
-[Download Full PDF version](/files/MitchGerhardt_CV_Fall2026.pdf){: .btn .btn--primary}
+[Download Full PDF version](/files/MitchGerhardtCV_Fall2026.pdf){: .btn .btn--primary}
 
 Research Interests
 ======
