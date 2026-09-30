@@ -80,6 +80,10 @@ Journal Publications
 
 Peer-Reviewed Conference Publications
 ======
+* **The Challenge of Any Technology? Intergenerational Sense-Making About GenAI Systems in Engineering Education** (Submitted)
+  * *2027 ASEE Annual Conference & Exposition* - Toronto, Ontario, Canada
+  * **Mitchell Gerhardt**, Kylee Shiekh, Benjamin E. Chaback, and Andrew Katz
+
 * **The Jagged Edge of Adoption: Comparing GenAI Adoption Between Coding and Non-Coding STEM Graduate Students** (Submitted)
   * *Symposium on Educational Advances in Artificial Intelligence (EAAI-27)*
   * **Mitchell Gerhardt**, Sara Hooshangi, Sanmay Das, and Andrew Katz
