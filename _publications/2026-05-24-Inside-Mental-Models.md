@@ -1,6 +1,6 @@
 ---
 title: "Inside the Mental Models: Instructor’s Conceptions on Generative Artificial Intelligence"
-author: "Kylee Shiekh, Benjamin Chaback, Mitchell Gerhardt, Andrew Katz"
+author: "Kylee Shiekh, Benjamin E. Chaback, Mitchell Gerhardt, Andrew Katz"
 collection: publications
 category: conferences
 permalink: /publication/2026-05-24-Inside-Mental-Models

@@ -60,7 +60,7 @@ Journal Publications
 
 * **Refutable Reflexivity: A Theoretical and Visual Model for LLM-Infused Qualitative Research** (Submitted)
   * *International Journal of Qualitative Methods* - Special Issue on Artificial Intelligence in the Analysis of Qualitative Data
-  * **Mitchell Gerhardt**, Kylee Shiekh, Andrew Katz, and Benjamin Chaback
+  * **Mitchell Gerhardt**, Kylee Shiekh, Andrew Katz, and Benjamin E. Chaback
 
 * **The Problem With Prompting: Using Decision Models for Traceable and Justifiable GenAI-Infused Qualitative Data Analysis** (In Preparation)
   * *Organizational Research Methods*
@@ -94,15 +94,15 @@ Peer-Reviewed Conference Publications
 
 * **It's like "X": How Engineering Faculty Metaphors Construct (and Constrain) GAI Understanding in Engineering Education** (June 2026) [[Paper](https://peer.asee.org/60248)]
   * *2026 ASEE Annual Conference & Exposition* - Charlotte, NC
-  * **Mitchell Gerhardt**, Kylee Shiekh, Andrew Katz, and Benjamin Chaback
+  * **Mitchell Gerhardt**, Kylee Shiekh, Andrew Katz, and Benjamin E. Chaback
 
 * **When Can GAI be Used Anyway? An Analysis of Engineering Faculty's Generative AI Policies** (June 2026) [[Paper](https://peer.asee.org/60771)]
   * *2026 ASEE Annual Conference & Exposition* - Charlotte, NC
-  * Benjamin Chaback, Andrew Katz, and **Mitchell Gerhardt**
+  * Benjamin E. Chaback, Andrew Katz, and **Mitchell Gerhardt**
 
 * **Inside the Mental Models: Instructor's Conceptions on Generative Artificial Intelligence** (April 2026)
   * *2026 ASEE STL Conference* - Ithaca, NY
-  * Kylee Shiekh, Benjamin Chaback, **Mitchell Gerhardt**, and Andrew Katz
+  * Kylee Shiekh, Benjamin E. Chaback, **Mitchell Gerhardt**, and Andrew Katz
 
 * **Automated Analysis of Knowledge Types in Computer Science Textbooks: A Natural Language Processing Approach to Understanding Epistemic Climate** (June 2025) [[Paper](https://peer.asee.org/55491)]
   * *2025 ASEE Annual Conference & Exposition* - Montreal, QC, Canada
