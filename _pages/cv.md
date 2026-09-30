@@ -19,14 +19,14 @@ Sociotechnical studies of generative AI adoption in workplace settings, ethnogra
 
 Education
 ======
-* **Ph.D. in Engineering Education**, Virginia Tech, GPA: 4.00/4.00 (May 2027, expected)
+* **Ph.D. in Engineering Education**, Virginia Tech, GPA: 3.95/4.00 (May 2027, expected)
   * PhD Candidate (advanced to candidacy Fall 2025)
   * Committee: Courtney Faber, Andrew Katz (Chair), Holly Matusovich, and Nicole Pitterson
   * 2025 NSF GRFP Honorable Mention
-  * 2024 Google PhD Fellowship Nominee
+  * 2025 Google PhD Fellowship Nominee
   * 2023-2024 Davenport Fellowship Awardee
 
-* **M.S. in Computer Science**, Virginia Tech, GPA: 3.95/4.00 (December 2026, expected)
+* **M.S. in Computer Science**, Virginia Tech, GPA: 3.90/4.00 (December 2026, expected)
   * Committee: Sara Hooshangi (Chair), Andrew Katz, Sanmay Das
   * Coursework: *Machine Learning*, *Natural Language Processing*, *Computer Education Research*, *AI Tools for Software Engineering*, *Applied Design and Assessment of Educational Environments in Engineering*
 
@@ -100,7 +100,7 @@ Peer-Reviewed Conference Publications
   * *2026 ASEE Annual Conference & Exposition* - Charlotte, NC
   * Benjamin Chaback, Andrew Katz, and **Mitchell Gerhardt**
 
-* **Inside the Mental Models: Instructor's Conceptions on Generative Artificial Intelligence** (May 2026)
+* **Inside the Mental Models: Instructor's Conceptions on Generative Artificial Intelligence** (April 2026)
   * *2026 ASEE STL Conference* - Ithaca, NY
   * Kylee Shiekh, Benjamin Chaback, **Mitchell Gerhardt**, and Andrew Katz
 
@@ -134,7 +134,7 @@ Research Experience
   * [Department of Engineering Education](https://enge.vt.edu/), Virginia Tech, Blacksburg, VA
   * Assisted [NSF Award #2433099](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2433099&HistoricalAwards=false): "Collaborative Research: Research: The Engineering Master's Workforce: Leveraging NLP Techniques to Understand Employer Demands and Student Goals"
   * Created a Python-based workflow to manage DuckDB-based database to analyze over 5 million jobs spanning 2007-2025
-  * Implemented Jupyter notebooks to extract job postings' qualification information, tasks and responsibilities, skills and knowledge, and technologies required
+  * Implemented extraction mechanisms to pull qualification information, tasks and responsibilities, skills and knowledge, and technologies from job postings
   * Currently applying open-source large language models (LLMs) to add flexibility and granularity to job posting extractions
 
 * January 2024 - July 2024: **Research Assistant**
@@ -145,7 +145,7 @@ Research Experience
   * Contributed to ongoing refinement and improvement of the NLP-based methodology for analyzing qualitative data
   * Applied open-source LLMs to preserve data security and privacy while maintaining analytical rigor
 
-* August 2024 - January 2024: **Research Assistant**
+* August 2024 - January 2025: **Research Assistant**
   * [Department of Engineering Education](https://enge.vt.edu/), Virginia Tech, Blacksburg, VA
   * Assisted [NSF Award #2217523](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2217523&HistoricalAwards=false): "Collaborative Research: Collaboration in Engineering Student and Practitioner Teams: A Study of Beliefs about Effective Behaviors"
   * Designed and implemented a pilot study to examine the frequency and prevalence of collaborative behaviors in senior engineering capstone teams
@@ -212,12 +212,6 @@ Grants & Awards
   * Positions research program for larger NSF/NIH proposals by demonstrating technical feasibility of computational methods in engineering education research
   * See the Transcription page for our paper! 
 
-* Fall 2025: **Selected Participant**
-  * **Fulbright Brazil International Collaboration**
-  * Virginia Tech and Brazilian Universities Partnership
-  * Selected by Fulbright Brazil with advisor and VT colleagues to design and deliver a faculty development program examining GenAI adoption in higher education workplace contexts
-  * Delivered as a two-part workshop series: São Paulo, Brazil (September 2025) and Arlington, VA (May 2026) — see Teaching Experience
-
 * 2025: **Nominee**, Google PhD Fellowship in Human-Computer Interaction
   * Nominated by Virginia Tech for national fellowship
 
@@ -283,6 +277,12 @@ Service
   * Help educate the graduate community on academic integrity standards, ethical research practices, and honor system processes
   * Collaborate with diverse stakeholders including faculty, administrators, and students across disciplines to resolve cases annually
 
+* **Web Master**, ASEE National Graduate Studies Division (June 2025 - Present)
+  * Currently serving as the website maintainer for the ASEE National Graduate Studies Division
+
+* **Division Board Search Committee Member**, ASEE National Graduate Studies Division (Spring 2026)
+  * Served on the search committee for the new board of the ASEE National Graduate Studies Division, facilitating the nomination, voting, and election process
+
 * **Graduate Student Search Committee Member**, Department of Graduate and Professional Studies (Summer 2025)
   * Served on faculty search committee for GHS chair position, evaluating candidates and participating in selection process
 
@@ -291,8 +291,10 @@ Service
 
 * **Graduate Ambassador**, Department of Engineering Education (August 2024 - May 2025)
 
+* **Reviewer**, Studies in Engineering Education (September 2026)
 * **Reviewer**, College of Engineering Torgersen Research Excellence Award (May 2025)
 * **Reviewer**, ASEE Annual Conference (May 2024, 2025, 2026)
+* **Reviewer**, Frontiers in Engineering Conference (May 2026)
 * **Reviewer**, International Journal of Qualitative Methods (November 2024 & September 2025)
 * **Reviewer**, Capstone Design Conference (May 2024)
 * **President Emeritus**, Hillel at Virginia Tech (December 2018 - December 2020)
@@ -371,6 +373,7 @@ Teaching Experience
 * September 2025: **Co-Facilitator**, *Fulbright Brazil Workshop: Innovating Engineering Education with Generative AI*
   * INOVA.USP, Campus da Cidade Universitária, São Paulo, Brazil (September 23-25, 2025)
   * Intensive three-day faculty development program examining GenAI adoption in higher education workplace contexts, delivered with Dr. Andrew Katz and Dr. Dayoung Kim
+  * Selected by Fulbright Brazil, through a Virginia Tech and Brazilian universities partnership, to design and deliver the program
   * Presented to 80+ engineering faculty from dozens of Brazilian universities on sociotechnical dimensions of GenAI integration: technical fundamentals, assessment transformation, ethics, institutional policy development, and faculty-student relationship dynamics
   * Served as technical expert and instructional designer facilitating cross-cultural dialogue about workplace technology adoption and organizational change
 
@@ -384,6 +387,6 @@ Technical Skills
 * **Qualitative Methods:** Ethnography, participant observation, semi-structured interviews, grounded theory, symbolic interactionism, ethnomethodology, thematic analysis, discourse and conversational analysis, content analysis
 * **Theoretical Frameworks:** Engineering expertise, sociology of expertise, Science & Technology Studies (STS), epistemic cultures, epistemic thinking, social construction of technology, engineering studies, academic integrity and cheating, human-computer interactions (HCI)
 * **Computational Methods:** Natural language processing, large language models (LLMs), prompt and context engineering, LLMs for qualitative research, retrieval-augmented generation (RAG), agent-based systems, computational text analysis
-* **Programming & Tools:** Python, R, JavaScript, C++, SQL, React, FastAPI, Docker, Git, Jupyter notebooks, PyTorch, MCP, scikit-learn, HuggingFace Transformers, AI-based programming systems
+* **Programming & Tools:** Python, R, JavaScript, C++, SQL, React, FastAPI, Docker, Git, Jupyter notebooks, PyTorch, MCP, scikit-learn, HuggingFace, AI-based programming systems
 * **Mixed Methods:** Survey design (Qualtrics), descriptive statistics, correlation analysis, triangulation of qualitative and quantitative data
 * **Data Management:** DuckDB, MySQL, AWS S3, Azure, version control, reproducible research practices

@@ -4,9 +4,9 @@ author: "Kylee Shiekh, Benjamin Chaback, Mitchell Gerhardt, Andrew Katz"
 collection: publications
 category: conferences
 permalink: /publication/2026-05-24-Inside-Mental-Models
-date: 2026-05-24
+date: 2026-04-24
 venue: 'In the proceedings of 2026 ASEE STL Conference'
-citation: 'Shiekh, K. N., Chaback, B. E., Gerhardt, M., & Katz, A. (2026, April 24). Inside the Mental Models: Instructor’s Conceptions on Generative Artificial  Intelligence. 2026 STL Annual Conference, Ithaca, NY.'
+citation: 'Shiekh, K. N., Chaback, B. E., Gerhardt, M., & Katz, A. (2026, April 24–25). Inside the Mental Models: Instructor’s Conceptions on Generative Artificial  Intelligence. 2026 STL Annual Conference, Ithaca, NY.'
 # paperurl: 'https://peer.asee.org/TBD'
 plain_language_summary: "We look at how engineering instructors think about generative AI (GenAI) tools like ChatGPT, and specifically at the moments in interviews where an instructor realizes a scenario doesn't fit what they already believed about the technology. We call these \"aha\" moments. Drawing on interviews with 169 instructors across 18 universities, we show that these realization moments cluster around a few recurring topics, and that they offer a window into where instructors' thoughts about AI remain unsettled."
 contribution_summary: "Rather than surveying instructors' GenAI policies or attitudes directly, we operationalize belief change itself by identifying spoken \"aha\" moments in interview transcripts via a targeted cue-word screening procedure, then interpret their content through the Reasoned Action Approach (RAA), offering a method for surfacing where instructors' mental models of GenAI are actively being revised rather than only where they currently stand."
