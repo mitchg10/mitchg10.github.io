@@ -1,6 +1,6 @@
 ---
 title: "What Should Graduate Engineering Students Learn About Generative AI? A Critical Review of GAI Competency in Engineering Graduate Education"
-author: "Mitchell Gerhardt, Jenni Case"
+author: "Mitchell Gerhardt, Jennifer Case"
 collection: publications
 category: manuscripts
 permalink: /publication/2026-01-07-GAI-Competency-Doctoral-Engineering-Education

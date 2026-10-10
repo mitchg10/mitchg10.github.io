@@ -15,7 +15,11 @@ Higher education presents one of the most consequential sites of AI integration,
 
 I contribute to discourse about how researchers themselves use AI and what responsible AI-infused methodology looks like.
 
-My dissertation in Engineering Education is a three-manuscript demonstration of GenAI-infused qualitative data analysis. The first manuscript, [*Refutable Reflexivity: A Theoretical and Visual Model for LLM-Infused Qualitative Research*](/publication/2026-01-05-Toward-Reflexive-LLM-Infused-Research) (submitted, *International Journal of Qualitative Methods*), proposes a conceptual model for keeping LLM-infused analysis traceable and justifiable at scale. The second, [*Revisiting Transcription in the Age of AI*](/publication/2026-01-06-Voice-or-Speech-Fifty-Years-of-Transcription) (in preparation, *International Journal of Qualitative Methods*), critically reviews transcription as an interpretive act that AI-based systems now perform out of sight. The third studies the figurative language computer science instructors use to describe GenAI in two stages: my own discourse analysis first, then decision models (RLCD-trained) and prompt-engineered LLMs set to mimic that coding, with refutable reflexivity as the guide for comparing them.
+### Dissertation: Accountable by Design
+
+If AI is changing how expertise is developed and trusted, researchers are not exempt; my dissertation studies that change in qualitative research. It argues that accountability for AI-infused qualitative analysis has to be designed into the analysis rather than assumed of the analysts, and develops that claim across three manuscripts: a critical review of how automatic speech recognition deferred and obscured transcription's interpretive choices, a vocabulary and visual language for *refutable reflexivity* that makes any AI-infused claim traceable and contestable, and a test of that standard comparing human, prompted-LLM, and decision-model labels on one codebook. [Read more about the dissertation →](/dissertation/)
+
+### Other Methods Work
 
 My published article in the [*International Journal of Qualitative Methods*](/publication/2024-01-01-Using-Generative-Text-Models-to-Create-Qualitative-Codebooks-for-Student-Evaluations-of-Teaching) used LLMs to analyze qualitative educational data, interrogating LLM-infused workflows as a methodological intervention compared to human-based analysis. This work asks how LLMs afford and constrain research processes, and what constitutes "meaningful" and "trustworthy" findings when AI is part of the analytic chain.
 
@@ -31,7 +35,7 @@ My master's thesis in Computer Science has surveyed over 370 STEM graduate stude
 
 ### Instructors
 
-Instructors are a critically under-examined population in AI-in-education discourse: their course policies and departmental cultures propagate far beyond individual classrooms. Alongside my dissertation, I study how instructors make sense of AI and what that means for their students. Work from this strand includes an analysis of [how engineering faculty use metaphors to construct AI understanding](/publication/2026-06-01-How-Engineering-Faculty-Metaphors-Construct-GAI-Understanding), a study of [when and how faculty permit AI use in their courses](/publication/2026-06-01-When-Can-GAI-Be-Used-Engineering-Faculty-AI-Policies), and work with [NEASTE on engineering internships](/talks/2026-10-02-neaste-mentor-mentee-ai) examining how students notice differences between how practitioners and instructors orient toward AI.
+Through the NSF CAREER project *Minds and Machines* (#2339702, PI: Katz), I interview engineering instructors about how they conceptualize GenAI and how those conceptions reach students as course policy. Two instructors in the same department may use, think, and talk about GenAI entirely differently, and that variation is what makes instructors a critically under-examined population in AI-in-education discourse. Work from this strand includes an analysis of [how engineering faculty use metaphors to construct AI understanding](/publication/2026-06-01-How-Engineering-Faculty-Metaphors-Construct-GAI-Understanding), a study of [when and how faculty permit AI use in their courses](/publication/2026-06-01-When-Can-GAI-Be-Used-Engineering-Faculty-AI-Policies), and work with [NEASTE on engineering internships](/talks/2026-10-02-neaste-mentor-mentee-ai) examining how students notice differences between how practitioners and instructors orient toward AI.
 
 ### Institutions
 
@@ -39,7 +43,7 @@ Studying individual students and instructors is necessary but insufficient — i
 
 ### International
 
-AI adoption is not only a national question. Through an ongoing Fulbright Brazil collaboration, I study and support AI governance coordination at transnational scales, working with institutional leaders making decisions that impact real students. I participated in multi-day workshops in São Paulo in September 2025 and Washington DC in May 2026. See the [Fulbright Brazil workshop](/teaching/2025-09-fulbright-brazil) for details.
+AI adoption is not only a national question. Through an ongoing Fulbright Brazil collaboration, I study and support AI governance coordination at transnational scales, working with institutional leaders making decisions that impact real students. I participated in multi-day workshops in São Paulo in September 2025 and Arlington, Virginia in May 2026. See the [Fulbright Brazil workshop](/teaching/2025-09-fulbright-brazil) for details.
 
 ## Governance & Outreach
 

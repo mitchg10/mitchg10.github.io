@@ -25,6 +25,8 @@ __pycache__/
 # Claude Code local state (skills in .claude/skills/ are tracked)
 .claude/settings.local.json
 .claude/scheduled_tasks.lock
+.claude/rules
+.claude/.headroom*
 
 # Files
 files/

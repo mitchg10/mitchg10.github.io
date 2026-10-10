@@ -19,7 +19,7 @@ nodes:
     type: self
     projects:
       - "AI adoption in STEM higher education"
-      - "Engineering faculty mental models of AI"
+      - "Accountability and expertise in AI-infused qualitative research"
       - "Computational qualitative research methods"
 
   # INSTITUTIONS — Virginia Tech
@@ -238,7 +238,7 @@ nodes:
     role: "International Collaboration · South Africa"
     type: international
     projects:
-      - "Collaboration with Dr. Jenni Case on engineering curricular changes in response to AI"
+      - "Collaboration with Dr. Jennifer Case on engineering curricular changes in response to AI"
 
   # PERSONS — VT Engineering Education
   - id: andrew-katz
@@ -525,8 +525,8 @@ nodes:
       - "Collaborating on AI initatives for KEEN network"
 
   - id: jenni-case
-    label: "Dr. Jenni Case"
-    shortLabel: "Dr. Jenni Case"
+    label: "Dr. Jennifer Case"
+    shortLabel: "Dr. Jennifer Case"
     role: "Prof. · Cape Peninsula University of Technology"
     type: person
     projects:

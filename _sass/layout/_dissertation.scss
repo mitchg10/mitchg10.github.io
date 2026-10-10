@@ -1,0 +1,101 @@
+/* ==========================================================================
+   DISSERTATION PAGE
+   ========================================================================== */
+
+/*
+   Hero for /dissertation/: an expertise banner over three manuscript panels
+   that converge on "Accountable by design". Pure HTML/CSS (no SVG) so it
+   follows the --global-* custom properties and needs no dark-mode rules.
+   Panels stack vertically under 600px.
+*/
+
+.diss-hero {
+  margin: 1.5em 0 2em;
+  text-align: center;
+  font-family: $sans-serif;
+}
+
+.diss-hero__banner,
+.diss-hero__result {
+  padding: 0.6em 1em;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.diss-hero__banner {
+  border: 2px solid var(--global-link-color);
+  color: var(--global-link-color);
+}
+
+.diss-hero__result {
+  background: var(--global-link-color);
+  color: var(--global-bg-color);
+}
+
+.diss-hero__panels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+  margin: 1.5em 0;
+}
+
+.diss-hero__panel {
+  position: relative;
+  padding: 0.9em 0.8em;
+  border: 2px solid var(--global-border-color);
+  border-radius: 4px;
+  background: var(--global-footer-bg-color);
+  text-align: left;
+  font-size: 0.85em;
+  line-height: 1.4;
+  color: var(--global-text-color);
+
+  strong {
+    display: block;
+    margin-bottom: 0.3em;
+    color: var(--global-link-color);
+  }
+
+  &:not(:last-child)::after {
+    content: "\2192";
+    position: absolute;
+    top: 50%;
+    right: -1.3em;
+    transform: translateY(-50%);
+    color: var(--global-text-color-light);
+  }
+}
+
+.diss-hero__converge {
+  margin: 0 0 0.6em;
+  color: var(--global-text-color-light);
+  font-size: 0.8em;
+}
+
+@media (max-width: 599px) {
+  .diss-hero__panels {
+    grid-template-columns: 1fr;
+    gap: 1.4em;
+  }
+
+  .diss-hero__panel:not(:last-child)::after {
+    content: "\2193";
+    top: auto;
+    right: 50%;
+    bottom: -1.3em;
+    transform: translateX(50%);
+  }
+}
+
+/* Horizontal scroll wrapper so wide tables never scroll the whole page */
+.table-scroll {
+  overflow-x: auto;
+}
+
+.diss-meta {
+  color: var(--global-text-color-light);
+  line-height: 1.5;
+}
