@@ -1,12 +1,12 @@
 ---
 title: "Decade-Long Analysis of Skills Across 1 Million Graduate-Level Job Advertisements"
-author: "Mitchell Gerhardt, Shawn Sun, Andrew Katz, David Knight, Jessica Deters, Maura Borrego, Riya Budhathoki, Herman Ronald Clements III"
+author: "Mitchell Gerhardt, Shawn Sun, Andrew Katz, Jessica Deters, Maura Borrego, David Knight, Herman Ronald Clements III, Riya Budhathoki"
 collection: publications
 category: manuscripts
 permalink: /publication/2026-01-03-Decade-Long-Analysis-Skills-ME-Job-Advertisements
 date: 2026-08-31
 venue: 'Trends in Higher Education'
-citation: 'Gerhardt, M., Sun, S., Katz, A., Knight, D., Deters, J., Borrego, M., Budhathoki, R., & Clements III, H. R. (In Press). Decade-Long Analysis of Skills Across 1 Million Graduate-Level Job Advertisements. Trends in Higher Education.'
+citation: 'Gerhardt, M., Sun, S., Katz, A., Deters, J., Borrego, M., Knight, D., Clements III, H. R., & Budhathoki, R. (In Press). Decade-Long Analysis of Skills Across 1 Million Graduate-Level Job Advertisements. Trends in Higher Education.'
 status: in-press
 # paperurl: 'TBD'
 plain_language_summary: "Job advertisements are among the few continuously available records of what employers say they want, and this study reads a decade of them to ask how expectations placed on mechanical engineers holding graduate degrees have shifted. Working from more than one million postings collected between 2010 and 2022, we track 76 recurring skills and fit each one's year-by-year prevalence to a small set of interpretable growth patterns. What emerges is a discipline still anchored in its technical core, e.g., design, drafting, and physics, but one in which employers increasingly expect engineers to manage budgets, contracts, suppliers, and regulatory compliance as well, and to conduct all of it through software. Because graduate programs can revise coursework on shorter cycles than undergraduate curricula allow, these trends offer them an evidence base for deciding what to teach next."

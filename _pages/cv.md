@@ -52,7 +52,7 @@ Journal Publications
 
 * **Decade-Long Analysis of Skills Across 1 Million Graduate-Level Job Advertisements** (In Press)
   * *Trends in Higher Education*
-  * **Mitchell Gerhardt**, Shawn Sun, Andrew Katz, David Knight, Jessica Deters, Maura Borrego, Riya Budhathoki, and Herman Ronald Clements III
+  * **Mitchell Gerhardt**, Shawn Sun, Andrew Katz, Jessica Deters, Maura Borrego, David Knight, Herman Ronald Clements III, and Riya Budhathoki
 
 * **Refutable Reflexivity: A Theoretical and Visual Model for LLM-Infused Qualitative Research** (Submitted)
   * *International Journal of Qualitative Methods* - Special Issue on Artificial Intelligence in the Analysis of Qualitative Data
@@ -107,7 +107,7 @@ Peer-Reviewed Conference Publications
 
 * **Mechanical Engineering Students' Perspectives on Career Goals, Skills, and Industry** (Accepted)
   * *36th Australasian Association for Engineering Education (AAEE) Annual Conference* - October 2026
-  * Herman Ronald Clements III, Jessica Deters, **Mitchell Gerhardt**, Shawn Sun, David Knight, Maura Borrego, Andrew Katz, and Riya Budhathoki
+  * Herman Ronald Clements III, **Mitchell Gerhardt**, Riya Budhathoki, Jessica Deters, Maura Borrego, Andrew Katz, and David Knight
 
 * **It's like "X": How Engineering Faculty Metaphors Construct (and Constrain) GAI Understanding in Engineering Education** (June 2026) [[Paper](https://peer.asee.org/60248)]
   * *2026 ASEE Annual Conference & Exposition* - Charlotte, NC
