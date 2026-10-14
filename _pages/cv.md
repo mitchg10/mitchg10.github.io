@@ -50,7 +50,7 @@ Journal Publications
   * *Studies in Engineering Education* - Special Issue on GAI in Methods
   * **Mitchell Gerhardt** and Andrew Katz
 
-* **Decade-Long Analysis of Skills Across 1 Million Graduate-Level Job Advertisements** (Submitted)
+* **Decade-Long Analysis of Skills Across 1 Million Graduate-Level Job Advertisements** (In Press)
   * *Trends in Higher Education*
   * **Mitchell Gerhardt**, Shawn Sun, Andrew Katz, David Knight, Jessica Deters, Maura Borrego, Riya Budhathoki, and Herman Ronald Clements III
 
@@ -96,6 +96,14 @@ Peer-Reviewed Conference Publications
 * **WIP: The Challenge of Any Technology? Intergenerational Sense-Making About GenAI Systems in Engineering Education** (Submitted)
   * *2027 ASEE Annual Conference & Exposition* - Toronto, ON, Canada
   * **Mitchell Gerhardt**, Kylee Shiekh, Benjamin E. Chaback, and Andrew Katz
+
+* **WIP: Engineering Faculty Data Center Imaginaries: An Exploration of Pre-Pushback Perspectives of Internet Infrastructure** (Submitted)
+  * *2027 ASEE Annual Conference & Exposition* - Toronto, ON, Canada
+  * Nathanael Li, Kylee Shiekh, **Mitchell Gerhardt**, and Andrew Katz
+
+* **Whose Innovation Is It? Bidirectional AI Sensemaking and Reconfigured Trust in an Engineering Internship Mentoring Program** (Submitted)
+  * *2027 ASEE Annual Conference & Exposition* - Toronto, ON, Canada
+  * Margaret Webb and **Mitchell Gerhardt**
 
 * **Mechanical Engineering Students' Perspectives on Career Goals, Skills, and Industry** (Accepted)
   * *36th Australasian Association for Engineering Education (AAEE) Annual Conference* - October 2026
@@ -370,7 +378,7 @@ Service
 * **Graduate Ambassador**, Department of Engineering Education (August 2024 - May 2025)
 
 * **Reviewer**, Studies in Engineering Education (September 2026)
-* **Reviewer**, ASEE Annual Conference (May 2024, 2025, 2026)
+* **Reviewer**, ASEE Annual Conference (May 2024, 2025, 2026, 2027)
 * **Reviewer**, Frontiers in Education Conference (May 2026)
 * **Reviewer**, International Journal of Qualitative Methods (November 2024 & September 2025)
 * **Reviewer**, College of Engineering Torgersen Research Excellence Award (May 2025)
