@@ -1,12 +1,12 @@
 ---
 title: "Mechanical Engineering Students’ Perspectives on Career Goals, Skills, and Industry"
-author: "Herman Ronald Clements III, Jessica Deters, Mitchell Gerhardt, Shawn Sun, David Knight, Maura Borrego, Andrew Katz, Riya Budhathoki"
+author: "Herman Ronald Clements III, Mitchell Gerhardt, Riya Budhathoki, Jessica Deters, Maura Borrego, Andrew Katz, David Knight"
 collection: publications
 category: conferences
 permalink: /publication/2026-10-01-Unpacking-Mechanical-Engineering-Students-Career-Goals
 date: 2026-06-30
 venue: 'In the proceedings of the 36th Australasian Association for Engineering Education Annual Conference'
-citation: 'Clements III, H. R., Deters, J., Gerhardt, M., Sun, S., Knight, D., Borrego, M., Katz, A., &amp; Budhathoki, R. (2026, October). WIP: Unpacking Mechanical Engineering Students&apos; Career Goals, Skill Development, and Perspectives on Industry. 36th Australasian Association for Engineering Education Annual Conference.'
+citation: 'Clements III, H. R., Gerhardt, M., Budhathoki, R., Deters, J., Borrego, M., Katz, A., &amp; Knight, D. (2026, October). Mechanical Engineering Students&apos; Perspectives on Career Goals, Skills, and Industry. 36th Australasian Association for Engineering Education Annual Conference.'
 status: in-press
 # paperurl: 'https://fie-conference.org/TBD'
 plain_language_summary: "We look at how mechanical engineering master's students decide to pursue their degree, what skills they hope to gain, and how these decisions connect to what they believe industry wants from them. Master's students are a large and fast-growing part of the engineering workforce, yet most existing research treats them as an afterthought to Ph.D. students rather than as a group with their own goals. Drawing on interviews with students nearing the end of their programs, we find that their reasons for enrolling extend well beyond the usual assumption of chasing a higher salary, encompassing personal interest, access to specific career paths, and timing relative to the job market. This is a work-in-progress report, so what we present here are preliminary codes and patterns from an ongoing qualitative study rather than final conclusions."
