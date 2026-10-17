@@ -298,14 +298,13 @@ Grants & Awards
 * 2025: **Honorable Mention**, NSF Graduate Research Fellowship Program
   * National Science Foundation
 
-Select Projects
+Research Software and Methods Systems
 ======
-<!-- TODO(Mitch): add the [Code] link for laya-wrapper (PDF has one; repo URL not in this repo). -->
-* **laya-wrapper** (September 2026 - Present)
-  * Local workbench for iterating on decision model question sets for figurative-language coding of qualitative data
-  * Built a FastAPI + Next.js application over a shared Python package, letting researchers edit decision-question sets on a flowchart or table, preview the exact prompts the model receives, and check them against a token budget
-  * Implemented gold-label tooling that embeds coded segments, ranks exemplars by centroid similarity and margin against neighboring codes, and maps positions via PCA, feeding exemplars directly into indicator questions
-  * Supports cached per-question reruns, live AUROC/precision/recall/F1 metrics, weight and threshold tuning fit to gold labels, false-positive/negative disagreement review, and side-by-side run comparison
+* **Purrcept** (September 2026 - Present) [[Web](https://mitchgerhardt.com/portfolio/purrcept/)]
+  * Local workbench for running and evaluating decision questions across language models and research projects (figurative-language coding of participant responses; workforce-development analysis of engineering job postings)
+  * Built one interface over interchangeable backends (local Laya via PyTorch/MLX, remote GPU over a tunnel, hosted GLiDE, Bespoke-Nimble, h2o-lightning-4b) behind a shared predictor interface, with per-model, per-question answer caching
+  * Implemented question-set authoring as flowchart or table with exact-prompt preview and token-budget checks, plus gold-label tooling that ranks exemplars by similarity to position centroids
+  * Supports AUROC/precision/recall/F1 per position and question, weight and threshold tuning fit from gold labels without new model calls, disagreement review with notes and disputed-label flags, side-by-side run comparison, incremental per-question reruns, and a headless batch CLI
 
 * **Transcript Mapping** (August 2026 - Present) [[Code](https://github.com/mitchg10/interview-graph)] [[Web](https://mitchgerhardt.com/interview-graph/)]
   * Knowledge-graphing approach to mapping features contained in interview transcripts
@@ -331,15 +330,15 @@ Select Projects
   * Implemented single-file export that inlines reveal.js, fonts, images, and CDN libraries into a self-contained HTML deck presentable without internet access
   * Added LAN preview with QR code for phone and tablet review, PDF export, and a pytest suite with GitHub Actions CI
 
-* **Between the Lines** (Fall 2025)
+<!-- * **Between the Lines** (Fall 2025)
   * React + TypeScript bookstore e-commerce application developed for CS 5244: Web App Development
   * Built full-stack e-commerce site using React + TypeScript with Vite, evolving from Figma and static HTML/CSS into a complete bookstore application with shopping cart, category browsing, and checkout functionality
   * Developed Java servlet backend running on Tomcat to handle categories, books, and order processing with RESTful API design
   * Implemented state management using React Context providers with useReducer pattern for order state, including persistent cart state via localStorage
-  * Integrated Formik/Yup for form validation with custom validators for phone numbers and credit cards, ensuring robust client-side validation throughout checkout flow
+  * Integrated Formik/Yup for form validation with custom validators for phone numbers and credit cards, ensuring robust client-side validation throughout checkout flow -->
 
 * **Ducky** (Fall 2025)
-  * AI-powered software developer assistant built with Streamlit providing intelligent development support through specialized features for CS 5740: AI Tools for Software Engineers
+  * AI-powered software developer assistant built with Streamlit providing intelligent development support through specialized features 
   * Developed ReAct-pattern agent system with sandboxed tool execution capabilities, enabling GenAI agents to autonomously perform file operations, code editing, and multi-step task completion with security through path validation
   * Implemented dual interface architecture: rich web interface with Monaco editor integration and CLI interface, supporting persona-based agent behaviors across software development roles (planning, development, QA, operations)
   * Integrated RAG (Retrieval Augmented Generation) using local sentence-transformers for offline-capable document queries and comprehensive LLM integration with OpenAI-compatible APIs supporting function calling and streaming responses
