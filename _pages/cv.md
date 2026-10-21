@@ -50,10 +50,6 @@ Journal Publications
   * *Studies in Engineering Education* - Special Issue on GAI in Methods
   * **Mitchell Gerhardt** and Andrew Katz
 
-* **Decade-Long Analysis of Skills Across 1 Million Graduate-Level Job Advertisements** (In Press)
-  * *Trends in Higher Education*
-  * **Mitchell Gerhardt**, Shawn Sun, Andrew Katz, Jessica Deters, Maura Borrego, David Knight, Herman Ronald Clements III, and Riya Budhathoki
-
 * **Refutable Reflexivity: A Theoretical and Visual Model for LLM-Infused Qualitative Research** (Submitted)
   * *International Journal of Qualitative Methods* - Special Issue on Artificial Intelligence in the Analysis of Qualitative Data
   * **Mitchell Gerhardt**, Kylee Shiekh, Andrew Katz, and Benjamin E. Chaback
@@ -78,6 +74,10 @@ Journal Publications
 * **What Should Graduate Engineering Students Learn About Generative AI? A Critical Review of GAI Competency in Engineering Graduate Education** (In Preparation)
   * *European Journal of Engineering Education*
   * **Mitchell Gerhardt** and Jennifer Case
+
+* **Decade-Long Analysis of Skills Across 1 Million Graduate-Level Job Advertisements** (October 2026) [[Paper](https://doi.org/10.3390/higheredu5040119)]
+  * *Trends in Higher Education* - Volume 5(4), Article 119
+  * **Mitchell Gerhardt**, Shawn Sun, Andrew Katz, Jessica Deters, Maura Borrego, David Knight, Herman Ronald Clements III, and Riya Budhathoki
 
 * **Collaborative (In)decision: A Preliminary Investigation of the Differences in Undergraduate Engineering Capstone Students' Collaborative Behaviors** (April 2025) [[Paper](https://www.ijee.ie/contents/c410425.html)]
   * *International Journal of Engineering Education* - Special Issue for Capstone Design, Volume 41(4), pp. 872–888
