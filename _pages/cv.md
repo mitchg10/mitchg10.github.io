@@ -152,7 +152,7 @@ Teaching and Mentoring
 
 ### Guest Lecturing and Classroom Instruction
 
-* **Guest Lecturer**, *ME 397/379M Qualitative Research Methods*, University of Texas at Austin (Dr. Maura Borrego) (November 2025 & November 2026, scheduled)
+* **Guest Lecturer**, *ME 397/379M Qualitative Research Methods*, University of Texas at Austin (Dr. Maura Borrego) (November 2025 & November 2026, scheduled) [[Slides](https://mitchgerhardt.com/slides/genai-in-qual/){:target="_blank" rel="noopener noreferrer"}]
   * "Large Language Models in Qualitative Engineering Education Research: Technical Methods and Methodological Considerations"
   * Examined human versus machine pattern recognition, researcher positionality, translational challenges between software and social-science conventions, and shifting definitions of "intelligence"
   * Addressed methodological questions about computational approaches to qualitative work and implications for research practice
